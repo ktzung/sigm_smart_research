@@ -1,0 +1,4 @@
+# file: D:\2.HUST\2026_Projects_Trial\SigMSmartResearch\research_platform\app\services\export.py
+# hypothesis_version: 6.151.12
+
+['## Draft Sections\n', '## Paper Library\n', '## Research Gaps\n', '## Taxonomy\n', 'Reviewer Feedback', '_', 'authors', 'comparison_table', 'content', 'contradictions', 'datasets', 'decision', 'description', 'dimensions', 'draft_sections', 'evidence_ids', 'explanation', 'extraction', 'gaps', 'id', 'label', 'limitations', 'major_weaknesses', 'method_clusters', 'method_type', 'minor_issues', 'overall_score', 'paper_mapping', 'papers', 'priority', 'reason', 'recurring_patterns', 'review', 'revision_priorities', 'score', 'section', 'setting', 'strengths', 'synthesis', 'taxonomy', 'title', 'topic', 'type', 'unscreened', 'url', 'venue', 'version', 'year']

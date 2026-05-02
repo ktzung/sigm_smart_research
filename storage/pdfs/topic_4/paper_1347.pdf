@@ -1,0 +1,416 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Proposed Methodology for Disaster Classification Using Computer Vision and Federated Learning</title>
+<meta charset="utf-8">
+<meta name="generator" content="Technoscience Academy">
+<meta name="gs_meta_revision" content="1.1" />
+<meta name="citation_journal_title" content="International Journal of Scientific Research in Computer Science, Engineering and Information Technology" />
+<meta name="citation_journal_abbrev" content="int. j. sci. res. comput. sci. eng. inf. technol." />
+<meta name="citation_issn" content="2456-3307" />
+<meta name="citation_author" content="Jash Shah"/>
+<meta name="citation_author_institution" content="Department of Information Technology, Dwarkadas J. Sanghvi College of Engineering, Maharashtra, India"/>
+<meta name="citation_author" content="Divya Patel"/>
+<meta name="citation_author_institution" content="Department of Information Technology, Dwarkadas J. Sanghvi College of Engineering, Maharashtra, India"/>
+<meta name="citation_author" content="Jinish Shah"/>
+<meta name="citation_author_institution" content="Department of Information Technology, Dwarkadas J. Sanghvi College of Engineering, Maharashtra, India"/>
+<meta name="citation_author" content="Saurav Shah"/>
+<meta name="citation_author_institution" content="Department of Information Technology, Dwarkadas J. Sanghvi College of Engineering, Maharashtra, India"/>
+<meta name="citation_author" content="Dr. Vinaya Sawant"/>
+<meta name="citation_author_institution" content="HOD, Department of Information Technology, Dwarkadas J. Sanghvi College of Engineering, Maharashtra, India"/>
+<meta name="citation_title" content="Proposed Methodology for Disaster Classification Using Computer Vision and Federated Learning" />
+<meta name="citation_language" content="en" />
+<meta name="citation_date" content="2023-08-30"/>
+<meta name="citation_volume" content="9"/>
+<meta name="citation_issue" content="4"/>
+<meta name="citation_firstpage" content="432"/>
+<meta name="citation_lastpage" content="442"/>
+<meta name="citation_doi" content="10.32628/CSEIT2390453"/>
+<meta name="citation_abstract_html_url" content=" https://res.ijsrcseit.com/CSEIT2390453"/>
+<meta name="citation_keywords" xml:lang="en" content="Disaster classification, Computer vision, Federated Learning, Deep Learning"/>
+<meta name="citation_pdf_url" content=" https://res.ijsrcseit.com/paper/CSEIT2390453.pdf"/>
+<meta name='citation_publication_date' content='30/08/2023' />
+<link rel="schema.DC" href="https://purl.org/dc/elements/1.1/" />
+<meta name="DC.Creator.PersonalName" content="Jash Shah" />
+<meta name="DC.Creator.PersonalName" content="Divya Patel" />
+<meta name="DC.Creator.PersonalName" content="Jinish Shah" />
+<meta name="DC.Creator.PersonalName" content="Saurav Shah" />
+<meta name="DC.Creator.PersonalName" content="Dr. Vinaya Sawant" />
+<meta name="DC.Date.created" scheme="ISO8601" content="2023-08-30" />
+<meta name="DC.Date.created" scheme="ISO8601" content="2023-08-30" />
+<meta name="DC.Description" xml:lang="en" content="Classification of disasters is crucial for effective disaster management and response. This paper proposes a methodology that combines computer vision techniques and federated learning to improve the classification accuracy of disasters while addressing the issue of data transfer and the time squandered doing so. This methodology employs computer vision algorithms to analyze captured visual data from a variety of sources. It seeks to accurately classify disasters such as wildfires, floods, earthquakes, and cyclones by extracting pertinent features and patterns from these images. Using federated learning to resolve the issues of data privacy and transfer latency is the proposed solution. Federated learning makes it possible to train models on decentralized data sources without requiring data centralization. Each participating device or data source trains a local model using its own data, and only model updates are shared and aggregated to create a global model. Extensive experiments utilizing videos of actual disasters are conducted to evaluate the proposed methodology. The evaluation focuses on precision and effectiveness. This strategy is anticipated to result in improved disaster classification models, making them appropriate for deployment in disaster management systems." />
+<meta name="DC.Format" scheme="IMT" content="application/pdf" />
+<meta name="DC.Identifier" content="" />
+<meta name="DC.Identifier.pageNumber" content="432-442" />
+<meta name="DC.Identifier.DOI" content="10.32628/CSEIT2390453" />
+<meta name="DC.Identifier.URI" content="https://res.ijsrcseit.com/CSEIT2390453" />
+<meta name="DC.Language" scheme="ISO639-1" content="en" />
+<meta name="DC.Rights" content="Copyright (c) International Journal of Scientific Research in Computer Science, Engineering and Information Technology" />
+<meta name="DC.Rights" content />
+<meta name="DC.Source" content="International Journal of Scientific Research in Computer Science, Engineering and Information Technology" />
+<meta name="DC.Source.ISSN" content="2456-3307" />
+<meta name="DC.Source.Issue" content="4" />
+<meta name="DC.Source.Volume" content="9" />
+<meta name="DC.Source.URI" content="https://www.ijsrcseit.com" />
+<meta name="DC.Subject" xml:lang="en" content="Disaster classification, Computer vision, Federated Learning, Deep Learning" />
+<meta name="DC.Title" content="Proposed Methodology for Disaster Classification Using Computer Vision and Federated Learning" />
+<meta name="DC.Type" content="Text.Serial.Journal" />
+<meta name="DC.Type.articleType" content="Original Research Articles" />
+	
+<link rel="icon" href="https://ijsrcseit.com/public/journals/1/favicon_en.ico">
+ 
+<link rel="stylesheet" href="https://ijsrcseit.com/index.php/home/$$$call$$$/page/page/css?name=stylesheet" type="text/css" />
+<link rel="stylesheet" href="https://ijsrcseit.com/index.php/home/$$$call$$$/page/page/css?name=font" type="text/css" />
+<link rel="stylesheet" href="https://ijsrcseit.com/lib/pkp/styles/fontawesome/fontawesome.css?v=3.4.0.5" type="text/css" />
+<style type="text/css">
+.pkp_structure_head { background: center / cover no-repeat url("https://ijsrcseit.com/public/journals/1/homepageImage_en.png");}
+</style>
+<link rel="stylesheet" href="https://ijsrcseit.com/plugins/generic/doiInSummary/styles/doi.css?v=3.4.0.5" type="text/css" />
+<link rel="stylesheet" href="https://ijsrcseit.com/plugins/generic/citations/css/citations.css?v=3.4.0.5" type="text/css" />
+<link rel="stylesheet" href="https://ijsrcseit.com/plugins/generic/mostViewed/css/mostViewed.css?v=3.4.0.5" type="text/css" />
+<link rel="stylesheet" href="https://ijsrcseit.com/public/journals/1/styleSheet.css?d=2024-03-05+18%3A45%3A07" type="text/css" />
+<link rel="stylesheet" href="https://ijsrcseit.com/plugins/generic/citationStyleLanguage/css/citationStyleLanguagePlugin.css?v=3.4.0.5" type="text/css" />
+</head>
+<body class="pkp_page_article pkp_op_view has_site_logo" dir="ltr">
+<div class="pkp_structure_page">
+ <header class="pkp_structure_head" id="headerNavigationContainer" role="banner">
+ <div class="pkp_head_wrapper">
+  <div class="pkp_site_name_wrapper">
+  <button class="pkp_site_nav_toggle"> <span>Open Menu</span> </button>
+  <div class="pkp_site_name"> <a href="https://ijsrcseit.com/index.php/home/index" class="is_img"> <img src="https://ijsrcseit.com/public/journals/1/pageHeaderLogoImage_en.png" width="1620" height="93" alt="IInternational Journal of Scientific Research in Computer Science, Engineering and Information Technology" /> </a> </div>
+  </div>
+  <nav class="pkp_site_nav_menu" aria-label="Site Navigation"> <a id="siteNav"></a>
+  <div class="pkp_navigation_primary_row">
+   <div class="pkp_navigation_primary_wrapper">
+   <ul id="navigationPrimary" class="pkp_navigation_primary pkp_nav_list">
+								<li class="">
+				<a href="https://ijsrcseit.com/index.php/home">
+					<em class="fa  fa-home"></em> Home
+				</a>
+							</li>
+								<li class="">
+				<a href="https://ijsrcseit.com/index.php/home/issue/current">
+					<em class="fa  fa-book">&nbsp;</em> Current
+				</a>
+							</li>
+								<li class="">
+				<a href="https://ijsrcseit.com/index.php/home/issue/archive">
+					<em class="fa  fa-archive">&nbsp;</em>  Archives
+				</a>
+									<ul>
+																					<li class="">
+									<a href="https://ijsrcseit.com/index.php/home/archives">
+										Archives
+									</a>
+								</li>
+																												<li class="">
+									<a href="https://ijsrcseit.com/index.php/home/Conferences">
+										Conferences 
+									</a>
+								</li>
+																		</ul>
+							</li>
+								<li class="">
+				<a href="https://ijsrcseit.com/index.php/home/about/editorialTeam">
+					<em class="fa fa-users"></em> Editorial Committee
+				</a>
+									<ul>
+																					<li class="">
+									<a href="https://ijsrcseit.com/index.php/home/about/editorialTeam">
+										Editorial Team
+									</a>
+								</li>
+																												<li class="">
+									<a href="https://ijsrcseit.com/index.php/home/reviewers-board">
+										Reviewers Board
+									</a>
+								</li>
+																												<li class="">
+									<a href="https://ijsrcseit.com/index.php/home/editors-responsibilities">
+										Editors Responsibilities
+									</a>
+								</li>
+																												<li class="">
+									<a href="https://ijsrcseit.com/index.php/home/reviewers-responsibilities">
+										Reviewers Responsibilities
+									</a>
+								</li>
+																												<li class="">
+									<a href="https://ijsrcseit.com/index.php/home/editorial-policies">
+										Editorial Policies
+									</a>
+								</li>
+																		</ul>
+							</li>
+								<li class="">
+				<a href="https://ijsrcseit.com/index.php/home/about/privacy">
+					<em class="fa fa-list"></em>  Peer Review & Ethics 
+				</a>
+									<ul>
+																					<li class="">
+									<a href="https://ijsrcseit.com/index.php/home/Peer-Review-Policy">
+										 Peer Review Policy
+									</a>
+								</li>
+																												<li class="">
+									<a href="https://ijsrcseit.com/index.php/home/manuscript-types">
+										Manuscript Types
+									</a>
+								</li>
+																												<li class="">
+									<a href="https://ijsrcseit.com/index.php/home/abstracting-and-indexing">
+										Abstracting and Indexing
+									</a>
+								</li>
+																												<li class="">
+									<a href="https://ijsrcseit.com/index.php/home/research-and-publication-ethics">
+										Research and Publication Ethics
+									</a>
+								</li>
+																												<li class="">
+									<a href="https://ijsrcseit.com/index.php/home/crossmarkpolicy">
+										CrossMark Policy
+									</a>
+								</li>
+																												<li class="">
+									<a href="https://ijsrcseit.com/index.php/home/Guidelines-for-Authors">
+										Guidelines for Authors
+									</a>
+								</li>
+																		</ul>
+							</li>
+								<li class="">
+				<a href="https://ijsrcseit.com/index.php/home/about">
+					<em class="fa fa-slack">&nbsp;</em> About
+				</a>
+									<ul>
+																					<li class="">
+									<a href="https://ijsrcseit.com/index.php/home/Open-Access-Policy">
+										Open Access Policy
+									</a>
+								</li>
+																												<li class="">
+									<a href="https://ijsrcseit.com/index.php/home/about">
+										About the Journal
+									</a>
+								</li>
+																												<li class="">
+									<a href="https://ijsrcseit.com/index.php/home/aims-and-scope">
+										Aims & Scope
+									</a>
+								</li>
+																												<li class="">
+									<a href="https://ijsrcseit.com/index.php/home/impact-factor">
+										Impact Factor
+									</a>
+								</li>
+																												<li class="">
+									<a href="https://ijsrcseit.com/index.php/home/about/contact">
+										Contact
+									</a>
+								</li>
+																												<li class="">
+									<a href="https://ijsrcseit.com/eJManager/index.php">
+										Submissions
+									</a>
+								</li>
+																												<li class="">
+									<a href="https://ijsrcseit.com/index.php/home/authors-responsibilities">
+										Author's Responsibilities
+									</a>
+								</li>
+																		</ul>
+							</li>
+			</ul>
+
+				   <div class="pkp_navigation_search_wrapper"> <a href="https://ijsrcseit.com/index.php/home/search" class="pkp_search pkp_search_desktop"> <span class="fa fa-search" aria-hidden="true"></span> Search </a> </div>
+   </div>
+  </div>
+  <div class="pkp_navigation_user_wrapper" id="navigationUserWrapper"> </div>
+  </nav>
+ </div>
+ <!-- .pkp_head_wrapper -->
+ </header>
+ <!-- .pkp_structure_head -->
+ <div class="pkp_structure_content has_sidebar">
+ <div class="pkp_structure_main" role="main"> <a id="pkp_content_main"></a>
+  <div class="page page_article">
+
+
+  <nav class="cmp_breadcrumbs" role="navigation" aria-label="You are here:">
+   <ol>
+   <li> <a href="https://ijsrcseit.com/index.php/home/index"> Home </a> <span class="separator">/</span> </li>
+   <li> <a href="https://ijsrcseit.com/index.php/home/issue/archive"> Archives </a> <span class="separator">/</span> </li>
+   <li> <a href="https://ijsrcseit.com/home/issue/view/archive.php?v=12&i=66&pyear=2023"> Vol. 9 No. 4 (2023) : July-August </a> <span class="separator">/</span> </li>
+   <li class="current" aria-current="page"> <span aria-current="page"> Research Articles </span> </li>
+   </ol>
+  </nav>
+  <article class="obj_article_details">
+   <h1 class="page_title"> Proposed Methodology for Disaster Classification Using Computer Vision and Federated Learning </h1>
+   <div class="row">
+   <div class="main_entry">
+    <section class="item authors">
+    <h2 class="pkp_screen_reader">Authors</h2>
+<ul class="authors">
+<li><span class='name'> Jash Shah</span><span class='affiliation'>&nbsp;&nbsp;Department of Information Technology, Dwarkadas J. Sanghvi College of Engineering, Maharashtra, India</span> </li><li><span class='name'>  Divya Patel</span><span class='affiliation'>&nbsp;&nbsp;Department of Information Technology, Dwarkadas J. Sanghvi College of Engineering, Maharashtra, India</span> </li><li><span class='name'>  Jinish Shah</span><span class='affiliation'>&nbsp;&nbsp;Department of Information Technology, Dwarkadas J. Sanghvi College of Engineering, Maharashtra, India</span> </li><li><span class='name'>  Saurav Shah</span><span class='affiliation'>&nbsp;&nbsp;Department of Information Technology, Dwarkadas J. Sanghvi College of Engineering, Maharashtra, India
+</span> </li><li><span class='name'>  Dr. Vinaya Sawant</span><span class='affiliation'>&nbsp;&nbsp;HOD, Department of Information Technology, Dwarkadas J. Sanghvi College of Engineering, Maharashtra, India
+</span> </li>    </ul>
+    </section>
+    <section class="item doi">
+    
+	<h2 class='label'> DOI: </h2>  <span class='value'> <a href='https://doi.org/10.32628/CSEIT2390453'> https://doi.org/10.32628/CSEIT2390453</a> </span>    </section>
+    <section class="item keywords">
+    <h2 class="label"> Keywords: </h2>
+    <span class="value"> Disaster classification, Computer vision, Federated Learning, Deep Learning </span> </section>
+    <section class="item abstract">
+    <h2 class="label">Abstract</h2>
+    <p>Classification of disasters is crucial for effective disaster management and response. This paper proposes a methodology that combines computer vision techniques and federated learning to improve the classification accuracy of disasters while addressing the issue of data transfer and the time squandered doing so. This methodology employs computer vision algorithms to analyze captured visual data from a variety of sources. It seeks to accurately classify disasters such as wildfires, floods, earthquakes, and cyclones by extracting pertinent features and patterns from these images. Using federated learning to resolve the issues of data privacy and transfer latency is the proposed solution. Federated learning makes it possible to train models on decentralized data sources without requiring data centralization. Each participating device or data source trains a local model using its own data, and only model updates are shared and aggregated to create a global model. Extensive experiments utilizing videos of actual disasters are conducted to evaluate the proposed methodology. The evaluation focuses on precision and effectiveness. This strategy is anticipated to result in improved disaster classification models, making them appropriate for deployment in disaster management systems.  </p>
+    </section>
+    <section class="item references">
+    <h2 class="label"> References </h2>
+    <div class="value">
+     <p> <ol>
+<li>He, K., Zhang, X., Ren, S. and Sun, J., 2016. Deep residual learning for image recognition. In Proceedings of the IEEE conference on computer vision and pattern recognition (pp. 770-778).</li>
+<li>Agrawal, T. and Meleet, M., 2021, September. Classification of natural disaster using satellite and drone images with CNN using transfer learning. In 2021 International Conference on Innovative Computing, Intelligent Communication and Smart Electrical Systems (ICSES) (pp. 1-5). IEEE.</li>
+<li>He, C., Li, S., So, J., Zeng, X., Zhang, M., Wang, H., Wang, X., Vepakomma, P., Singh, A., Qiu, H. and Zhu, X., 2020. Fedml: A research library and benchmark for federated machine learning. arXiv preprint arXiv:2007.13518.</li>
+<li>He, C., Li, S., So, J., Zeng, X., Zhang, M., Wang, H., Wang, X., Vepakomma, P., Singh, A., Qiu, H. and Zhu, X., 2020. Fedml: A research library and benchmark for federated machine learning. arXiv preprint arXiv:2007.13518.</li>
+<li>Mascarenhas, S. and Agarwal, M., 2021, November. A comparison between VGG16, VGG19 and ResNet50 architecture frameworks for Image Classification. In 2021 International Conference on Disruptive Technologies for Multi-Disciplinary Research and Applications (CENT- CON) (Vol. 1, pp. 96-99). IEEE.</li>
+<li>Mascarenhas, S. and Agarwal, M., 2021, November. A comparison between VGG16, VGG19 and ResNet50 architecture frameworks for Image Classification. In 2021 International Conference on Disruptive Technologies for Multi-Disciplinary Research and Applications (CENT- CON) (Vol. 1, pp. 96-99). IEEE.</li>
+<li>Li, Y., Wang, H., Sun, S. and Buckles, B., 2020, June. Integrating multiple deep learning models to classify disaster scene videos. In 2020 IEEE High Performance Extreme Computing Conference.</li>
+<li>Borawar, L. and Kaur, R., 2023, March. ResNet: Solving Vanishing Gradient in Deep Networks. In Proceedings of International Conference on Recent Trends in Computing: ICRTC 2022 (pp. 235-247). Singapore: Springer Nature Singapore.</li>
+<li>Wu, D., Wang, Y., Xia, S.T., Bailey, J. and Ma, X., 2020. Skip connec- tions matter: On the transferability of adversarial examples generated with resnets. arXiv preprint arXiv:2002.05990.</li>
+<li>Brownlee, J., 2020. Data preparation for machine learning: data cleaning, feature selection, and data transforms in Python. Machine Learning Mastery.</li>
+<li>Rebuffi, S.A., Gowal, S., Calian, D.A., Stimberg, F., Wiles, O. and Mann, T.A., 2021. Data augmentation can improve robustness. Advances in Neural Information Processing Systems, 34, pp.29935-29948.</li>
+<li>Shorten, C. and Khoshgoftaar, T.M., 2019. A survey on image data augmentation for deep learning. Journal of big data, 6(1), pp.1-48.</li>
+<li>Nilsson, A., Smith, S., Ulm, G., Gustavsson, E. and Jirstrand, M., 2018, December. A performance evaluation of federated learning algorithms. In Proceedings of the second workshop on distributed infrastructures for deep learning (pp.1-8).</li>
+<li>Agarap, A.F., 2018. Deep learning using rectified linear units (relu). arXiv preprint arXiv:1803.08375.</li>
+<li>Srivastava, N., Hinton, G., Krizhevsky, A., Sutskever, I. and Salakhutdi- nov, R., 2014. Dropout: a simple way to prevent neural networks from overfitting. The journal of machine learning research, 15(1), pp.1929- 1958.</li>
+<li>Zhang, Z. and Sabuncu, M., 2018. Generalized cross entropy loss for training deep neural networks with noisy labels. Advances in neural information processing systems, 31.</li>
+<li>Keskar, N.S. and Socher, R., 2017. Improving generalization perfor- mance by switching from adam to sgd. arXiv preprint arXiv:1712.07628.</li>
+<li>Basu, M., Shandilya, A., Khosla, P., Ghosh, K. and Ghosh, S., 2019. Extracting resource needs and availabilities from microblogs for aiding post-disaster relief operations. IEEE Transactions on Computational Social Systems, 6(3), pp.604-618.</li>
+<li>Madichetty, S. and Sridevi, M., 2019, January. Detecting informative tweets during disaster using deep neural networks. In 2019 11th International Conference on Communication Systems and Networks (COMSNETS) (pp. 709-713). IEEE.</li>
+<li>Bhoi, A., Pujari, S.P. and Balabantaray, R.C., 2020. A deep learning- based social media text analysis framework for disaster resource management. Social Network Analysis and Mining, 10, pp.1-14.</li>
+<li>Chaudhuri, N. and Bose, I., 2019. Application of image analytics for disaster response in smart cities.</li>
+<li>Alam, F., Ofli, F. and Imran, M., 2018. Processing social media images by combining human and machine computing during crises. International Journal of Human&ndash;Computer Interaction, 34(4), pp.311-327.</li>
+<li>Pi, Y., Nath, N.D. and Behzadan, A.H., 2020. Convolutional neural networks for object detection in aerial imagery for disaster response and recovery. Advanced Engineering Informatics, 43, p.101009.</li>
+</ol> </p>
+    </div>
+    </section>
+   </div>
+   
+    
+   <!-- .main_entry -->
+   <div class="entry_details">
+    <div class="item cover_image">
+    <div class="sub_item"> <a href="https://ijsrcseit.com/index.php/home/issue/view/v11i2"> <img src="https://ijsrcseit.com/public/journals/1/cover_issue_1_en.png" alt="IInternational Journal of Scientific Research in Computer Science, Engineering and Information Technology"> </a> </div>
+    </div>
+    <div class="item galleys">
+    <h2 class="pkp_screen_reader"> Downloads </h2>
+    <ul class="value galleys_links">
+     <li> <a class="obj_galley_link pdf" href="https://ijsrcseit.com/paper/CSEIT2390453.pdf"  target="_blank"> PDF </a> </li>	 
+    </ul>
+    </div>
+    <div class="item published">
+    <section class="sub_item">
+     <h2 class="label"> Published </h2>
+     <div class="value"> <span>30-08-2023 </span> </div>
+    </section>
+    </div>
+    <div class="item issue">
+    <section class="sub_item">
+     <h2 class="label"> Issue </h2>
+     <div class="value"> <a href="https://ijsrcseit.com/home/issue/view/archive.php?v=12&i=66&pyear=2023">   Volume 9, Issue 4, July-August-2023 </a> </div>
+    </section>
+    <section class="sub_item">
+     <h2 class="label"> Section </h2>
+     <div class="value"> Research Articles </div>
+    </section>
+    </div>
+    <div class="item copyright">
+    <h2 class="label"> License </h2>
+    <p>Copyright (c) IJSRCSEIT</p>
+    <a rel="license" href="https://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" src="//i.creativecommons.org/l/by/4.0/88x31.png" /></a>
+    <p>This work is licensed under a <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</p>
+    </div>
+    <div class="item citation">
+    <section class="sub_item citation_display">
+     <h2 class="label"> How to Cite </h2>
+     <div class="value">
+     <div id="citationOutput" role="region" aria-live="polite">
+      <div class="csl-bib-body">
+      <div class="csl-entry">
+       <div class="csl-left-margin">[1]</div>
+       <div class="csl-right-inline">
+	   
+	   Jash Shah, Divya Patel, Jinish Shah, Saurav Shah, Dr. Vinaya Sawant, &quot;
+Proposed Methodology for Disaster Classification Using Computer Vision and Federated Learning&quot;  International Journal of Scientific Research in Computer Science, Engineering and Information Technology(IJSRCSEIT), ISSN : 2456-3307,
+												Volume 9, Issue 4, pp.432-442, July-August-2023.												Available at doi : <strong><a href=' https://doi.org//10.32628/CSEIT2390453'> https://doi.org/10.32628/CSEIT2390453</a></strong> </a> 
+	   </div>
+      </div>
+      </div>
+     </div>
+ 
+     </div>
+    </section>
+    </div>
+    
+ 
+    
+    
+    </div>
+    <style>
+  .citations-container {
+  overflow-y: auto;
+  overflow-x: hidden;
+  max-height: 500px;
+  }
+ </style>
+    </div>
+   </div>
+   <!-- .entry_details -->
+   </div>
+   <!-- .row -->
+  </article>
+  <div id="articlesBySameAuthorList"> </div>
+  <div id="articlesBySimilarityList"> </div>
+  </div>
+  <!-- .page -->
+ </div>
+ <!-- pkp_structure_main -->
+ 
+ <!-- pkp_structure_content -->
+<div class="pkp_structure_footer_wrapper" role="contentinfo">
+	<a id="pkp_content_footer"></a>
+
+	<div class="pkp_structure_footer">
+
+					<div class="pkp_footer_content">
+				<p><strong style="color: #0066ff;"> Peer reviewed and Refereed International Scientific Research Journal </strong><br />Online ISSN : 2456-3307| <strong style="color: #0066ff;">UGC Approved Journal Number : 64718</strong></p>
+<p>Submit your paper to the following e-mails:<strong><a href="/cdn-cgi/l/email-protection#e386878a978c91a38a8990918090868a97cd808c8e"><span class="__cf_email__" data-cfemail="4e2b2a273a213c0e27243d3c2d3d2b273a602d2123">[email&#160;protected]</span></a>,<a href="/cdn-cgi/l/email-protection#adc4c7dedfcedec8c4d9edcac0ccc4c183cec2c0"><span class="__cf_email__" data-cfemail="6801021b1a0b1b0d011c280f05090104460b0705">[email&#160;protected]</span></a></strong></p>
+<p>IJSRCSEIT @ Copyright 2025. All Rights Reserved. | Platform and Workflow by <a href="https://ojs34.testdrive.publicknowledgeproject.org/index.php/testdrive-journal/about/aboutThisPublishingSystem">OJS/PKP</a></p>
+			</div>
+		
+		 
+	</div>
+</div> <!-- pkp_structure_footer_wrapper -->
+ 
+<!-- pkp_structure_page -->
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js" defer></script><script src="https://ijsrcseit.com/lib/pkp/lib/vendor/components/jquery/jquery.min.js?v=3.4.0.5" type="text/javascript"></script>
+<script src="https://ijsrcseit.com/lib/pkp/lib/vendor/components/jqueryui/jquery-ui.min.js?v=3.4.0.5" type="text/javascript"></script>
+<script src="https://ijsrcseit.com/plugins/themes/default/js/lib/popper/popper.js?v=3.4.0.5" type="text/javascript"></script>
+<script src="https://ijsrcseit.com/plugins/themes/default/js/lib/bootstrap/util.js?v=3.4.0.5" type="text/javascript"></script>
+<script src="https://ijsrcseit.com/plugins/themes/default/js/lib/bootstrap/dropdown.js?v=3.4.0.5" type="text/javascript"></script>
+<script src="https://ijsrcseit.com/plugins/themes/default/js/main.js?v=3.4.0.5" type="text/javascript"></script>
+<script src="https://ijsrcseit.com/plugins/generic/citationStyleLanguage/js/articleCitation.js?v=3.4.0.5" type="text/javascript"></script>
+<script src="https://ijsrcseit.com/plugins/generic/citations/js/citations.js?v=3.4.0.5" type="text/javascript"></script>
+<script src="https://d3js.org/d3.v4.js?v=3.4.0.5" type="text/javascript"></script>
+<script src="https://cdn.jsdelivr.net/gh/holtzy/D3-graph-gallery@master/LIB/d3.layout.cloud.js?v=3.4.0.5" type="text/javascript"></script>
+<script type="text/javascript">var pkpUsageStats = pkpUsageStats || {};pkpUsageStats.data = pkpUsageStats.data || {};pkpUsageStats.data.Submission = pkpUsageStats.data.Submission || {};pkpUsageStats.data.Submission[2] = {"data":{"2024":{"3":"11","4":0}},"label":"All Downloads","color":"79,181,217","total":11};</script>
+<script src="https://ijsrcseit.com/lib/pkp/js/lib/Chart.min.js?v=3.4.0.5" type="text/javascript"></script>
+<script type="text/javascript">var pkpUsageStats = pkpUsageStats || {};pkpUsageStats.locale = pkpUsageStats.locale || {};pkpUsageStats.locale.months = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];pkpUsageStats.config = pkpUsageStats.config || {};pkpUsageStats.config.chartType = "bar";</script>
+<script src="https://ijsrcseit.com/lib/pkp/js/usage-stats-chart.js?v=3.4.0.5" type="text/javascript"></script>
+ 
+</body>
+</html>

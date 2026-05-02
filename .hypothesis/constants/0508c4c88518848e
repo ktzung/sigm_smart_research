@@ -1,0 +1,4 @@
+# file: D:\2.HUST\2026_Projects_Trial\SigMSmartResearch\research_platform\app\models\__init__.py
+# hypothesis_version: 6.151.12
+
+['AuditLog', 'CodeAnalysis', 'DraftSection', 'ExtractionRecord', 'GapRecord', 'GitHubRepo', 'Lab', 'LabInvitation', 'LabMember', 'LabNews', 'News', 'Paper', 'PaperChunk', 'PaperDecision', 'PaperSource', 'PasswordResetToken', 'PipelineRun', 'Project', 'Publication', 'QueryBundle', 'QueryPlan', 'RefreshToken', 'ReviewReport', 'SynthesisResult', 'TaxonomyCandidate', 'Topic', 'UsageStat', 'User', 'UserProfile']

@@ -1,0 +1,4 @@
+# file: D:\2.HUST\2026_Projects_Trial\SigMSmartResearch\research_platform\app\schemas\__init__.py
+# hypothesis_version: 6.151.12
+
+['DraftSectionRead', 'ExportBundle', 'GapRecordRead', 'PaperDecisionUpdate', 'PaperRead', 'PipelineRunRead', 'QueryPlanRead', 'ReviewReportRead', 'SynthesisResultRead', 'TopicCreate', 'TopicRead', 'TopicUpdate']

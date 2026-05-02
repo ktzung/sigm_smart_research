@@ -1,0 +1,4 @@
+# file: D:\2.HUST\2026_Projects_Trial\SigMSmartResearch\research_platform\main.py
+# hypothesis_version: 6.151.12
+
+[400, '/', '/api/v1', '/health', '/static', '/storage', '1.0.0', 'Cache-Control', 'Pragma', 'failed', 'max_tokens', 'model', 'no-cache', 'ok', 'provider', 'routing', 'running', 'stage', 'static', 'static/index.html', 'status', 'storage', 'task-aware', 'temperature']

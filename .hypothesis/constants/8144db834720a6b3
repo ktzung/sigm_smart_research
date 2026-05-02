@@ -1,0 +1,4 @@
+# file: D:\2.HUST\2026_Projects_Trial\SigMSmartResearch\research_platform\app\services\config_service.py
+# hypothesis_version: 6.151.12
+
+['"', '#', "'", '.env', '.env.tmp.', '=', 'ANTHROPIC_API_KEY', 'ANTHROPIC_MODEL', 'GEMINI_API_KEY', 'GEMINI_MODEL', 'LLM_PROVIDER', 'OLLAMA_BASE_URL', 'OLLAMA_MODEL', 'OPENAI_API_KEY', 'OPENAI_MODEL', 'PERPLEXITY_API_KEY', 'PERPLEXITY_MODEL', 'env_file', 'extra', 'ignore', 'r', 'research_platform', 'utf-8', 'w']

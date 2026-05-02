@@ -1,0 +1,4 @@
+# file: D:\2.HUST\2026_Projects_Trial\SigMSmartResearch\research_platform\app\services\profile_service.py
+# hypothesis_version: 6.151.12
+
+[403, 404, 'Access forbidden', 'Project not found', 'book_chapter', 'completed', 'conference', 'journal', 'ongoing', 'planned', 'preprint']

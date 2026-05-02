@@ -1,0 +1,4 @@
+# file: D:\2.HUST\2026_Projects_Trial\SigMSmartResearch\research_platform\app\models\audit.py
+# hypothesis_version: 6.151.12
+
+['CASCADE', 'SET NULL', 'audit_logs', 'labs.id', 'month', 'topics.id', 'usage_stats', 'user_id', 'users.id']

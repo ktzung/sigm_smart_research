@@ -1,0 +1,4 @@
+# file: D:\2.HUST\2026_Projects_Trial\SigMSmartResearch\research_platform\app\schemas\topic.py
+# hypothesis_version: 6.151.12
+
+['Q1/Q2', 'after', 'case_study', 'extra', 'from_attributes', 'ignore', 'paper_type', 'populate_by_name', 'research_paper', 'review', 'survey', 'target_paper_type', 'technical_report', 'thesis_chapter']

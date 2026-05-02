@@ -1,0 +1,63 @@
+This is BibTeX, Version 0.99e
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: main.aux
+Reallocating 'name_of_file' (item size: 1) to 9 items.
+The style file: IEEEtran.bst
+Reallocating 'name_of_file' (item size: 1) to 11 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'wiz_functions' (item size: 4) to 6000 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Database file #1: references.bib
+Warning--I didn't find a database entry for "paper62"
+Warning--I didn't find a database entry for "paper130"
+Warning--I didn't find a database entry for "paper142"
+-- IEEEtran.bst version 1.14 (2015/08/26) by Michael Shell.
+-- http://www.michaelshell.org/tex/ieeetran/bibtex/
+-- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
+Warning--empty journal in Martin2025
+
+Done.
+You've used 38 entries,
+            4087 wiz_defined-function locations,
+            1011 strings with 15932 characters,
+and the built_in function-call counts, 21090 in all, are:
+= -- 1537
+> -- 741
+< -- 0
++ -- 352
+- -- 176
+* -- 1106
+:= -- 3600
+add.period$ -- 76
+call.type$ -- 38
+change.case$ -- 38
+chr.to.int$ -- 0
+cite$ -- 39
+duplicate$ -- 1638
+empty$ -- 1945
+format.name$ -- 214
+if$ -- 4750
+int.to.chr$ -- 0
+int.to.str$ -- 38
+missing$ -- 364
+newline$ -- 213
+num.names$ -- 38
+pop$ -- 1017
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 2
+skip$ -- 1593
+stack$ -- 0
+substring$ -- 38
+swap$ -- 975
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 5
+type$ -- 38
+warning$ -- 1
+while$ -- 38
+width$ -- 40
+write$ -- 439
+(There were 4 warnings)

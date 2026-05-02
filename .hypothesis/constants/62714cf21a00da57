@@ -1,0 +1,4 @@
+# file: D:\2.HUST\2026_Projects_Trial\SigMSmartResearch\research_platform\app\models\topic.py
+# hypothesis_version: 6.151.12
+
+[500, 'Paper', 'PipelineRun', 'Q1/Q2', 'QueryBundle', 'QueryPlan', 'Topic', 'all, delete-orphan', 'bundles', 'labs.id', 'plan', 'query_bundles', 'query_plans', 'query_plans.id', 'survey', 'topic', 'topics', 'topics.id', 'users.id']

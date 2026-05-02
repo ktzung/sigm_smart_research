@@ -1,0 +1,4 @@
+# file: D:\2.HUST\2026_Projects_Trial\SigMSmartResearch\research_platform\app\models\paper.py
+# hypothesis_version: 6.151.12
+
+[100, 200, 500, 'Paper', 'PaperChunk', 'PaperDecision | None', 'PaperSource', 'Topic', 'all, delete-orphan', 'chunks', 'decision', 'extraction', 'extraction_records', 'llm', 'paper', 'paper_chunks', 'paper_decisions', 'paper_sources', 'papers', 'papers.id', 'query_bundles.id', 'sources', 'topics.id']

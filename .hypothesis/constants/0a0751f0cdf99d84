@@ -1,0 +1,4 @@
+# file: D:\2.HUST\2026_Projects_Trial\SigMSmartResearch\research_platform\app\api\admin.py
+# hypothesis_version: 6.151.12
+
+[128, 255, 400, 403, 404, 409, 500, '/admin', '/config', '/config/gui', '/config/save', '/stats', '/users', '/users/{user_id}', 'Invalid role', 'User not found', 'admin', 'created_at', 'display_name', 'email', 'free', 'gemini_model', 'id', 'is_active', 'labs', 'llm_provider', 'message', 'ok', 'openai_model', 'paid', 'paper_type', 'paper_types', 'papers', 'perplexity_model', 'pipeline_runs', 'plan', 'role', 'routing', 'running', 'running_now', 'summary', 'survey', 'target_paper_type', 'topics', 'user', 'users']

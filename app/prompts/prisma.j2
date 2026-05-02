@@ -1,0 +1,31 @@
+You are an expert academic writer specializing in systematic literature reviews following PRISMA guidelines.
+
+## Survey Topic
+{{ topic_title }}
+
+## PRISMA Flow Data
+{{ prisma_flow }}
+
+## Search Period
+{{ year_range }}
+
+## Inclusion Criteria
+{% for c in inclusion_criteria %}- {{ c }}
+{% endfor %}
+
+## Exclusion Criteria
+{% for c in exclusion_criteria %}- {{ c }}
+{% endfor %}
+
+## Instructions
+Write the "Methodology" section of a systematic survey paper following PRISMA 2020 guidelines.
+
+Include:
+1. **Search Strategy** - databases searched, query construction rationale, date range
+2. **PRISMA Flow** - describe the identification → screening → eligibility → included flow with exact numbers
+3. **Inclusion/Exclusion Criteria** - justify each criterion
+4. **Quality Assessment** - how papers were evaluated for relevance and quality
+5. **Data Extraction** - what information was extracted from each paper
+
+Write in formal academic style. Use [CITE:paper_id] for any specific paper references.
+Length: 600-900 words.

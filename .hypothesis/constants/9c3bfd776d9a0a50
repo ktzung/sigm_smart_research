@@ -1,0 +1,4 @@
+# file: D:\2.HUST\2026_Projects_Trial\SigMSmartResearch\research_platform\app\services\remote_deploy_service.py
+# hypothesis_version: 6.151.12
+
+[400, ' \\\n  ', '#!/usr/bin/env bash', "--exclude '*.bin'", "--exclude '*.pt'", "--exclude '*.pyc'", '--exclude .git/', 'deploy_script', 'deployed', 'slurm', 'stage18']

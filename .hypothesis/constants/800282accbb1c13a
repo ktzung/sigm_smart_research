@@ -1,0 +1,4 @@
+# file: D:\2.HUST\2026_Projects_Trial\SigMSmartResearch\research_platform\app\services\lab_homepage_service.py
+# hypothesis_version: 6.151.12
+
+[403, 404, 'Event not found', 'Lab not found', 'Master Student', 'News item not found', 'PhD Student', 'Professor', 'master_student', 'phd_student', 'professor']

@@ -1,0 +1,4 @@
+# file: D:\2.HUST\2026_Projects_Trial\SigMSmartResearch\research_platform\app\core\config.py
+# hypothesis_version: 6.151.12
+
+[587, './storage/pdfs', '.env', 'HS256', 'INFO', 'development', 'env_file', 'extra', 'gemini-2.0-flash', 'gpt-4o-mini', 'ignore', 'llama3.2', 'openai', 'sonar-pro']

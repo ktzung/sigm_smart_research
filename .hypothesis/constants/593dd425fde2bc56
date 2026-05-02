@@ -1,0 +1,4 @@
+# file: D:\2.HUST\2026_Projects_Trial\SigMSmartResearch\research_platform\app\services\paper_type_service.py
+# hypothesis_version: 6.151.12
+
+['analysis', 'case_study', 'chapter_conclusion', 'chapter_intro', 'context_description', 'contribution', 'critical_analysis', 'data_collection', 'discover', 'discussion', 'draft', 'error', 'executive_summary', 'experiment_design', 'extract', 'ingest', 'lessons_learned', 'literature_search', 'methodology', 'outline', 'paper_type', 'problem_statement', 'prompts', 'query_plan', 'recommendations', 'related_work', 'research_paper', 'results', 'review', 'scope_definition', 'screen', 'survey', 'synthesize', 'technical_background', 'technical_report', 'thesis_chapter']

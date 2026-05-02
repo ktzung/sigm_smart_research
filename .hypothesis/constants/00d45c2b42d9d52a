@@ -1,0 +1,4 @@
+# file: D:\2.HUST\2026_Projects_Trial\SigMSmartResearch\research_platform\app\services\gap_analysis.py
+# hypothesis_version: 6.151.12
+
+[200, 6000, 'assumptions', 'benchmark_coverage', 'contradictions', 'datasets', 'description', 'dimensions', 'evidence_paper_ids', 'evidence_quotes', 'explanation', 'future_opportunity', 'gap_analysis.j2', 'gap_type', 'gaps', 'id', 'limitations', 'medium', 'priority', 'prompts', 'recurring_patterns', 'title']

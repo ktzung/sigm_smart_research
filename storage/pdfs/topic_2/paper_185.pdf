@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="no">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="preconnect" href="https://api.nva.unit.no" />
+    <link rel="dns-prefetch" href="https://api.nva.unit.no" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Nasjonalt vitenarkiv" />
+    <link rel="manifest" href="/manifest.json" />
+    <style>
+      mjx-container {
+        /* Avoid line-breaks for mathjax elements */
+        display: inline !important;
+        font-size: 100% !important;
+      }
+    </style>
+    <script type="module" crossorigin src="/assets/index-sg-UHdXM.js"></script>
+    <link rel="modulepreload" crossorigin href="/assets/date-fns-BRalJu4L.js">
+    <link rel="modulepreload" crossorigin href="/assets/@mui-Y8acY3-P.js">
+    <link rel="modulepreload" crossorigin href="/assets/@tanstack-C-I2nPsh.js">
+    <link rel="modulepreload" crossorigin href="/assets/i18next-CutBG8ps.js">
+    <link rel="modulepreload" crossorigin href="/assets/axios-CCdcGsvC.js">
+    <link rel="modulepreload" crossorigin href="/assets/formik-DBuhbUBw.js">
+    <link rel="modulepreload" crossorigin href="/assets/yup-r7SRWCOh.js">
+    <link rel="modulepreload" crossorigin href="/assets/@aws-amplify-CiNL4K48.js">
+    <link rel="modulepreload" crossorigin href="/assets/axios-mock-adapter-ClaARnfU.js">
+    <link rel="modulepreload" crossorigin href="/assets/i18next-browser-languagedetector-OJKzRF51.js">
+    <link rel="stylesheet" crossorigin href="/assets/index-lGuLeS3A.css">
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+  </body>
+</html>

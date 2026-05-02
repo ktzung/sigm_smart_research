@@ -1,0 +1,4 @@
+# file: D:\2.HUST\2026_Projects_Trial\SigMSmartResearch\research_platform\app\services\reviewer.py
+# hypothesis_version: 6.151.12
+
+[0.0, 0.2, 0.3, 0.4, 0.6, 0.8, 1.0, 200, 10000, 'PIVOT', 'PROCEED', 'REFINE', 'accept', 'borderline', 'decision', 'major_weaknesses', 'minor_issues', 'overall_score', 'prompts', 'rationale', 'raw_review', 'recommended_action', 'reject', 'review', 'reviewer.j2', 'revision_priorities', 'score', 'strong_accept', 'weak_accept', 'weak_reject']

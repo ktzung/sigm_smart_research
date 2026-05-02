@@ -1,0 +1,4 @@
+# file: D:\2.HUST\2026_Projects_Trial\SigMSmartResearch\research_platform\app\services\slides_service.py
+# hypothesis_version: 6.151.12
+
+[404, 422, 1024, '.gif', '.jpeg', '.jpg', '.png', '.webp', 'Slide not found', 'image/gif', 'image/jpeg', 'image/png', 'image/webp', 'slider-images', 'storage']

@@ -1,0 +1,4 @@
+# file: D:\2.HUST\2026_Projects_Trial\SigMSmartResearch\research_platform\app\models\github.py
+# hypothesis_version: 6.151.12
+
+[100, 500, 'CASCADE', 'CodeAnalysis', 'GitHubRepo', 'all, delete-orphan', 'analyses', 'code_analyses', 'github_repos', 'github_repos.id', 'pending', 'repo', 'topics.id', 'users.id']

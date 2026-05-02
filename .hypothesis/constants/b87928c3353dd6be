@@ -1,0 +1,4 @@
+# file: D:\2.HUST\2026_Projects_Trial\SigMSmartResearch\research_platform\app\services\screening.py
+# hypothesis_version: 6.151.12
+
+[0.0, 0.2, 200, 2015, 'aaai', 'acl', 'acm transactions', 'adjacent', 'american journal of', 'cvpr', 'direct', 'eccv', 'emnlp', 'exclude', 'foundational', 'global journal of', 'high', 'hindawi open access', 'iccv', 'iclr', 'icml', 'ieee transactions', 'ijaiem', 'ijarcce', 'ijarcet', 'ijcai', 'ijcsit', 'ijert', 'information sciences', 'jmlr', 'kdd', 'label', 'llm', 'low', 'manual', 'naacl', 'nature', 'neural networks', 'neurips', 'neurocomputing', 'omics', 'pattern recognition', 'prompts', 'reason', 'relevance_score', 'rule', 'science', 'scirp', 'screen', 'screening.j2', 'sigir', 'sigkdd', 'unknown', 'wseas', 'www']

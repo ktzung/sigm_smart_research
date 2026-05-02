@@ -1,0 +1,4 @@
+# file: D:\2.HUST\2026_Projects_Trial\SigMSmartResearch\research_platform\app\api\__init__.py
+# hypothesis_version: 6.151.12
+
+['/auth', '/labs', '/papers', '/topics', '/users', 'admin', 'auth', 'github', 'lab-homepage', 'labs', 'news', 'papers', 'pipeline', 'profiles', 'remote-execution', 'ssh-servers', 'topics']

@@ -1,0 +1,4 @@
+# file: D:\2.HUST\2026_Projects_Trial\SigMSmartResearch\research_platform\app\api\topics.py
+# hypothesis_version: 6.151.12
+
+[201, 204, 400, 403, 404, '/{topic_id}', '/{topic_id}/authors', '/{topic_id}/papers', 'Topic not found', 'authors_info', 'available_models', 'category', 'category:', 'category_defaults', 'effective_routing', 'id', 'is_overridden', 'max_tokens', 'message', 'model', 'overrides', 'paper_type', 'provider', 'remaining', 'removed', 'stage:', 'success', 'target_paper_type', 'temperature', 'title', 'topic_created', 'topic_id', 'topics_created', 'user_id']

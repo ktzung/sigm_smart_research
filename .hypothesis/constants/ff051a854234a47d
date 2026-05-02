@@ -1,0 +1,4 @@
+# file: D:\2.HUST\2026_Projects_Trial\SigMSmartResearch\research_platform\app\api\labs.py
+# hypothesis_version: 6.151.12
+
+[201, 204, 401, 404, '/{lab_id}', '/{lab_id}/audit', '/{lab_id}/members', '/{lab_id}/usage', 'Lab not found', 'description', 'email', 'expires_at', 'id', 'invitation_id', 'joined_at', 'lab_create', 'lab_id', 'labs', 'member_invite', 'member_remove', 'name', 'owner_id', 'professor', 'removed_user_id', 'role', 'success', 'user_id']

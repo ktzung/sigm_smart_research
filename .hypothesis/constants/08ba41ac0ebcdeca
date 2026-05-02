@@ -1,0 +1,4 @@
+# file: D:\2.HUST\2026_Projects_Trial\SigMSmartResearch\research_platform\app\services\query_planning.py
+# hypothesis_version: 6.151.12
+
+[200, 'both', 'direct', 'label', 'prompts', 'query_plan', 'query_planning.j2', 'query_text', 'source']

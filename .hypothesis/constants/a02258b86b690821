@@ -1,0 +1,4 @@
+# file: D:\2.HUST\2026_Projects_Trial\SigMSmartResearch\research_platform\app\services\extraction.py
+# hypothesis_version: 6.151.12
+
+[6000, ', ', 'abstract', 'assumptions', 'body', 'conclusion', 'datasets', 'evaluation_protocol', 'exclude', 'experiments', 'extract', 'extraction.j2', 'introduction', 'limitations', 'method', 'method_type', 'problem_formulation', 'prompts', 'relevance_to_topic', 'setting', 'strengths', 'unknown']

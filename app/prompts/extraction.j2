@@ -1,0 +1,28 @@
+You are a research analyst extracting structured knowledge from an academic paper.
+
+## Survey Topic
+{{ topic_title }}
+
+## Paper
+Title: {{ title }}
+Authors: {{ authors }}
+Year: {{ year }}
+
+## Paper Text (truncated if long)
+{{ paper_text }}
+
+## Instructions
+Extract the following fields. If a field cannot be determined from the text, use null.
+
+Return JSON with these exact keys:
+- problem_formulation: what problem does the paper solve?
+- method_type: what type of method/approach is proposed?
+- assumptions: key assumptions made
+- setting: experimental or theoretical setting (e.g., cross-silo FL, data stream)
+- datasets: list of dataset names used
+- evaluation_protocol: how is the method evaluated?
+- strengths: main contributions and strengths
+- limitations: stated or apparent limitations
+- relevance_to_topic: how does this paper relate to "{{ topic_title }}"?
+
+Return ONLY valid JSON, no markdown fences.

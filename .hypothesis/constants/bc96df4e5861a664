@@ -1,0 +1,4 @@
+# file: D:\2.HUST\2026_Projects_Trial\SigMSmartResearch\research_platform\app\models\lab.py
+# hypothesis_version: 6.151.12
+
+[255, 'CASCADE', 'Lab', 'LabInvitation', 'LabMember', 'all, delete-orphan', 'invitations', 'lab', 'lab_id', 'lab_invitations', 'lab_members', 'labs', 'labs.id', 'members', 'user_id', 'users.id']

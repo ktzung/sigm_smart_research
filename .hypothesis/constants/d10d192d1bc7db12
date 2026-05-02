@@ -1,0 +1,4 @@
+# file: D:\2.HUST\2026_Projects_Trial\SigMSmartResearch\research_platform\app\api\cost.py
+# hypothesis_version: 6.151.12
+
+[0.0, '/cost', '/recent', '/summary', '/topic/{topic_id}', 'by_model', 'by_provider', 'by_stage', 'calls', 'completion_tokens', 'cost', 'cost_usd', 'created_at', 'id', 'latency_ms', 'model', 'prompt_tokens', 'provider', 'stage', 'tokens', 'topic_id', 'total_calls', 'total_cost_usd', 'total_tokens']

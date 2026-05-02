@@ -1,0 +1,8 @@
+{
+  "description": "Example MCP entry for MiniMax coding plan. Use your local MCP/claude tool to register this if needed.",
+  "mcp": {
+    "name": "minimax-coding-plan-mcp",
+    "provider": "minimax",
+    "notes": "Run: `claude mcp add --file minimax-coding-plan-mcp.json` (local user-level action)"
+  }
+}

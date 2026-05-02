@@ -1,0 +1,4 @@
+# file: D:\2.HUST\2026_Projects_Trial\SigMSmartResearch\research_platform\app\api\github.py
+# hypothesis_version: 6.151.12
+
+[100, 200, 201, 301, 400, 404, 409, 2000, '#', '.go', '.java', '.js', '.py', '.ts', '/', 'Accept', 'Authorization', 'Complete', 'Fetching README', 'Fetching languages', 'Starting', 'Topic not found', 'analysis_status', 'blob', 'content', 'current_step', 'dependencies', 'directory_tree', 'done', 'draft', 'failed', 'github', 'github.com/', 'github_analysis', 'github_link', 'go.mod', 'https://github.com/', 'id', 'ignore', 'key_modules', 'languages', 'message', 'name', 'package.json', 'path', 'pending', 'pom.xml', 'progress_pct', 'quality_issues', 'readme_summary', 'repo_id', 'repo_url', 'requirements.txt', 'running', 'section', 'status', 'suggestion', 'tree', 'type', 'utf-8']

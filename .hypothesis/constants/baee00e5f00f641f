@@ -1,0 +1,4 @@
+# file: D:\2.HUST\2026_Projects_Trial\SigMSmartResearch\research_platform\app\services\code_synthesis_service.py
+# hypothesis_version: 6.151.12
+
+['\\n?```$', '^```[a-zA-Z]*\\n?', 'code_config', 'code_requirements', 'code_synthesis.j2', 'code_train', 'config.yaml', 'dataset', 'done', 'hybrid_design', 'method', 'prompts', 'requirements.txt', 'stage16', 'stage17', 'title', 'train.py']

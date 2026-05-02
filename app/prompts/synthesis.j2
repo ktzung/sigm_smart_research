@@ -1,0 +1,22 @@
+You are a synthesis specialist for literature reviews on: "{{ topic_title }}".
+
+## Extracted Paper Notes
+{{ papers_json }}
+
+## Instructions
+Produce a comprehensive synthesis. Return JSON with these keys:
+
+1. **comparison_table**: Object mapping paper IDs to key attributes {method, setting, datasets, key_metric, year}
+2. **recurring_patterns**: Paragraph describing patterns across ≥3 papers. Cite specific papers by ID.
+3. **contradictions**: Paragraph describing conflicting findings. State which papers disagree and why.
+4. **method_clusters**: Object grouping papers by method family (e.g., {"gradient-based": [1,2,3], "evolutionary": [4,5]})
+5. **benchmark_coverage**: Paragraph summarizing datasets used, coverage gaps, and which benchmarks are underrepresented.
+6. **prioritized_opportunities**: Array of 3-5 research opportunities ranked by impact, each with {opportunity, rationale, difficulty: "low|medium|high"}
+
+Quality standards (from top-conference paper analysis):
+- Cite specific paper IDs for every claim
+- Identify contradictions explicitly — do not smooth over disagreements
+- Prioritized opportunities must be actionable and specific, not vague ("future work")
+- method_clusters must reflect actual algorithmic families, not superficial groupings
+
+Return ONLY valid JSON, no markdown fences.

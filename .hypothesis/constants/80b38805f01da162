@@ -1,0 +1,4 @@
+# file: D:\2.HUST\2026_Projects_Trial\SigMSmartResearch\research_platform\app\services\auth_service.py
+# hypothesis_version: 6.151.12
+
+[400, 401, 422, '@', 'From', 'Invalid credentials', 'Subject', 'To', 'User logged in: %s', 'bearer', 'free', 'revoked']

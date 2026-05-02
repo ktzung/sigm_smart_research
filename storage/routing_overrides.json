@@ -1,0 +1,70 @@
+{
+  "extract": {
+    "provider": "openai",
+    "model": "GPT-4.0 mini"
+  },
+  "ingest": {
+    "provider": "openai",
+    "model": "GPT-4.0 mini"
+  },
+  "taxonomy": {
+    "provider": "openai",
+    "model": "GPT-4.0 mini"
+  },
+  "gaps": {
+    "provider": "openai",
+    "model": "GPT-4.0 mini"
+  },
+  "draft": {
+    "provider": "openai",
+    "model": "GPT-4.0 mini"
+  },
+  "review": {
+    "provider": "openai",
+    "model": "GPT-4.0 mini"
+  },
+  "prisma": {
+    "provider": "openai",
+    "model": "GPT-4.0 mini"
+  },
+  "citation_network": {
+    "provider": "openai",
+    "model": "GPT-4.0 mini"
+  },
+  "revision": {
+    "provider": "openai",
+    "model": "GPT-4.0 mini"
+  },
+  "quality_check": {
+    "provider": "openai",
+    "model": "GPT-4.0 mini"
+  },
+  "export_latex": {
+    "provider": "openai",
+    "model": "GPT-4.0 mini"
+  },
+  "stage16": {
+    "provider": "openai",
+    "model": "GPT-4.0 mini"
+  },
+  "stage17": {
+    "provider": "openai",
+    "model": "GPT-4.0 mini"
+  },
+  "stage18": {
+    "provider": "openai",
+    "model": "GPT-4.0 mini"
+  },
+  "stage22": {
+    "provider": "openai",
+    "model": "GPT-4.0 mini"
+  },
+  "screen": {
+    "provider": "openai",
+    "model": "GPT-4.0 mini"
+  },
+  "synthesize": {
+    "provider": "openai",
+    "model": "GPT-4.0 mini"
+  }
+}

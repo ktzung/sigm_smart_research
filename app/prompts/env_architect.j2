@@ -1,0 +1,48 @@
+You are a DevOps engineer specializing in ML infrastructure. Your task is to generate environment setup files for a remote GPU experiment.
+
+## Requirements File
+```
+{{ requirements_txt_content }}
+```
+
+## Target Hardware
+- GPU Type: {{ gpu_type }}
+- Scheduler: {{ scheduler_type }}
+
+## Task
+Analyze the requirements above and generate the appropriate environment configuration.
+
+{% if has_cuda %}
+**CUDA packages detected** (e.g., torch, tensorflow-gpu, cupy, cuda). Generate a **Conda environment.yml** that:
+- Uses conda-forge and pytorch channels
+- Pins the correct CUDA toolkit version compatible with the GPU type
+- Installs all pip packages not available via conda using a pip section
+{% else %}
+**No CUDA packages detected**. Generate a **Dockerfile** based on python:3.11-slim that:
+- Installs system dependencies
+- Copies and installs requirements.txt
+- Sets a sensible working directory and entrypoint
+{% endif %}
+
+After the environment file, generate SSH initialization commands.
+
+Output the following two sections with their exact headers:
+
+### environment_file
+{% if has_cuda %}
+The complete environment.yml content (Conda format).
+{% else %}
+The complete Dockerfile content.
+{% endif %}
+
+### ssh_commands
+A shell script with commands to:
+1. Create the remote working directory
+2. Set up the conda environment or build the Docker image on the remote server
+3. Verify the environment is ready (e.g., `python -c "import torch; print(torch.__version__)"`)
+4. Any additional initialization steps for {{ scheduler_type }} scheduler
+
+Use `$SSH_KEY_PATH` as the placeholder for the SSH private key path.
+Use `$REMOTE_USER`, `$REMOTE_HOST`, and `$REMOTE_DIR` as placeholders for connection details.
+
+Output ONLY the two sections with their exact headers. Do not add any text before or after.

@@ -1,0 +1,4 @@
+# file: D:\2.HUST\2026_Projects_Trial\SigMSmartResearch\research_platform\app\api\remote_ops.py
+# hypothesis_version: 6.151.12
+
+[403, 404, 500, '/server', '/stage16', '/stage17', '/stage18', '/stage19', '/stage20', '/stage21', '/stage22', '/status', 'Content-Disposition', 'HTTPException', 'Topic not found', 'artefact_download', 'done', 'execution_status', 'failed', 'generated', 'gpu_type', 'host', 'id', 'name', 'phd_student', 'professor', 'remote-execution', 'remote_pipeline_run', 'run_id', 'running', 'scheduler_type', 'section_id', 'section_name', 'sections', 'server_name', 'ssh_server', 'ssh_server_id', 'stage', 'stage16', 'stage17', 'stage18', 'stage19', 'stage20', 'stage21', 'stage22', 'status', 'success', 'topic_id', 'username', 'utf-8']

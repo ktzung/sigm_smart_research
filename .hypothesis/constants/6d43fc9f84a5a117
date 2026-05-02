@@ -1,0 +1,4 @@
+# file: D:\2.HUST\2026_Projects_Trial\SigMSmartResearch\research_platform\app\services\discovery.py
+# hypothesis_version: 6.151.12
+
+['/abs/', 'ArXiv', 'DOI', 'abstract', 'application/pdf', 'arxiv', 'arxiv_id', 'atom', 'atom:author', 'atom:entry', 'atom:id', 'atom:link', 'atom:name', 'atom:published', 'atom:summary', 'atom:title', 'authors', 'both', 'citationCount', 'citation_count', 'data', 'direct', 'doi', 'externalIds', 'external_id', 'fields', 'href', 'ieee', 'limit', 'max_results', 'name', 'openAccessPdf', 'paperId', 'pdf_url', 'query', 'relevance', 'search_query', 'semantic_scholar', 'sortBy', 'source_api', 'title', 'type', 'url', 'venue', 'x-api-key', 'year']

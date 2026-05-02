@@ -1,0 +1,4 @@
+# file: D:\2.HUST\2026_Projects_Trial\SigMSmartResearch\research_platform\app\services\github_service.py
+# hypothesis_version: 6.151.12
+
+[100, 200, 401, 403, 404, 2000, '#', ', ', '.git', '/', '1', '2022-11-28', '=', 'Accept', 'Authorization', 'Gemfile', 'Pipfile', 'Repo not found', 'X-GitHub-Api-Version', '[>=<!;\\[]', 'blob', 'build.gradle', 'content', 'current_step', 'dependencies', 'depth', 'description', 'devDependencies', 'done', 'draft', 'failed', 'fetching_languages', 'github.com', 'go.mod', 'initializing', 'name', 'not_started', 'package.json', 'path', 'pom.xml', 'progress_pct', 'pyproject.toml', 'recursive', 'replace', 'requirements-dev.txt', 'requirements.txt', 'running', 'setup.cfg', 'setup.py', 'status', 'summarizing_readme', 'tree', 'type', 'www.github.com', '📁 ']

@@ -1,0 +1,42 @@
+You are an expert ML engineer. Your task is to synthesize production-ready experiment code based on a Hybrid Design Document and knowledge extracted from the literature.
+
+## Hybrid Design Document
+{{ hybrid_design_content }}
+
+{% if extraction_summary %}
+## Extracted Implementation Details from Literature
+{{ extraction_summary }}
+{% endif %}
+
+{% if code_analysis_summary %}
+## Existing Codebase Context
+{{ code_analysis_summary }}
+{% endif %}
+
+## Task
+Generate three complete, runnable files for the ML experiment described in the Hybrid Design Document. Each file must be clearly delimited with the exact headers shown below.
+
+### train.py
+Provide a complete Python training script. Include:
+- Argument parsing (argparse or similar)
+- Dataset loading and preprocessing
+- Model definition or import
+- Training loop with logging
+- Checkpoint saving
+- Evaluation on validation set
+
+### config.yaml
+Provide a complete YAML configuration file with all hyperparameters referenced in train.py:
+- model architecture parameters
+- training hyperparameters (lr, batch_size, epochs, etc.)
+- dataset paths and splits
+- output directories
+
+### requirements.txt
+Provide a complete requirements.txt with pinned or minimum versions for all Python packages used in train.py. Include:
+- Deep learning framework (PyTorch or TensorFlow)
+- Any CUDA-specific packages if GPU training is required
+- Data processing libraries
+- Logging and experiment tracking tools
+
+Output ONLY the three sections with their exact headers (### train.py, ### config.yaml, ### requirements.txt). Do not add any text before or after the sections.

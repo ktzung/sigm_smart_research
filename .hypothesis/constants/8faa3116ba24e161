@@ -1,0 +1,4 @@
+# file: D:\2.HUST\2026_Projects_Trial\SigMSmartResearch\research_platform\app\middleware\plan_enforcement.py
+# hypothesis_version: 6.151.12
+
+[429, 500, '/plans', 'detail', 'paid', 'paper ingest', 'papers', 'pipeline run', 'pipeline_runs', 'topic', 'topics', 'upgrade_url']

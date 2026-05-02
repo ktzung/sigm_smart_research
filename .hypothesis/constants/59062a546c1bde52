@@ -1,0 +1,4 @@
+# file: D:\2.HUST\2026_Projects_Trial\SigMSmartResearch\research_platform\app\services\synthesis.py
+# hypothesis_version: 6.151.12
+
+[200, 8000, '[]', 'benchmark_coverage', 'comparison_table', 'contradictions', 'datasets', 'id', 'limitations', 'method_clusters', 'method_type', 'prompts', 'recurring_patterns', 'relevance_to_topic', 'setting', 'strengths', 'synthesis.j2', 'synthesize', 'title', 'year']

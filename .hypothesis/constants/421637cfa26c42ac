@@ -1,0 +1,4 @@
+# file: D:\2.HUST\2026_Projects_Trial\SigMSmartResearch\research_platform\app\services\execution_service.py
+# hypothesis_version: 6.151.12
+
+[400, 409, '#!/bin/bash', '#!/usr/bin/env bash', '#SBATCH --nodes=1', '#SBATCH --ntasks=1', 'SBATCH_EOF', 'exec_monitoring', 'exec_script', 'gpu', 'module load cuda', 'running', 'slurm', 'stage19']

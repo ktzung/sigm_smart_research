@@ -1,0 +1,4 @@
+# file: D:\2.HUST\2026_Projects_Trial\SigMSmartResearch\research_platform\app\services\env_architect_service.py
+# hypothesis_version: 6.151.12
+
+['\\n?```$', '^```[a-zA-Z]*\\n?', 'code_requirements', 'env_architect.j2', 'env_environment_file', 'env_ssh_commands', 'environment_file', 'prompts', 'ssh_commands', 'stage17', 'stage18', 'standalone', 'unknown']

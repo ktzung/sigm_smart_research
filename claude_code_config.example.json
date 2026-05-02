@@ -1,0 +1,9 @@
+{
+  "description": "Example Claude Code / MiniMax local config. Do NOT commit real API keys.",
+  "claude_code": {
+    "provider": "minimax",
+    "api_key_env": "MINIMAX_API_KEY",
+    "model": "MiniMax-M2.7",
+    "base_url": "https://api.minimax.io/v1"
+  }
+}

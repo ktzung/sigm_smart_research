@@ -1,0 +1,78 @@
+This is BibTeX, Version 0.99e
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: main.aux
+Reallocating 'name_of_file' (item size: 1) to 9 items.
+The style file: IEEEtran.bst
+Reallocating 'name_of_file' (item size: 1) to 11 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'wiz_functions' (item size: 4) to 6000 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Database file #1: references.bib
+Warning--I didn't find a database entry for "paper826"
+Warning--I didn't find a database entry for "paper827"
+Warning--I didn't find a database entry for "paper820"
+Warning--I didn't find a database entry for "paper801"
+Warning--I didn't find a database entry for "paper802"
+Warning--I didn't find a database entry for "paper803"
+Warning--I didn't find a database entry for "paper804"
+Warning--I didn't find a database entry for "paper805"
+Warning--I didn't find a database entry for "paper806"
+Warning--I didn't find a database entry for "paper807"
+Warning--I didn't find a database entry for "paper808"
+Warning--I didn't find a database entry for "paper809"
+Warning--I didn't find a database entry for "paper810"
+Warning--I didn't find a database entry for "paper811"
+Warning--I didn't find a database entry for "paper882"
+Warning--I didn't find a database entry for "paper883"
+Warning--I didn't find a database entry for "paper412"
+-- IEEEtran.bst version 1.14 (2015/08/26) by Michael Shell.
+-- http://www.michaelshell.org/tex/ieeetran/bibtex/
+-- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
+Warning--empty journal in Straat2018
+Warning--empty journal in Chen2020
+
+Done.
+You've used 26 entries,
+            4087 wiz_defined-function locations,
+            995 strings with 14202 characters,
+and the built_in function-call counts, 12820 in all, are:
+= -- 1010
+> -- 409
+< -- 0
++ -- 194
+- -- 97
+* -- 665
+:= -- 2385
+add.period$ -- 52
+call.type$ -- 26
+change.case$ -- 26
+chr.to.int$ -- 0
+cite$ -- 28
+duplicate$ -- 1019
+empty$ -- 1064
+format.name$ -- 118
+if$ -- 2792
+int.to.chr$ -- 0
+int.to.str$ -- 26
+missing$ -- 203
+newline$ -- 153
+num.names$ -- 26
+pop$ -- 556
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 2
+skip$ -- 949
+stack$ -- 0
+substring$ -- 26
+swap$ -- 600
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 5
+type$ -- 26
+warning$ -- 2
+while$ -- 26
+width$ -- 28
+write$ -- 306
+(There were 19 warnings)

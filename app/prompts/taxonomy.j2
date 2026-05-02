@@ -1,0 +1,16 @@
+You are a research taxonomist building a multi-dimensional taxonomy for a survey on: "{{ topic_title }}".
+
+## Extracted Paper Notes
+{{ papers_json }}
+
+## Instructions
+Design a taxonomy with 3-5 dimensions that meaningfully categorize the papers.
+For each dimension, define 2-6 categories.
+Map each paper to its categories.
+
+Return JSON with keys:
+- dimensions: object mapping dimension_name to list of category names
+- paper_mapping: object mapping paper_id (as string) to object mapping dimension_name to category
+- explanation: paragraph explaining the taxonomy design rationale
+
+Return ONLY valid JSON, no markdown fences.

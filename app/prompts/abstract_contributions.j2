@@ -1,0 +1,32 @@
+You are an expert academic writer finalizing a survey paper on: "{{ topic_title }}".
+
+## Existing Draft Sections (summaries)
+{{ sections_summary }}
+
+## Research Gaps Identified
+{{ gaps_summary }}
+
+## Task
+Generate TWO outputs for this survey paper:
+
+### 1. Abstract (150-250 words)
+Write a structured abstract covering:
+- Motivation: why this survey is needed
+- Scope: what is covered
+- Methodology: how papers were selected and analyzed
+- Key findings: main patterns, taxonomy dimensions, contradictions found
+- Contributions: what this survey adds to the field
+
+### 2. Contributions List
+Write 3-5 numbered contributions in the format used by top venues:
+"The main contributions of this paper are as follows:
+(1) We present...
+(2) We propose/develop/introduce...
+(3) We conduct/provide...
+(4) [optional]
+(5) [optional]"
+
+Each contribution must be specific, verifiable, and differentiated from prior work.
+
+Return JSON with keys: "abstract" and "contributions".
+Return ONLY valid JSON, no markdown fences.

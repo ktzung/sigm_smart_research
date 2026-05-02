@@ -1,0 +1,4 @@
+# file: D:\2.HUST\2026_Projects_Trial\SigMSmartResearch\research_platform\app\models\profile.py
+# hypothesis_version: 6.151.12
+
+[255, 500, 'CASCADE', 'lab_events', 'lab_news', 'lab_slides', 'labs.id', 'projects', 'publications', 'seminar', 'user_profiles', 'users.id']

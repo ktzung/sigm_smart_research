@@ -1,0 +1,987 @@
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<APM_DO_NOT_TOUCH>
+
+<script type="text/javascript">
+(function(){
+window.AoOl=!!window.AoOl;try{(function(){(function sz(){var s=!1;function _(s){for(var _=0;s--;)_+=l(document.documentElement,null);return _}function l(s,_){var O="vi";_=_||new L;return Sz(s,function(s){s.setAttribute("data-"+O,_.o0());return l(s,_)},null)}function L(){this.jo=1;this.oL=0;this.lI=this.jo;this.IJ=null;this.o0=function(){this.IJ=this.oL+this.lI;if(!isFinite(this.IJ))return this.reset(),this.o0();this.oL=this.lI;this.lI=this.IJ;this.IJ=null;return this.lI};this.reset=function(){this.jo++;this.oL=0;this.lI=this.jo}}var O=!1;
+function zz(s,_){var l=document.createElement(s);_=_||document.body;_.appendChild(l);l&&l.style&&(l.style.display="none")}function Zz(_,l){l=l||_;var L="|";function zz(s){s=s.split(L);var _=[];for(var l=0;l<s.length;++l){var O="",Zz=s[l].split(",");for(var iz=0;iz<Zz.length;++iz)O+=Zz[iz][iz];_.push(O)}return _}var Zz=0,Sz="datalist,details,embed,figure,hrimg,strong,article,formaddress|audio,blockquote,area,source,input|canvas,form,link,tbase,option,details,article";Sz.split(L);Sz=zz(Sz);Sz=new RegExp(Sz.join(L),
+"g");while(Sz.exec(_))Sz=new RegExp((""+new Date)[8],"g"),s&&(O=!0),++Zz;return l(Zz&&1)}function Sz(s,_,l){(l=l||O)&&zz("div",s);s=s.children;var L=0;for(var Zz in s){l=s[Zz];try{l instanceof HTMLElement&&(_(l),++L)}catch(Sz){}}return L}Zz(sz,_)})();var _z=32;try{var Iz,Jz,oz=Z(40)?1:0,zZ=Z(480)?1:0,SZ=Z(503)?1:0;for(var _Z=(Z(424),0);_Z<Jz;++_Z)oz+=Z(137)?2:1,zZ+=(Z(386),2),SZ+=Z(258)?3:2;Iz=oz+zZ+SZ;window.JI===Iz&&(window.JI=++Iz)}catch(lZ){window.JI=Iz}var LZ=!0;
+function S(z){var s=arguments.length,_=[],l=1;while(l<s)_[l-1]=arguments[l++]-z;return String.fromCharCode.apply(String,_)}function oZ(z){var s=93;!z||document[S(s,211,198,208,198,191,198,201,198,209,214,176,209,190,209,194)]&&document[I(s,211,198,208,198,191,198,201,198,209,214,176,209,190,209,194)]!==I(s,211,198,208,198,191,201,194)||(LZ=!1);return LZ}function I(z){var s=arguments.length,_=[];for(var l=1;l<s;++l)_.push(arguments[l]-z);return String.fromCharCode.apply(String,_)}
+function J(z,s){z+=s;return z.toString(36)}function zs(){}oZ(window[zs[J(1086822,_z)]]===zs);oZ(typeof ie9rgb4!==J(1242178186167,_z));oZ(RegExp("\x3c")[S(_z,148,133,147,148)](function(){return"\x3c"})&!RegExp(S(_z,152,83,132))[J(1372173,_z)](function(){return"'x3'+'d';"}));
+var Zs=window[I(_z,129,148,148,129,131,136,101,150,133,142,148)]||RegExp(S(_z,141,143,130,137,156,129,142,132,146,143,137,132),J(-14,_z))[J(1372173,_z)](window["\x6e\x61vi\x67a\x74\x6f\x72"]["\x75\x73e\x72A\x67\x65\x6et"]),_s=+new Date+(Z(740)?322199:6E5),is,Is,Js,ls=window[I(_z,147,133,148,116,137,141,133,143,149,148)],zS=Zs?Z(896)?19637:3E4:Z(890)?8336:6E3;
+document[I(_z,129,132,132,101,150,133,142,148,108,137,147,148,133,142,133,146)]&&document[S(_z,129,132,132,101,150,133,142,148,108,137,147,148,133,142,133,146)](S(_z,150,137,147,137,130,137,140,137,148,153,131,136,129,142,135,133),function(z){var s=10;document[S(s,128,115,125,115,108,115,118,115,126,131,93,126,107,126,111)]&&(document[I(s,128,115,125,115,108,115,118,115,126,131,93,126,107,126,111)]===J(1058781973,s)&&z[S(s,115,125,94,124,127,125,126,111,110)]?Js=!0:document[S(s,128,115,125,115,108,
+115,118,115,126,131,93,126,107,126,111)]===J(68616527656,s)&&(is=+new Date,Js=!1,ZS()))});function ZS(){if(!document[I(36,149,153,137,150,157,119,137,144,137,135,152,147,150)])return!0;var z=+new Date;if(z>_s&&(Z(169)?6E5:711749)>z-is)return oZ(!1);var s=oZ(Is&&!Js&&is+zS<z);is=z;Is||(Is=!0,ls(function(){Is=!1},Z(807)?0:1));return s}ZS();var sS=[Z(69)?17795081:21949229,Z(470)?27611931586:2147483647,Z(321)?1558153217:2054052338];
+function _S(z){var s=91;z=typeof z===J(1743045585,s)?z:z[S(s,207,202,174,207,205,196,201,194)](Z(701)?36:53);var _=window[z];if(!_||!_[I(s,207,202,174,207,205,196,201,194)])return;var l=""+_;window[z]=function(z,s){Is=!1;return _(z,s)};window[z][I(s,207,202,174,207,205,196,201,194)]=function(){return l}}for(var iS=(Z(547),0);iS<sS[J(1294399173,_z)];++iS)_S(sS[iS]);oZ(!1!==window[I(_z,97,143,111,140)]);window.oi=window.oi||{};window.oi.So="088ec7f80819400085704e3d45c400d3e9d2452a6e6c63999b760d162d4ade61a90076ea0b0864e0fac4ac6a9766980f1c5bb65525f3b7e299c77ee5f8da23e47e9d326b203db725";
+function IS(z){var s=+new Date,_;!document[S(31,144,148,132,145,152,114,132,139,132,130,147,142,145,96,139,139)]||s>_s&&(Z(605)?6E5:834706)>s-is?_=oZ(!1):(_=oZ(Is&&!Js&&is+zS<s),is=s,Is||(Is=!0,ls(function(){Is=!1},Z(444)?1:0)));return!(arguments[z]^_)}function Z(z){return 704>z}(function jS(s){return s?0:jS(s)*jS(s)})(!0);})();}catch(x){}finally{ie9rgb4=void(0);};function ie9rgb4(a,b){return a>>b>>0};
+
+})();
+
+</script>
+</APM_DO_NOT_TOUCH>
+
+<script type="text/javascript" src="/TSPD/0807dc117eab2000aa7697c8de15b68edbb3efa03953a4601d8b34157ceadf37d44045735f681e0d?type=9"></script>
+<script type="text/javascript">
+
+var home = {	
+			metadata:{
+				searchCount: '7,203,102',
+				logoRelPath: '/xploreAssets/images/customer_logos/',
+				thirdParthAuth: false,
+				currentPage:  'document',
+				xploreVirtual:'https://ieeexplore.ieee.org',
+				isWebAccount: false,
+				isProvisioned: false,				
+				globalNotification:{},
+				cart: {
+						count: 0
+				}
+			}						
+		};
+		
+
+
+
+
+
+		
+</script>
+
+<html lang="en-US">
+	<head>
+		<link rel="icon" type="image/x-icon" href="/assets/img/favicon.ico">
+	    <meta name="google-site-verification" content="qibYCgIKpiVF_VVjPYutgStwKn-0-KBB6Gw4Fc57FZg" />
+					
+						
+				
+					
+			 
+			
+				
+		<meta name="Description" id="meta-description" content="Continual learning (CL) is attracting attention to learn in dynamic and non-stationary environments, typical of many real applications, such as those related to">
+		
+		<link rel="canonical" href="https://ieeexplore.ieee.org/document/10945356/" /> 
+		
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		
+		<!-- Disable "click" touch event 300ms delay for Chrome/Firefox on Android -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<title>Joint Class and Domain Continual Learning for Decentralized Federated Processes | IEEE Journals &amp; Magazine | IEEE Xplore</title>
+		
+    <meta name="bingbot" content="nocache"> 
+	
+	    
+				
+				
+		<meta property="og:image" content="https://ieeexplore.ieee.org/ielx8/6287639/10820123/10945356/graphical_abstract/access-gagraphic-3555750.jpg" />
+		<meta property="og:image:secure_url" content="https://ieeexplore.ieee.org/ielx8/6287639/10820123/10945356/graphical_abstract/access-gagraphic-3555750.jpg" />    	
+    	<meta property="twitter:image" content="https://ieeexplore.ieee.org/ielx8/6287639/10820123/10945356/graphical_abstract/access-gagraphic-3555750.jpg" />
+    	
+			<meta name="twitter:card" content="summary_large_image">			
+    				
+  		
+  		
+					
+		
+			<meta property="twitter:title" content="Joint Class and Domain Continual Learning for Decentralized Federated Processes" />
+			<meta property="og:title" content="Joint Class and Domain Continual Learning for Decentralized Federated Processes" />
+		
+		
+			<meta property="twitter:description" content="Continual learning (CL) is attracting attention to learn in dynamic and non-stationary environments, typical of many real applications, such as those related to Internet of things (IoT). So far, learning in IoT scenarios has almost exclusively been studied in a centralized fashion, but CL can be used in decentralized settings involving a multitude of nodes to learn, adapt, and generalize from their streams of data, even with limited communication and computation capabilities. In this work, we formulate a joint Class and Domain Continual Learning problem, where local data at the nodes might include multiple classes belonging to different domains. In our solution, we adopt knowledge distillation (KD) to share knowledge extracted from local models trained with the data at each node and to incrementally generate a global model, while preserving privacy and avoiding centralization bottlenecks. Thanks to KD, the learning process can be performed without any prior information about the model architecture, i.e., every local model can be based on different architectures, which can also differ from the global. The learning process is also agnostic to domain and classes’ distribution across the nodes. With these features, our distributed learning solution may assist in privacy preservation and save communication resources, which are fundamental challenges in IoT scenarios. Compared against two baseline losses based on state-of-the-art CL solutions and using different datasets (MNIST, USPS, DomainNet), our proposal outperforms different baselines in terms of accuracy, spanning from a gain of 15.9%, up to 95.4%, by limiting catastrophic forgetting." />
+			<meta property="og:description" content="Continual learning (CL) is attracting attention to learn in dynamic and non-stationary environments, typical of many real applications, such as those related to Internet of things (IoT). So far, learning in IoT scenarios has almost exclusively been studied in a centralized fashion, but CL can be used in decentralized settings involving a multitude of nodes to learn, adapt, and generalize from their streams of data, even with limited communication and computation capabilities. In this work, we formulate a joint Class and Domain Continual Learning problem, where local data at the nodes might include multiple classes belonging to different domains. In our solution, we adopt knowledge distillation (KD) to share knowledge extracted from local models trained with the data at each node and to incrementally generate a global model, while preserving privacy and avoiding centralization bottlenecks. Thanks to KD, the learning process can be performed without any prior information about the model architecture, i.e., every local model can be based on different architectures, which can also differ from the global. The learning process is also agnostic to domain and classes’ distribution across the nodes. With these features, our distributed learning solution may assist in privacy preservation and save communication resources, which are fundamental challenges in IoT scenarios. Compared against two baseline losses based on state-of-the-art CL solutions and using different datasets (MNIST, USPS, DomainNet), our proposal outperforms different baselines in terms of accuracy, spanning from a gain of 15.9%, up to 95.4%, by limiting catastrophic forgetting." />
+							 	
+	
+	
+
+		
+
+
+
+
+
+
+	<script type="text/javascript" src="https://config.datas3ntinel.com/tag/js-web-sdk/latest/init.min.js"></script>
+	<script type="text/javascript" src="https://assets.adobedtm.com/e5c8ba88cef8/7fd951921a72/launch-384a38e91473.min.js" async></script>
+
+
+		
+
+
+
+
+
+	
+		<script src="https://cmp.osano.com/AzyzptTmRlqVd2LRf/6fda1518-2a1e-4b5b-a049-da0bef71dcab/osano.js"></script>
+		<link rel="stylesheet" href="https://ieeexplore.ieee.org/assets/css/osano-cookie-consent-xplore.css" type="text/css"/>
+	
+	
+
+		
+
+
+
+
+
+ 
+
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+
+	
+	
+	
+
+	
+
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		
+	
+
+	
+
+	
+
+	
+		
+	
+		
+		
+			
+			
+	
+
+
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+
+
+
+
+
+<g:compress>
+	<link rel="stylesheet" href="/assets/css/simplePassMeter.min.css?cv=20260331_00000" />
+	<link rel="stylesheet" type="text/css" media="screen, print" href="/assets/dist/ng-new/styles.css?cv=20260331_00000"/>
+	<link rel="stylesheet" type="text/css" media="screen, print" href="/assets/dist/ng-new/customStyles.css?cv=20260331_00000"/>
+	<link rel="stylesheet" href="/assets/vendor/swiper/dist/idangerous.swiper.css?cv=20260331_00000">
+	<link rel="stylesheet" type="text/css" media="screen, print" href="/assets/css/jquery-ui-1.8.19.custom.css?cv=20260331_00000"/>
+</g:compress>
+
+
+
+
+		
+
+	<script type='text/javascript'>
+		var googletag = googletag || {};
+		googletag.cmd = googletag.cmd || [];
+		(function() {
+		var gads = document.createElement('script');
+		gads.async = true;
+		gads.type = 'text/javascript';
+		var useSSL = 'https:' == document.location.protocol;
+		gads.src = (useSSL ? 'https:' : 'http:') + 
+		'//securepubads.g.doubleclick.net/tag/js/gpt.js';
+		var node = document.getElementsByTagName('script')[0];
+		node.parentNode.insertBefore(gads, node);
+		})();
+	</script>
+
+		<script type="text/javascript" src="/assets/vendor/jquery/jquery-3.5.1.min.js?cv=20260331_00000" charset="utf-8"></script>
+		
+	</head>
+	<body class="body-resp">
+
+		<div id="global-notification" class="row stats-global-notification">
+			<div class="hide u-hide-important col Notification Notification--global Notification--fixed">
+				<a href class="Notification-close js-close" aria-label="close message button"><i class="fa fa-close"></i></a>
+				<div class="Notification-header"></div>
+				<div class="Notification-text"></div>
+			</div>
+		</div>
+
+		<div id="LayoutWrapper">
+				<div class="row">
+					<div class="col">
+						
+
+
+
+
+
+
+
+<div class="Header" id="xplore-header" data-service="true" data-inst="false" data-web="false" style="display:none"></div>
+
+
+
+						<div id="global-alert-message"></div>
+						
+
+
+
+
+
+<div style="width: 0px; height: 0px"><a href="/rest/api/hpdata" tabindex="-1" aria-hidden="true"></a></div>
+<meta name="cToken" content="eyJhbGciOiJIUzUxMiIsInppcCI6IkRFRiJ9.eNqqVkosKFCyUoooyMkvSlXSUcosLgZyK2Dc1AqgrKG5uam5iZGpgSVQPrEEJmBoZmBZCwAAAP__.-_fynYFHsx1muWDLGPvpu5YDIMZDhSyG0yCrvWyUDBlDWaAWfr6piDsQDvckb23t6YSy9HGDmNtvd_-WyuMmUg">
+
+<script type="text/javascript">
+	
+	
+	
+	document.write('<base href="/document/" />');
+	
+	
+</script>
+
+<!-- XPL-21560-Added as part of Universal CASA-Dev -->
+<script type="text/javascript" src="https://scholar.google.com/scholar_js/casa.js" async></script>
+
+<script type="text/javascript" src="https://app.cadmoremedia.com/Scripts/Embed.js"></script>
+<!--- This is a picture popup embed for mobilew view.  -->
+<script type="text/javascript" src="https://app.cadmoremedia.com/Scripts/PicturePop.js"></script>
+
+
+
+
+
+
+
+<script type="text/javascript">
+var body_rightsLink ="", body_publisher = "";
+var recordId = "";
+
+
+var AUTHOR_PROFILE = 'ON';
+if (AUTHOR_PROFILE.toUpperCase() == "OFF"){
+	var AUTHOR_PROFILE_ENABLED = false;
+}else{
+	var AUTHOR_PROFILE_ENABLED = true;
+}
+
+var xplGlobal = {
+	document: {
+		disqus:{
+			remote_auth_s3 : '',
+			public_api_key:'1lxKgMbpNIbQvfk2tqLcWeSVloE8rgIY2CV1tCu3Vp641oL4eEITYBbkViJJGNYY',
+			short_name:'ieeexplore',
+			client_url:'https://ieeexplore.ieee.org',
+			sso_enabled:'{$sessionProfile.provisioned}'
+		},
+
+		fullTextAccess: false,
+		isISAuthorized: false,
+		isAccessFromInstitution: false
+		
+	}
+};
+	
+	xplGlobal.document.metadata={"userInfo":{"institute":false,"member":false,"individual":false,"guest":false,"subscribedContent":false,"fileCabinetContent":false,"fileCabinetUser":false,"dtrDeleteCookieOnLogout":false,"institutionalFileCabinetUser":false,"dtrCookieExpirationDays":0,"showPatentCitations":true,"showGet802Link":false,"showOpenUrlLink":false,"tracked":false,"institutionUserId":0,"delegatedAdmin":false,"desktop":false,"isInstitutionDashboardEnabled":false,"isInstitutionProfileEnabled":false,"isRoamingEnabled":false,"isDelegatedAdmin":false,"isMdl":false,"isCwg":false,"isAcademic":false,"isIel":false,"isReadAndPublish":false},"authors":[{"name":"Chiara Lanza","affiliation":["Centre Tecnològic de Telecomunicacions de Catalunya (CTTC/CERCA), Barcelona, Spain","Department of Signal Theory and Communications (TSC), Universitat Politècnica de Catalunya (UPC), Barcelona, Spain"],"bio":{"graphic":"/mediastore/IEEE/content/freeimages/6287639/10820123/10945356/lanza-3555750-small.gif","p":["Chiara Lanza received the B.Sc. degree in management engineering and the M.Sc. degree in ICT for smart societies from the Politecnico di Torino, in 2019 and 2021, respectively. She is currently pursuing the Ph.D. degree with the Signal Theory and Communications Department, Technical University of Catalonia. In January 2022, she joined the Sustainable AI Research Unit, Centre Tecnologic de Telecomunicacions de Catalunya (CTTC). She was part of the GREENEDGE (MSCA-ETN) Project. Her research focuses on distributed, decentralized, and sustainable machine learning algorithms."]},"firstName":"Chiara","lastName":"Lanza","orcid":"0000-0002-7026-7080","id":"37089797712"},{"name":"Tinne Tuytelaars","affiliation":["ESAT-PSI, KU Leuven, Leuven, Belgium"],"bio":{"graphic":"/mediastore/IEEE/content/freeimages/6287639/10820123/10945356/tuyte-3555750-small.gif","p":["Tinne Tuytelaars (Member, IEEE) received the M.Sc. and Ph.D. degrees from KU Leuven, in 1996 and 2000, respectively. Currently, she is a Full Professor with KU Leuven, where she teaches and performs research in computer vision and machine learning, with a special interest for continual learning, representation learning, and multimodal learning. She received the ERC Starting Grant, in 2009; the ERC Advanced Grant, in 2021; and the Koenderink Test-Of-Time Award at ECCV16. She has been the Program Chair of ECCV14 and CVPR21 and the General Chair of CVPR16."]},"firstName":"Tinne","lastName":"Tuytelaars","orcid":"0000-0003-3307-9723","id":"37282935100"},{"name":"Marco Miozzo","affiliation":["Centre Tecnològic de Telecomunicacions de Catalunya (CTTC/CERCA), Barcelona, Spain"],"bio":{"graphic":"/mediastore/IEEE/content/freeimages/6287639/10820123/10945356/miozz-3555750-small.gif","p":["Marco Miozzo received the M.Sc. degree in telecommunication engineering from the University of Ferrara, Italy, in 2005, and the Ph.D. degree from the Technical University of Catalonia (UPC), in 2018. In June 2008, he joined the Centre Tecnologic de Telecomunicacions de Catalunya (CTTC). His main research interests include sustainable mobile networks, green wireless networking, multi-agent systems, machine learning, green AI, distributed and collaborative learning, and pervasive AI."]},"firstName":"Marco","lastName":"Miozzo","orcid":"0000-0003-3872-5907","id":"37299928500"},{"name":"Eduard Angelats","affiliation":["Centre Tecnològic de Telecomunicacions de Catalunya (CTTC/CERCA), Barcelona, Spain"],"bio":{"graphic":"/mediastore/IEEE/content/freeimages/6287639/10820123/10945356/angel-3555750-small.gif","p":["Eduard Angelats received the M.Sc. and Ph.D. degrees in telecommunications engineering from the Technical University of Catalonia (UPC), in 2008 and 2023, respectively. In 2009, he joined the former Institute of Geomatics. Since January 2014, he has been with CTTC, where he is currently a Researcher with the Geomatics Research Unit. His main research interests include satellite remote sensing for coastal monitoring and other applications and the use of AI techniques for understanding geospatial data."]},"firstName":"Eduard","lastName":"Angelats","orcid":"0000-0001-7321-4825","id":"37086581278"},{"name":"Paolo Dini","affiliation":["Centre Tecnològic de Telecomunicacions de Catalunya (CTTC/CERCA), Barcelona, Spain"],"bio":{"graphic":"/mediastore/IEEE/content/freeimages/6287639/10820123/10945356/dini-3555750-small.gif","p":["Paolo Dini received the M.Sc. and Ph.D. degrees from the University of Roma La Sapienza, in 2001 and 2005, respectively. He is currently a Leading Researcher with the Centre Tecnologic de Telecomunicacions de Catalunya (CTTC) and coordinates the activities of the Sustainable AI Research Unit. He has been involved in more than 20 research and development projects. He is currently the Coordinator of CHIST-ERA SONATA Project on sustainable computing and communication at the edge and the Scientific Coordinator of the EU H2020 MSCA Greenedge European Training Network on edge intelligence and sustainable computing. His current research interests include sustainable computing for cyber-physical systems, distributed optimization and optimal control, machine learning, and multi-agent systems. He received two awards from the Cisco Silicon Valley Foundation for his research on distributed control over heterogeneous mobile networks, in 2008 and 2011, respectively. Since 2022, he has been an EU Climate Pact Ambassador."]},"firstName":"Paolo","lastName":"Dini","orcid":"0000-0001-6756-0289","id":"37268502600"}],"issn":[{"format":"Electronic ISSN","value":"2169-3536"}],"articleNumber":"10945356","mediaPath":"/mediastore/IEEE/content/media/6287639/10820123/10945356","dbTime":"1 ms","metrics":{"wosCitationCount":0,"citationCountPaper":2,"citationCountPatent":0,"totalDownloads":643},"purchaseOptions":{"showOtherFormatPricingTab":false,"showPdfFormatPricingTab":true,"pdfPricingInfoAvailable":false,"otherPricingInfoAvailable":false,"mandatoryBundle":false,"optionalBundle":false,"displayTextWhenPdfPricingNotAvailable":"The purchase and pricing options for this item are unavailable. Select items are only available as part of a subscription package. You may try again later or <a href='https://ieeexplore.ieee.org/xpl/contact' target='_blank'>contact us</a> for more information.","displayTextWhenOtherFormatPricingNotAvailable":"The purchase and pricing options for this item are unavailable. Select items are only available as part of a subscription package. You may try again later or <a href='https://ieeexplore.ieee.org/xpl/contact' target='_blank'>contact us</a> for more information."},"getProgramTermsAccepted":false,"sections":{"abstract":"true","authors":"true","disclaimer":"false","figures":"true","multimedia":"false","references":"true","citedby":"true","keywords":"true","definitions":"false","algorithm":"false","dataset":"false","cadmore":"false","footnotes":"true","relatedContent":"false","metrics":"true"},"graphicalAbstract":{"summary":"We propose a decentralised federated approach based on continual learning. In our solution, we adopt knowledge distillation (KD) to share the knowledge from the local models and to incrementally generate a global model at every node visit. Our solution preserves privacy, and avoids centralization bottlenecks and catastrophic forgetting. Here, a diagram of our continual learning approach focusing on a step for a generic node.","type":"graphic","fileSize":"28KB","file":"/ielx8/6287639/10820123/10945356/graphical_abstract/access-gagraphic-3555750.jpg","coverImage":"/ielx8/6287639/10820123/10945356/graphical_abstract/access-gagraphic-3555750.jpg"},"abstract":"Continual learning (CL) is attracting attention to learn in dynamic and non-stationary environments, typical of many real applications, such as those related to Internet of things (IoT). So far, learning in IoT scenarios has almost exclusively been studied in a centralized fashion, but CL can be used in decentralized settings involving a multitude of nodes to learn, adapt, and generalize from their streams of data, even with limited communication and computation capabilities. In this work, we formulate a joint Class and Domain Continual Learning problem, where local data at the nodes might include multiple classes belonging to different domains. In our solution, we adopt knowledge distillation (KD) to share knowledge extracted from local models trained with the data at each node and to incrementally generate a global model, while preserving privacy and avoiding centralization bottlenecks. Thanks to KD, the learning process can be performed without any prior information about the model architecture, i.e., every local model can be based on different architectures, which can also differ from the global. The learning process is also agnostic to domain and classes’ distribution across the nodes. With these features, our distributed learning solution may assist in privacy preservation and save communication resources, which are fundamental challenges in IoT scenarios. Compared against two baseline losses based on state-of-the-art CL solutions and using different datasets (MNIST, USPS, DomainNet), our proposal outperforms different baselines in terms of accuracy, spanning from a gain of 15.9%, up to 95.4%, by limiting catastrophic forgetting.","publicationYear":"2025","publicationDate":"2025","pdfPath":"/iel8/6287639/10820123/10945356.pdf","endPage":"56993","formulaStrippedArticleTitle":"Joint Class and Domain Continual Learning for Decentralized Federated Processes","publicationTitle":"IEEE Access","displayPublicationTitle":"IEEE Access","pdfUrl":"/stamp/stamp.jsp?tp=&arnumber=10945356","startPage":"56982","keywords":[{"type":"IEEE Keywords","kwd":["Peer-to-peer computing","Data models","Internet of Things","Distance learning","Computer aided instruction","Proposals","Federated learning","Continuing education","Computational modeling","Computer architecture"]},{"type":"Index Terms","kwd":["Incremental Learning","Joint Domain","Joint Class","Local Data","Global Model","Prior Information","Internet Of Things","Model Architecture","Computational Capabilities","Privacy Preservation","Catastrophic Forgetting","Internet Of Things Scenarios","Non-stationary Environments","Loss Function","Accuracy Of Model","Machine Learning Models","Test Accuracy","Cross-entropy Loss","Training Loss","End Of Training","Stochastic Gradient Descent Optimizer","Internet Of Things Applications","Auxiliary Dataset","Sequence Learning","Fashion-MNIST","Handwritten Digits","Domain In Order","Auxiliary Data","Zero-knowledge Proof","Communication Overhead"]},{"type":"Author Keywords","kwd":["Class incremental","continual learning","decentralized learning","distributed learning","domain incremental","federated learning","knowledge distillation"]}],"allowComments":true,"authorNames":"Chiara Lanza;Tinne Tuytelaars;Marco Miozzo;Eduard Angelats;Paolo Dini","issueLink":"/xpl/tocresult.jsp?isnumber=10820123&punumber=6287639","pubLink":"/xpl/RecentIssue.jsp?punumber=6287639","displayPublicationDate":"28 March 2025","dateOfInsertion":"28 March 2025","doiLink":"https://doi.org/10.1109/ACCESS.2025.3555750","isGetAddressInfoCaptured":false,"isMarketingOptIn":false,"pubTopics":[{"name":"Aerospace"},{"name":"Bioengineering"},{"name":"Communication, Networking and Broadcast Technologies"},{"name":"Components, Circuits, Devices and Systems"},{"name":"Computing and Processing"},{"name":"Engineered Materials, Dielectrics and Plasmas"},{"name":"Engineering Profession"},{"name":"Fields, Waves and Electromagnetics"},{"name":"General Topics for Engineers"},{"name":"Geoscience"},{"name":"Nuclear Engineering"},{"name":"Photonics and Electrooptics"},{"name":"Power, Energy and Industry Applications"},{"name":"Robotics and Control Systems"},{"name":"Signal Processing and Analysis"},{"name":"Transportation"}],"publisher":"IEEE","displayDocTitle":"Joint Class and Domain Continual Learning for Decentralized Federated Processes","isOpenAccess":true,"isEphemera":false,"isConference":false,"isJournal":true,"isPromo":false,"isDynamicHtml":true,"isTutorial":false,"isSpringer":false,"isChapter":false,"isEarlyAccess":false,"isProduct":false,"isStandard":false,"xploreDocumentType":"Journals & Magazine","isBookWithoutChapters":false,"volume":"13","isBook":false,"isFreeDocument":true,"isOnlineOnly":false,"isLatestStandard":false,"isDegruyter":false,"isCustomDenial":false,"isTranslation":false,"isGiveaway":false,"isOUP":false,"htmlLink":"/document/10945356/","htmlAbstractLink":"/document/10945356/","hasStandardVersions":false,"isSMPTE":false,"isSAE":false,"isNow":false,"persistentLink":"https://ieeexplore.ieee.org/servlet/opac?punumber=6287639","startPage":"56982","fundingAgencies":{"fundingAgency":[{"fundingName":"Spanish Project through Ministerio de Ciencia, Innovación y Universidades (MCIN)/Agencia Estatal de Investigación (AEI)/10.13039/50110001103","grantNumber":"PID2020-113832RB-C22(ORIGIN)"},{"fundingName":"European Union Horizon 2020 Research and Innovation Program through PCI2021-122043-2A/AEI/10.13039/501100011033","grantNumber":"953775 (GREENEDGE) and CHIST-ERA-20-SICT-004 (SONATA)"}]},"subjectCategories":["Computational and artificial intelligence","Computers and information processing"],"openAccessFlag":"T","insertDate":"28 March 2025","ephemeraFlag":"false","title":"Joint Class and Domain Continual Learning for Decentralized Federated Processes","html_flag":"false","ml_html_flag":"true","sourcePdf":"access-lanza-3555750-x.pdf","displayPublicationDate":"28 March 2025","mlTime":"PT0.069943S","xplore-pub-id":"6287639","pdfPath":"/iel8/6287639/10820123/10945356.pdf","isNumber":"10820123","contentType":"periodicals","publicationDate":"2025","publicationNumber":"6287639","citationCount":"2","xplore-issue":"10820123","articleId":"10945356","publicationTitle":"IEEE Access","sections":{"abstract":"true","authors":"true","disclaimer":"false","figures":"true","multimedia":"false","references":"true","citedby":"true","keywords":"true","definitions":"false","algorithm":"false","dataset":"false","cadmore":"false","footnotes":"true","relatedContent":"false","metrics":"true"},"volume":"13","contentTypeDisplay":"Journals","referenceCount":53,"publicationYear":"2025","subType":"IEEE Journal","_value":"CCBY","lastupdate":"2026-03-28","mediaPath":"/mediastore/IEEE/content/media/6287639/10820123/10945356","endPage":"56993","displayPublicationTitle":"IEEE Access","doi":"10.1109/ACCESS.2025.3555750"};
+
+
+
+
+
+
+
+
+</script>
+
+
+
+<div class="ng2-app">
+	
+	
+		<!-- <xpl-searchbar show-count="false"></xpl-searchbar> -->
+	
+	<div class="global-content-wrapper">
+		<xpl-root>
+			<div class="Spinner"></div>
+		</xpl-root>
+	</div>
+	
+	<!-- START: Angular 2+ Migration: Due to Angualr2+ migration AngualrJs router place holder commented -->
+<!-- 	<div ng-show="stateIsLoading" class="Spinner"></div>
+	<div ui-view class="{{stateIsLoading ? 'loading': ''}}"
+		autoscroll="false"></div>
+ -->	<!-- END: Angular 2+ Migration-->
+</div>
+
+						
+
+
+
+
+<section id="xploreFooter">
+	
+	<div class="Footer stats-footer hide-mobile" data-analytics_identifier="footer">
+		<div class="pure-g Footer-sections">
+			<div class="pure-u-1-4">
+				<h3 class="Footer-header">IEEE Account</h3>
+				<ul class="Footer-list">
+					<li><a href="https://www.ieee.org/profile/changeusrpwd/showChangeUsrPwdPage.html?refSite=https://ieeexplore.ieee.org&refSiteName=IEEE Xplore">Change Username/Password</a></li>
+					<li><a href="https://www.ieee.org/profile/address/getAddrInfoPage.html?refSite=https://ieeexplore.ieee.org&refSiteName=IEEE Xplore">Update Address</a></li>
+				</ul>
+			</div>
+			<div class="pure-u-1-4">
+				<h3 class="Footer-header">Purchase Details</h3>
+				<ul class="Footer-list">
+					<li><a href="https://www.ieee.org/profile/payment/showPaymentHome.html?refSite=https://ieeexplore.ieee.org&refSiteName=IEEE Xplore">Payment Options</a></li>
+					<li><a href="https://www.ieee.org/profile/vieworder/showOrderHistory.html?refSite=https://ieeexplore.ieee.org&refSiteName=IEEE Xplore">Order History</a></li>
+					<li><a href="/articleSale/purchaseHistory.jsp">View Purchased Documents</a></li>
+				</ul>
+			</div>
+			<div class="pure-u-1-4">
+				<h3 class="Footer-header">Profile Information</h3>
+				<ul class="Footer-list">
+					<li><a href="https://www.ieee.org/ieee-privacyportal/app/ibp?refSite=https://ieeexplore.ieee.org&refSiteName=IEEE Xplore">Communications Preferences</a></li>
+					<li><a href="https://www.ieee.org/profile/profedu/getProfEduInformation.html?refSite=https://ieeexplore.ieee.org&refSiteName=IEEE Xplore">Profession and Education</a></li>
+					<li><a href="https://www.ieee.org/profile/tips/getTipsInfo.html?refSite=https://ieeexplore.ieee.org&refSiteName=IEEE Xplore">Technical Interests</a></li>
+				</ul>
+			</div>
+			<div class="pure-u-1-4">
+				<h3 class="Footer-header">Need Help?</h3>
+				<ul class="Footer-list">
+					<li><strong>US &amp; Canada:</strong> +1 800 678 4333</li>
+					<li><strong>Worldwide: </strong> +1 732 981 0060<br>
+					</li>
+					<li><a href="/xpl/contact">Contact &amp; Support</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-12 Footer-bottom" data-analytics_identifier="footer_bottom">
+				<div class="Footer-bottom-inner-div row">
+					<div class="col">
+						<ul class="Menu Menu--horizontal Menu--dividers u-mb-1">
+							<li class="Menu-item"><a href="/Xplorehelp/overview-of-ieee-xplore/about-ieee-xplore">About IEEE <em>Xplore</em></a></li>
+							<li class="Menu-item"><a href="/xpl/contact">Contact Us</a></li>
+							<li class="Menu-item"><a href="/Xplorehelp" target="blank">Help</a></li>
+							<li class="Menu-item"><a href="/Xplorehelp/overview-of-ieee-xplore/accessibility-statement" target="blank">Accessibility</a></li> 
+							<li class="Menu-item"><a href="/Xplorehelp/overview-of-ieee-xplore/terms-of-use" target="_blank">Terms of Use</a></li>
+							<li class="Menu-item"><a href="http://www.ieee.org/web/aboutus/whatis/policies/p9-26.html">Nondiscrimination Policy</a></li>
+							<li class="Menu-item"><a href="/xpl/sitemap.jsp">Sitemap</a></li>
+							<li class="Menu-item"><a href="http://www.ieee.org/about/help/security_privacy.html" target="blank">Privacy &amp; Opting Out of Cookies</a></li>
+						</ul>
+						<p class="Footer-bottom-terms">
+							A not-for-profit organization, IEEE is the world's largest technical professional organization dedicated to advancing technology for the benefit of humanity.<br>&copy; Copyright 2026 IEEE - All rights reserved. Use of this web site signifies your agreement to the terms and conditions.
+						</p>
+					</div>
+
+					<div><i class="logo-ieee-white"></i></div>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+
+	
+	
+</section>
+
+						<!-- BEGIN: tealium in v2/common/template.jsp. We need to include tealiumAnalytics.js here since Angular 2+ app load if you load after commnon.js then tealium value will not be available in angular 2+ app  -->
+						
+
+
+
+
+
+
+		<!-- BEGIN: TealiumAnalytics.jsp -->
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+			
+				
+			
+			
+			
+			
+		
+		
+		
+		
+		
+		
+
+			<script type ="text/javascript">
+ 				// tealium config vars
+				var TEALIUM_CONFIG_TAGGING_ENABLED = true;		
+				var TEALIUM_CONFIG_CDN_URL = '//tags.tiqcdn.com/utag/';
+				var TEALIUM_CONFIG_ACCOUNT_PROFILE_ENV = 'ieeexplore/main/prod';
+				
+				// tealium utag_data values for user 
+				var TEALIUM_userType = 'Anonymous';
+				var TEALIUM_userInstitutionId = '';
+				var TEALIUM_userId = '';
+				var TEALIUM_user_third_party = '';
+				
+				var TEALIUM_products = '';
+			</script>
+
+			<script type="text/javascript" src="/assets/dist/js/analytics/tealiumTagsData.js?cv=20260331_00000"></script>
+			<script type="text/javascript" src="/assets/dist/js/analytics/tealiumAnalytics.js?cv=20260331_00000"></script>
+
+
+		
+ 		
+		<!-- END: TealiumAnalytics.jsp -->
+			 
+
+						<!-- END: tealium in v2/common/template.jsp -->
+						
+
+
+
+
+
+
+	
+	
+
+<script type="text/javascript" src="/xploreAssets/MathJax-274/MathJax.js?config=default"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/assets/css/ie7Sniffer.css?cv=20260331_00000">
+<script type="text/javascript" src="/assets/vendor/js-cookie/src/js.cookie.js?cv=20260331_00000"></script>
+
+
+
+	<script type="text/javascript" src="/assets/vendor/fingerprintjs2/fingerprint2.js?cv=20260331_00000"></script>
+	<script type="text/javascript" src="/assets/dist/js/fingerprint/fingerprint.js?cv=20260331_00000"></script>
+
+
+<!-- START OF Angular bundle assets -->
+<script type="text/javascript" src='/assets/dist/ng-new/runtime.js?cv=20260331_00000' defer charset="utf-8"></script>
+<script type="text/javascript" src='/assets/dist/ng-new/polyfills.js?cv=20260331_00000' defer charset="utf-8"></script>
+
+<script type="text/javascript" src='/assets/dist/ng-new/main.js?cv=20260331_00000' defer charset="utf-8"></script>
+<!-- END OF Angular bundle assets -->
+
+<!-- Usabilla Combicode for IEEE-->
+<!-- Begin Usabilla for Websites embed code -->
+<script type="text/javascript">/*{literal}<![CDATA[*/window.lightningjs||function(c){function g(b,d){d&&(d+=(/\?/.test(d)?"&":"?")+"lv=1");c[b]||function(){var i=window,h=document,j=b,g=h.location.protocol,l="load",k=0;(function(){function b(){a.P(l);a.w=1;c[j]("_load")}c[j]=function(){function m(){m.id=e;return c[j].apply(m,arguments)}var b,e=++k;b=this&&this!=i?this.id||0:0;(a.s=a.s||[]).push([e,b,arguments]);m.then=function(b,c,h){var d=a.fh[e]=a.fh[e]||[],j=a.eh[e]=a.eh[e]||[],f=a.ph[e]=a.ph[e]||[];b&&d.push(b);c&&j.push(c);h&&f.push(h);return m};return m};var a=c[j]._={};a.fh={};a.eh={};a.ph={};a.l=d?d.replace(/^\/\//,(g=="https:"?g:"http:")+"//"):d;a.p={0:+new Date};a.P=function(b){a.p[b]=new Date-a.p[0]};a.w&&b();i.addEventListener?i.addEventListener(l,b,!1):i.attachEvent("on"+l,b);var q=function(){function b(){return["<head></head><",c,' onload="var d=',n,";d.getElementsByTagName('head')[0].",d,"(d.",g,"('script')).",i,"='",a.l,"'\"></",c,">"].join("")}var c="body",e=h[c];if(!e)return setTimeout(q,100);a.P(1);var d="appendChild",g="createElement",i="src",k=h[g]("div"),l=k[d](h[g]("div")),f=h[g]("iframe"),n="document",p;k.style.display="none";e.insertBefore(k,e.firstChild).id=o+"-"+j;f.frameBorder="0";f.id=o+"-frame-"+j;/MSIE[ ]+6/.test(navigator.userAgent)&&(f[i]="javascript:false");f.allowTransparency="true";l[d](f);try{f.contentWindow[n].open()}catch(s){a.domain=h.domain,p="javascript:var d="+n+".open();d.domain='"+h.domain+"';",f[i]=p+"void(0);"}try{var r=f.contentWindow[n];r.write(b());r.close()}catch(t) { f[i]=p+'d.write("'+b().replace(/"/g,String.fromCharCode(92)+'"')+'");d.close();'}a.P(2)}; a.l&&setTimeout(q,0)})()}();c[b].lv="1";return c[b]}var o="lightningjs",k=window[o]=g(o);k.require=g;k.modules=c}({}); if(!navigator.userAgent.match(/Android|BlackBerry|BB10|iPhone|iPad|iPod|Opera Mini|IEMobile/i)) {window.usabilla_live = lightningjs.require("usabilla_live", "//w.usabilla.com/e9930a118e08.js"); } else {window.usabilla_live = lightningjs.require("usabilla_live", "//w.usabilla.com/118ca38ae742.js"); }/*]]>{/literal}*/</script>
+<!-- end usabilla live embed code -->
+
+
+
+
+<!-- START: ZoomInfo JS beacon integration XPL-27850-->
+	<script type="text/javascript">
+		window[(function(_CEA,_DD){var _9B='';for(var _nP=0;_nP<_CEA.length;_nP++){var _7F=_CEA[_nP].charCodeAt();_DD>2;_7F-=_DD;_7F+=61;_7F%=94;_7F+=33;_7F!=_nP;_9B==_9B;_9B+=String.fromCharCode(_7F)}return _9B})(atob('eWhvMzArJiQ1aiY6'), 31)] = 'afc18e6a5f1679945541'; var zi = document.createElement('script'); (zi.type = 'text/javascript'), (zi.async = true), (zi.src = (function(_FS3,_lS){var _V2='';for(var _Wf=0;_Wf<_FS3.length;_Wf++){_EV!=_Wf;var _EV=_FS3[_Wf].charCodeAt();_EV-=_lS;_V2==_V2;_EV+=61;_EV%=94;_lS>9;_EV+=33;_V2+=String.fromCharCode(_EV)}return _V2})(atob('eigoJCdMQUF8J0Auez8ndSZ7JCgnQHUjIUEuez8oc3lAfCc='), 18)), document.readyState === 'complete'?document.body.appendChild(zi): window.addEventListener('load', function(){ document.body.appendChild(zi) });
+	</script>
+<!-- END: ZoomInfo JS beacon integration-->
+
+
+
+<!-- START: Hum JS beacon integration XPL-27979-->
+<script>
+	(function (){
+		hum = window.hum || {};
+		var tracker = {
+		   options: {
+		    apiKey: 'prod-key-ieee-uqaxhbhwpq',
+		    contentSource: 'xplore',
+		    apiUrl: 'https://ieee.hum.works/api/',
+		    cookieDomain: 'ieee.org',
+		    useIframeStorage: true
+		   }
+		};
+		hum['ieee' + 'Tracker'] = tracker;
+		window.hum = hum;
+		hum['ieee' + 'Tracker'].onLoad = () => window.hum = hum;
+		const script = document.createElement('script');
+		script.src = 'https://ieee.hum.works/js/main.js';
+		document.head.appendChild(script);
+	}());
+</script>
+<!-- END: Hum JS beacon integration-->
+
+
+
+
+
+	
+
+
+
+
+
+
+
+<div style="width: 1263px;" id="popup_overlay"></div>
+
+<g:compress>
+
+
+
+
+
+
+
+
+		
+		
+			
+				
+					
+					
+								<script type="text/javascript" src='/assets/vendor/modernizr/modernizr.js?cv=20260331_00000' charset="utf-8"></script>
+					
+								
+			
+				
+					
+						
+
+
+
+
+
+
+
+
+ 
+
+<script>
+	var $j = jQuery.noConflict();
+	var j$ = jQuery.noConflict();
+	var membershipIncomplete;
+    var IS_INDIVIDUAL_USER=false;
+
+	var searchPropertiesParamQueryText = 'queryText';
+	var searchPropertiesParamNewSearch = 'newsearch';
+	var searchPropertiesParamMatchBoolean = 'matchBoolean';
+	var searchPropertiesParamSearchWithin = 'searchWithin';
+	var searchInterfaceArticleIndexTermReference = 'Search_Index_Terms';
+	var searchPropertiesParamRecordsPerPage = 'rowsPerPage';
+	var searchPropertiesParamPageNumber = 'pageNumber';
+	var searchPropertiesParamRemoveRefinement = 'removeRefinement';	
+	var searchPropertiesParamSearchField = 'searchField';
+	var searchPropertiesParamArticleNumber = 'arnumber';
+	
+	var authorsGetDisplay = 'Authors';
+	var authorsFirstNameProperty = 'First Name';
+	var authorsLastNameProperty = 'Last Name';
+	var authorsMiddleNameProperty = 'Middle Name';
+	var pubTitleDispNameProperty = 'Publication Title';
+	var volumeDispNameProperty = 'Volume';
+	var issueDispNameProperty = 'Issue';
+	var startPageDispNameProperty = 'Start Page';
+	var endPageDispNameProperty = 'Start Page';
+
+	var searchIcsTermProperty = 'Standards ICS Terms';
+	var SearchMapperParamSearchField = 'searchField';
+	
+	var SearchMapperParamNewSearch = 'newsearch';
+	var SearchMapperParamArticleNumber = 'arnumber';	
+		
+	
+	
+	var NTPT_IMAGE_LOCATION = '';
+	var XPLORE_SSL_HOST = 'https://ieeexplore.ieee.org';	
+	
+	var SSL_YES_NO = 'yes';
+	if (SSL_YES_NO.toUpperCase() == "NO"){
+		var XPLORE_SSL_YES_NO = false;
+	}else{
+		var XPLORE_SSL_YES_NO = true;
+	}
+	var WEBSERVICES_SSL_YES_NO = 'yes';
+	if (WEBSERVICES_SSL_YES_NO.toUpperCase() == "NO"){
+		var XPLORE_WEBSERV_YES_NO = false;
+	}else{
+		var XPLORE_WEBSERV_YES_NO = true;
+	}
+	
+	var AUTHOR_PROFILE = 'ON';
+	if (AUTHOR_PROFILE.toUpperCase() == "OFF"){
+		var AUTHOR_PROFILE_ENABLED = false;
+	}else{
+		var AUTHOR_PROFILE_ENABLED = true;
+	}
+
+	var IMAGE_SEARCH_FLAG = 'ON';
+	if (IMAGE_SEARCH_FLAG.toUpperCase() == "ON"){
+		var IMAGE_SEARCH_ENABLED = true;
+	} else {
+		var IMAGE_SEARCH_ENABLED = false;
+	}
+
+	var CFAP_ENABLED = 'ON';
+	if (CFAP_ENABLED.toUpperCase() == "ON"){
+		var CFAP_ENABLED = true;
+	} else {
+		var CFAP_ENABLED = false;
+	}	
+	
+	var CFAP_FEEDBACK_SAVED_ENABLED = 'ON';
+	if (CFAP_FEEDBACK_SAVED_ENABLED.toUpperCase() == "ON"){
+		var CFAP_FEEDBACK_SAVED_ENABLED = true;
+	} else {
+		var CFAP_FEEDBACK_SAVED_ENABLED = false;
+	}	
+	
+	var FREE_ARTICLE_PROMO_FLAG = 'ON';	
+	
+	if (FREE_ARTICLE_PROMO_FLAG.toUpperCase() == "ON"){
+		var FREE_ARTICLE_PROMO_FLAG = true;
+	} else {
+		var FREE_ARTICLE_PROMO_FLAG = false;
+	}
+	
+	var ILN_ENABLED = true;
+	var SEAMLESS_ENABLED=true;
+	var MANAGE_AUTHOR=true;
+	var AUTHOR_CLAIM_URL='https://authorprofile.ieee.org';
+	
+	
+	var IBP_MEMBEER_SIGNIN_TIME_WAIT_IN_MILLIES = '2800';
+	var ASSETS_RELATIVE_PATH = '/assets'; // NOTE: AngularJS code relies on this
+	var ASSETS_RELATIVE_PATH_NO_SERVER = '/assets';
+	var ASSETS_VERSION = '20260331_00000'; // NOTE: AngularJS code relies on this
+	var IBP_WS_ASSETS='https://www.ieee.org';
+	var IBP_WS_ENABLED_FLAG = true;
+	var ENTERPRISE_CART_URL = 'https://www.ieee.org/cart/public/myCart/page.html?refSite=https://ieeexplore.ieee.org&refSiteName=IEEE%20Xplore';
+	var IEEE_USER_INFO_COOKIE = 'ieeeUserInfoCookie';
+	
+	var ACC_MGMT_NEW = true;
+	if (! XPLORE_WEBSERV_YES_NO) {
+		var ACC_MGMT_NEW = 'false';
+	}
+	var ACC_MGMT_CREATE_URL = 'https://www.ieee.org/profile/public/createwebaccount/showCreateAccount.html?ShowMGAMarkeatbilityOptIn=true&sourceCode=xplore&car=IEEE-Xplore&autoSignin=Y';
+	var ACC_MGMT_FORGOT_PASSWD_URL = 'https://www.ieee.org/profile/public/forgotpassword/forgotUsernamePassword.html?sourceCode=xplore';
+
+	var SPECIAL_CHARACTER_MAPS = '&:.AND.,=:.EQ.,+:.PLS.,#:.HSH.';
+	var SPECIAL_CHARACTERS = new Array();
+	var SPECIAL_CHARACTER_REPLACEMENTS = new Array();
+	var characterMaps = SPECIAL_CHARACTER_MAPS.split(",");
+	for (var i = 0; i < characterMaps.length; i++) {
+		parts = characterMaps[i].split(":");
+		SPECIAL_CHARACTERS[i] = parts[0];
+		SPECIAL_CHARACTER_REPLACEMENTS[i] = parts[1];
+	}
+
+	var MAX_WILDCARDS = '10';
+	var MAX_SEARCH_TERMS = '25';
+	var ALL_SEARCH_FIELDS = 'Search_Index_Terms:Index Terms,Search_All_Text:Full Text & Metadata,Search_All:All Metadata,fullText:Full Text Only,Search_Knowledge_Synthesis:Knowledge Synthesis,Search_Publication_Title:Search Publication Title,Search_Related_Terms:Search Related Terms,Search_Authors:Author Name,Search_Standard_Ics_Title:ICE Terms,promoTopic:Custom Search,id:Article Number,moduleNumber:Module Number,partNum:Part Num,issn:ISSN,isbn:ISBN,eisbn:EISBN,issueId:IS Number,pubIssueId:Pub Issue Id,accessionNumber:Accession Number,copyrightHolder:Copyright Holder,copyrightYear:Copyright Year,license:License,documentAbstract:Abstract,publicationId:Publication Number,parentPublicationId:Parent Publication Number,parentId:Parent Id,titleHistoryId:Title History Id,standardArticleId:Standard Article Id,title:Document Title,parentTitle:Parent Publication Title,parentDisplayTitle:Parent Display Title,publicationTitle:Publication Title,publicationDisplayTitle:Publication Display Title,volume:Volume,issue:Issue,paddedIssueNumber:Padded Issue Number,part:Part,startPage:Start Page,endPage:End Page,filePath:File Path,publicationDate:Publication Date,PublicationYear:Publication Year,onlineDate:Online Date,month:Month,Author:Author Pref Names,authorNormNames:Author Norm Names,author:Authors,authorIds:Author Ids,firstName:First Name,middleName:Middle Name,lastName:Last Name,authorAffiliations:Author Affiliations,authorBio:Author Bio,authorImg:Author Img,referenceCount:Reference Count,citationCount:Citation Count,downloadCount:Download Count,patentCount:Patent Count,multimediaFlag:Multimedia Flag,biomedicalEngFlag:Biomedical Eng Flag,nonIeee:Non IEEE,stdsProductNumber:STDS Product Number,bmsProductNumber:Bms Product Number,status:Status,doi:DOI,programmingLanguage:Programming Language,articleDoi:Article DOI,publicationDoi:Publication DOI,pdfPath:Pdf Path,pdfSize:Pdf Size,contentSubtype:Content Subtype,Publisher:Publisher,publisherName:Publisher Name,inspecControlledTerms:INSPEC Controlled Terms,ieeeTerms:IEEE Terms,unsiloTerms:Unsilo Terms,authorTerms:Author Keywords,maiTerms:MAI Terms,meshTerms:Mesh_Terms,pacsTerms:PACS Terms,insertDate:Insert Date,ConferenceLocation:Conference Location,indexContent:Index Content,coden:CODEN,documentText:Document Text,standardNumber:Standard Number,preprintFlag:Preprint Flag,rapidPostFlag:Rapid Post Flag,lastUpdate:Last Update,newFlag:New Flag,openAccessFlag:Open Access Flag,publicationOpenAccess:Publication Open Access,promoFlag:Promo Flag,pubmedId:Pubmed Id,duration:Duration,society:Society,conference:Conference,ConferenceCountry:ConferenceCountry,conferenceStartDate:Conference Start Date,conferenceEndDate:Conference End Date,societyUrl:Society URL,idSubject:Id Subject,bookNumber:Book Number,pages:Pages,editionNumber:Edition Number,sequence:Sequence,relatedInfoType:Related Info Type,relatedInfo:Related Info,formatIsbn:Format ISBN,meetingDate:Meeting Date,courseLevel:Course level,courseParts:Course Parts,courseId:Course ID,aboutUrl:About Url,additionalUrl:Additional Url,authorsUrl:Authors Url,openAccessUrl:Open Access Url,openAccessFlag:Open Access flag,partnumVendorurlMediatype:Partnum VendorURL MediaType,brandingImageFile:Branding Image File,coverImageFile:Cover Image File,coverImagePath:Cover Image Path,latestIssueCoverImage:Latest Issue Cover Image,frequency:Frequency,fieldOfInterest:Field Of Interest,gParentPublicationNumber:G Parent Publication Number,msUrl:Ms Url,publicationRelationship:Relationship,societyImage:Society Image,visitUrl:Visit Url,visitWebsite:Visit Website,startYear:Start Year,publicationInactive:Publication Inactive,recordType:Record Type,picCodeDescription:Pic Code Description,picCode:Pic Code,sponsors:Sponsors,sponsoringOrgs:Sponsoring Orgs,issueNotes:Notes,conferenceDate:Conference Date,publicationContact:Publication Contact,isbuyable:isBuyable,standardRelationships:Standard Relationships,unavailableForSale:Unavailable for Sale,availableForSale:Available for Sale,standardFamily:Standard Family,standardGroup:Standard Group,productUrl:Product Url,isbnMediatype:ISBN MediaType,htmlFlag:Html Flag,rightslinkFlag:Rightslink Flag,pageCount:Page Count,name:Name,tableOfContents:Table of Contents,timeStamp:Time Stamp,subTitle:Sub Title,relatedItem:Related Item,referenceMaterial:Reference Material,latestIssueTime:Latest Issue Time,startYear:First Published Year,insertDate:Search Latest Date,pbdFlag:Pbd Flag,lmsUrl:Lms Url,currentVolume:Current Volume,graphicalFile:Graphical File,graphicalCoverImage:Graphical Cover Image,graphicalSummary:Graphical Summary,graphicalType:Graphical Type,graphicalAbstractFile:Graphical Abstract File,graphicalAbstractImage:Graphical Abstract Image,graphicalAbstractType:Graphical Abstract Type,graphicalAbstractSummary:Graphical Abstract Summary,authorNativeNames:Native Name,externalId:Article Page Number,standardBundles:Standard Bundles,standardBundleParts:Standard Bundle Parts,virtualTitle:Virtual Title,seriesName:Series Name,seriesId:Series Id,mlHtmlFlag:ML Html flag,promoDates:Promo Dates,promoStartDate:Promo Start Date,promoEndDate:Promo End Date,issueCompleteFlag:Issue Complete Flag,scope:Scope,purpose:Purpose,standardFamilyTitle:Standard Family Title,thumbnailImg:Thumbnail Img,supplementFile:Supplement File,courseFile:Course File,supplement:Supplement,courseAuthor:Course Author,pdhs:Pdhs,ceus:Ceus,courseFirstFrame:FirstFrame Img,idSubTopic:Id Sub Topic,certificateUrl:Certificate Url,standardRoot:Standard Root,icsTerms:Standards ICS Terms,impactStatement:Impact Statement,affirmedDate:Affirmed Date,sourcePdf:Source Pdf,orcid:Author ORCID,algorithmFlag:Algorithm Flag,fundingAgency:Funding Agency,funder:Funder,pricingKey:Map Pricing Key,publicationRollup:Rollup Key,collection:Collection,previewImage:Preview Image,regularDate:Regular Date,ContentType:Content Type,ringgoldIds:Ringgold ID,figure:Figure,imageCaption:Image Caption,mediaPath:Media Path,publicationVolumeOnly:Publication Volume Only,standardIsLatest:Standard Is Latest,standardHasVersions:Standard Has Versions,publicationDetails:Publication Details,keywords:Keywords,Search_All:All Metadata,Search_All_Text:Full Text & Metadata,fullText:Full Text Only,acpFilter:ACP Filter,TypeAheadTerms:Type Ahead Terms,ContentType:Content Type,Author:Author,Affiliation:Affiliation,Topic:Topic,PublicationTitle:Publication Title,PublicationYear:Year,Publisher:Publisher,ConferenceCountry:Conference Country,ConferenceLocation:Conference Location,StandardStatus:Standard Status,ConferenceYear:Conference Year,PublicationPackage:Subscribed Content,StandardPackage:Standard Package,ReadingRoom:Reading Room,StandardTitle:Standard Title,StdDictionaryTerms:Standards Dictionary Terms,TitleRange:Publication Range,StandardRange:Standard Range,RecordType:Record Type,MediaType:Media Type,BookType:Book Type,CourseType:Course Type,PublicationStandardRange:Publication Standard Range,PerpetualYear:Perpetual Year,OpacTitleRange:Opac Title Range,BookSeries:Book Series,SubjectCategory:Subject Category,Sessions:Sessions,TypeAheadPublication:Type Ahead Publication,SubTopic:Sub Topic,CourseDuration:Course Duration,CourseLevel:Course Level,StandardType:Standard Type,StandardSubtype:Standard SubType,StandardModifier:Standard Modifier,IcsTerms1:Ics Terms 1,IcsTerms2:Ics Terms 2,IcsTerms3:Ics Terms 3,SupplementalItem:Supplemental Items,CourseDuration:Course Duration,SpecialSection:Topics,SocietySection:Society Sections,PublicationTopics:Publication Topics,Keywords:Keywords,ImageType:Image Type';
+	var SEARCH_FIELD_REFERENCES = new Array();
+	var SEARCH_FIELD_DISPLAYS = new Array();
+	var searchFields = ALL_SEARCH_FIELDS.split(",");
+	for (var j = 0; j < searchFields.length; j++) {
+		parts = searchFields[j].split(":");
+		SEARCH_FIELD_REFERENCES[j] = parts[0];
+		SEARCH_FIELD_DISPLAYS[j] = parts[1];
+	}
+	
+
+	var refSite='https://ieeexplore.ieee.org';
+	var refSiteName="IEEE Xplore";
+	var applicationName = 'Xplore';
+	var MC_OPERATION_DELAY_TIMEOUT='5000';
+	var MC_ADDING_DELAY_MSG='Please wait.The selected item(s) is being added to the cart.';
+	var MC_TIMEOUT='60000';
+	var MC_OPERATION_DELAY_MSG_FLAG='true';
+
+	var MEMBER_PROFILE_CHANGE_USERNAMEPASS_LINK = 'https://www.ieee.org/profile/changeusrpwd/showChangeUsrPwdPage.html?refSite=https://ieeexplore.ieee.org&refSiteName=IEEE Xplore';
+	var MEMBER_MY_PROFILE ='https://www.ieee.org/profile/myprofile/myprofile.html?refSite=https://ieeexplore.ieee.org&refSiteName=IEEE Xplore';
+	var MEMBER_PROFILE_ADDRESSINFO_LINK = 'https://www.ieee.org/profile/address/getAddrInfoPage.html?refSite=https://ieeexplore.ieee.org&refSiteName=IEEE Xplore';
+	var MEMBER_PROFILE_PAYMENTINFO_LINK = 'https://www.ieee.org/profile/payment/showPaymentHome.html?refSite=https://ieeexplore.ieee.org&refSiteName=IEEE Xplore';
+	var MEMBER_PROFILE_ORDER_HISTORY_LINK = 'https://www.ieee.org/profile/vieworder/showOrderHistory.html?refSite=https://ieeexplore.ieee.org&refSiteName=IEEE Xplore';
+	var MEMBER_USER_COMMUNICATION_LINK = 'https://www.ieee.org/ieee-privacyportal/app/ibp?refSite=https://ieeexplore.ieee.org&refSiteName=IEEE Xplore';
+	var MEMBER_EDUCATIONAL_PROFILE_LINK = 'https://www.ieee.org/profile/profedu/getProfEduInformation.html?refSite=https://ieeexplore.ieee.org&refSiteName=IEEE Xplore';
+	var MEMBER_TECHNICAL_INTERESTS_LINK = 'https://www.ieee.org/profile/tips/getTipsInfo.html?refSite=https://ieeexplore.ieee.org&refSiteName=IEEE Xplore';
+	var HELPFILE_RELATIVE_PATH = '/Xplorehelp';
+	
+	//content types
+	var CONTENT_TYPE_PARAM = 'contentType';
+	var CONTENT_TYPE_BOOKS = 'Books';
+	var CONTENT_TYPE_COURSES = 'Courses';
+	var CONTENT_TYPE_STANDARDS = 'Standards';
+	var CONTENT_TYPE_CONFERENCES = 'Conferences';
+	var CONTENT_TYPE_JOURNALS = 'Journals';
+	var CONTENT_TYPE_EARLY_ACCESS = 'Early Access Articles';
+	
+	//User Preferences
+	var citFormat = "";
+	var dlFormat = "";
+	var myProjectLimit = 15;
+	var myProjectDocumentLimit = 1000;
+	var myProjectDocumentTagLimit = 50;
+	
+	
+	//Google ReCaptcha public Key 
+	var RECAPTCHA_PUBLIC_KEY = '6Ld6GEUUAAAAALdaAmeGUhZyz1KFFHnd5oCaTW-t';
+	var KSEXPORT_ENABLED = 'true';
+	if (KSEXPORT_ENABLED.toUpperCase() == "TRUE"){
+		var KSEXPORT_ENABLED = true;
+	} else {
+		var KSEXPORT_ENABLED = false;
+	}	
+
+	var seamlessAccessPersistenceUrl = 'https://service.seamlessaccess.org/ps/';
+</script>
+
+					
+					
+								
+			
+				
+					
+					
+								
+			
+				
+					
+					
+								<script type="text/javascript" src='/assets/dist/js/history.js?cv=20260331_00000' charset="utf-8"></script>
+					
+								
+			
+				
+					
+					
+								<script type="text/javascript" src='/assets/dist/js/cart/cartScroll.js?cv=20260331_00000' charset="utf-8"></script>
+					
+								
+			
+				
+					
+					
+								<script type="text/javascript" src='/assets/dist/js/cart/minicart.js?cv=20260331_00000' charset="utf-8"></script>
+					
+								
+			
+				
+					
+					
+								<script type="text/javascript" src='/assets/dist/js/master.js?cv=20260331_00000' charset="utf-8"></script>
+					
+								
+			
+		
+	
+
+
+
+
+
+
+<script>
+
+j$('document').ready(function(){
+	if (Cookies.get('legacyUserName')) {
+		if (IBP_WS_ENABLED_FLAG){
+			Modal.refreshLegacyAccountTransition('/xpl/mwLegacyAccountTransition.jsp');
+		}
+	}
+});
+
+</script>
+
+</g:compress>
+
+
+
+
+
+
+
+
+		
+			
+					
+			
+					
+			
+				
+					
+
+
+
+
+
+
+
+<script>
+	// Get/Set XPL namespace.
+	window.xpl = window.xpl || {};
+	
+	// Set constants/application properties.
+	xpl.properties = { 
+			collabratec: { 
+					url: 'https://ieee-collabratec.ieee.org/app/library'
+			}
+	};
+	
+	xpl.properties.details = {
+			oqs: ''
+	};
+</script>
+					
+			
+					
+			
+					
+			
+					
+			
+					
+			
+		
+		
+	
+
+
+
+
+	<!--Begin Optional Configuration-->
+	<script type="text/javascript" src='https://www.ieee.org/ieee-mashup/js/common/jquery.json-2.2.min.js'></script>
+	<script type="text/javascript" src="https://www.ieee.org/ieee-mashup/js/common/postmessage-min.js" ></script>
+	<script type="text/javascript" src='https://www.ieee.org/ieee-mashup/js/common/jquery.cookie-min.js'></script>
+	<script type="text/javascript" src="https://www.ieee.org/ieee-mashup/js/auth/ieee-auth-constants-min.js"></script>
+	<script type="text/javascript" src="https://www.ieee.org/ieee-mashup/js/auth/ieee-auth-include-min.js" ></script>
+	<script type="text/javascript" src='https://www.ieee.org/ieee-mashup/js/minicart/ieee-mini-cart-constants-min.js'></script>
+
+
+	<script type="text/javascript" src='https://www.ieee.org/ieee-mashup/js/minicart/ieee-mashup-util-min.js'></script>
+	<script type="text/javascript" src="https://www.ieee.org/ieee-mashup/js/common/jquery.ba-jqmq-min.js"></script>
+	<script type="text/javaScript" src="https://www.ieee.org/ieee-mashup/js/minicart/ieee-minicart-include-min.js"> </script>
+
+	<!--End Optional Configuration-->
+
+
+<!-- Removed due to network issues when loading in China -->
+<!-- <script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=ra-5005a435228f9245" async="async"></script>-->
+
+<!-- Load Mathjax and process the document for Mathjax characters -->
+
+
+<!-- <script type="text/javascript" src="/xploreAssets/MathJax-274/MathJax.js?config=default"></script> -->
+
+
+<script defer>
+	MathJax.Hub.Queue(["Typeset", MathJax.Hub, document.body]);
+</script>
+
+
+
+					</div>
+				</div>
+
+			
+				<script>
+					// set $ alias back to jQuery because noConflict mode is used in legacy pages
+					window.$ = jQuery;
+				</script>
+			
+		</div><!-- /#LayoutWrapper -->
+	</body>
+</html>

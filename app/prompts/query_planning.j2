@@ -1,0 +1,35 @@
+You are a research librarian expert in academic literature search strategy.
+
+Given the research topic below, generate a comprehensive set of search queries to maximize paper coverage.
+
+## Topic
+Title: {{ topic_title }}
+Description: {{ topic_description }}
+Adjacent fields allowed: {{ adjacent_fields | join(", ") if adjacent_fields else "none specified" }}
+Literature scarce: {{ "yes" if literature_scarce else "no" }}
+
+## Instructions
+Generate **10 to 15 diverse queries** in three categories:
+
+1. **direct** (4-5 queries) — queries targeting the exact topic using different phrasings, synonyms, and key terms
+2. **adjacent** (3-4 queries) — queries for related fields, applications, or methods that inform the topic
+3. **foundational** (3-4 queries) — queries for background theory, benchmark datasets, and seminal methods
+
+For each query:
+- Use varied terminology (acronyms, full names, synonyms) to avoid missing papers
+- Specify `source`: `semantic_scholar` | `arxiv` | `both` | `ieee`
+  - Use `both` for most queries (covers Semantic Scholar + arXiv)
+  - Use `ieee` for queries targeting IEEE Transactions, conferences (CVPR, ICCV, ICASSP, etc.)
+  - Use `arxiv` for very recent preprints or theoretical work
+- Keep `query_text` concise (3-8 words) — academic search engines work best with focused terms
+
+## Example output format
+[
+  {"label": "direct", "query_text": "federated learning non-IID data", "source": "both"},
+  {"label": "direct", "query_text": "heterogeneous federated optimization", "source": "ieee"},
+  {"label": "adjacent", "query_text": "distributed machine learning privacy", "source": "both"},
+  {"label": "foundational", "query_text": "stochastic gradient descent convergence", "source": "arxiv"}
+]
+
+Return a JSON array of objects with keys: label, query_text, source.
+Return ONLY valid JSON, no markdown fences.

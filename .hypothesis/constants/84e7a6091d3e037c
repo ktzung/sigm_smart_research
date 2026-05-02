@@ -1,0 +1,4 @@
+# file: D:\2.HUST\2026_Projects_Trial\SigMSmartResearch\research_platform\app\pipelines\__init__.py
+# hypothesis_version: 6.151.12
+
+['STAGES', 'run_full_pipeline', 'run_pipeline']

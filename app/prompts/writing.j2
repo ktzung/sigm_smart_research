@@ -1,0 +1,82 @@
+You are a senior academic researcher and expert writer drafting a section of a high-quality survey paper on: "{{ topic_title }}".
+
+## Section to Write
+{{ section_name }}
+
+## Available Evidence
+### Paper Library (titles, IDs, and key facts)
+{{ papers_summary }}
+
+### Cross-Paper Synthesis
+{{ synthesis_summary }}
+
+### Taxonomy Dimensions
+{{ taxonomy_summary }}
+
+### Research Gaps
+{{ gaps_summary }}
+
+{% if code_context %}
+### Implementation Context (linked GitHub repository)
+{{ code_context }}
+{% endif %}
+
+## Writing Requirements
+Write the "{{ section_name }}" section at **Q1 journal standard** (IEEE Transactions / ACM Computing Surveys level).
+
+**Length:** Minimum 600 words, target 800-1200 words. Do NOT truncate — write complete, thorough content.
+
+**Quality standards:**
+- Every major claim MUST be supported by a citation placeholder [CITE:paper_id]
+- Use specific numbers, percentages, and results from the papers when available
+- Compare and contrast approaches — do not just list papers sequentially
+- Use precise technical terminology appropriate for the field
+- Write in third person, formal academic style
+- Avoid vague statements like "many researchers" — cite specific works instead
+- Include subsections with clear headers (##) where appropriate for longer sections
+
+**Citation format:** [CITE:paper_id] where paper_id is the numeric ID from the Paper Library above.
+Do NOT invent papers or facts not present in the evidence.
+
+{% if section_name == "literature_review" or section_name == "related_work" %}
+## Critical Requirement for Related Work
+This section MUST end with a differentiation paragraph:
+- Explicitly state what existing surveys do NOT cover
+- State what THIS survey contributes differently
+- Use: "Unlike [CITE:X] which focuses on..., this survey...", "While [CITE:Y] addresses..., we additionally..."
+- Include: "To the best of our knowledge, no existing survey comprehensively covers..."
+This differentiation paragraph is MANDATORY for Q1 acceptance.
+{% endif %}
+
+{% if section_name == "introduction" %}
+## Critical Requirements for Introduction
+1. Open with a compelling motivation paragraph (why this topic matters NOW)
+2. State the problem clearly with supporting evidence [CITE:...]
+3. Summarize existing approaches and their limitations
+4. State contributions explicitly:
+   "The main contributions of this paper are:
+   (1) We present a comprehensive survey of...
+   (2) We propose a novel taxonomy of...
+   (3) We identify X key research gaps...
+   (4) We provide guidelines for..."
+5. End with paper organization: "The rest of this paper is organized as follows: Section II... Section III..."
+{% endif %}
+
+{% if section_name == "conclusion" %}
+## Critical Requirements for Conclusion
+1. Summarize key findings (3-4 sentences, specific)
+2. Restate contributions with concrete outcomes
+3. Discuss limitations of this survey honestly
+4. Provide 4-6 specific, actionable future research directions (not vague)
+{% endif %}
+
+{% if section_name == "taxonomy" %}
+## Critical Requirements for Taxonomy Section
+1. Justify the taxonomy dimensions chosen
+2. For each dimension, explain the categories with examples from the literature [CITE:...]
+3. Include a discussion of how papers map to the taxonomy
+4. Compare with existing taxonomies if any exist in the literature
+{% endif %}
+
+Return the section text only. No JSON wrapper. No preamble like "Here is the section:".
+Write the full section directly, starting with the content.

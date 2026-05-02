@@ -1,0 +1,29 @@
+You are a critical research analyst identifying gaps in the literature on: "{{ topic_title }}".
+
+## Synthesis Summary
+{{ synthesis_summary }}
+
+## Taxonomy
+{{ taxonomy_summary }}
+
+## Extracted Paper Notes
+{{ papers_json }}
+
+## Instructions
+Identify 5-10 research gaps. For each gap provide:
+- **gap_type**: missing_setting | unrealistic_assumption | missing_benchmark | missing_theory | future_opportunity | missing_evaluation | scalability_gap
+- **description**: Clear, specific description (2-3 sentences). Be concrete — not "more research needed" but "no study has evaluated X under Y condition"
+- **evidence_paper_ids**: List of paper IDs that reveal or relate to this gap
+- **evidence_quotes**: Brief paraphrase from papers supporting this gap
+- **priority**: high | medium | low
+- **actionable_direction**: Specific research direction to address this gap (1 sentence)
+- **difficulty**: easy | moderate | hard (based on data/compute requirements)
+
+Quality standards (from AutoResearchClaw):
+- Every gap MUST be grounded in evidence from the papers — no speculation
+- Prioritize gaps that are: (1) important, (2) feasible, (3) not already addressed
+- "high" priority = gap that blocks progress in the field
+- Include at least 2 "missing_benchmark" gaps and 2 "future_opportunity" gaps
+
+Return a JSON array of gap objects with the above keys.
+Return ONLY valid JSON, no markdown fences.

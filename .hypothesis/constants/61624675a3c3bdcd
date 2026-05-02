@@ -1,0 +1,4 @@
+# file: D:\2.HUST\2026_Projects_Trial\SigMSmartResearch\research_platform\app\middleware\auth.py
+# hypothesis_version: 6.151.12
+
+[401, '/api/v1/auth/login', '/api/v1/auth/refresh', '/api/v1/labs/', '/api/v1/users/', '/docs', '/health', '/openapi', '/static/', '/storage/', 'sub']

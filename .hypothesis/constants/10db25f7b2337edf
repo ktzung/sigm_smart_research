@@ -1,0 +1,4 @@
+# file: D:\2.HUST\2026_Projects_Trial\SigMSmartResearch\research_platform\app\api\profiles.py
+# hypothesis_version: 6.151.12
+
+[201, 204, 400, 404, '.gif', '.jpeg', '.jpg', '.png', '.webp', '/me/avatar', '/me/profile', '/me/projects', '/me/publications', '/{user_id}/profile', '/{user_id}/projects', 'User not found', 'image/gif', 'image/jpeg', 'image/jpg', 'image/png', 'image/webp', 'profile-avatars', 'profiles', 'storage']

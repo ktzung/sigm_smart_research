@@ -1,0 +1,4 @@
+# file: D:\2.HUST\2026_Projects_Trial\SigMSmartResearch\research_platform\app\services\writing.py
+# hypothesis_version: 6.151.12
+
+['analysis', 'background', 'case_study', 'chapter_conclusion', 'chapter_intro', 'code_context', 'conclusion', 'context_description', 'contradictions', 'contribution', 'critical_analysis', 'data_collection', 'discussion', 'done', 'draft', 'executive_summary', 'experiment_design', 'future_directions', 'gaps_summary', 'introduction', 'lessons_learned', 'literature_review', 'literature_search', 'methodology', 'paper_type', 'papers_summary', 'patterns', 'problem_formulation', 'problem_statement', 'prompts', 'recommendations', 'related_work', 'research_paper', 'results', 'review', 'scope_definition', 'survey', 'synthesis_summary', 'synthesize', 'taxonomy', 'taxonomy_summary', 'technical_background', 'technical_report', 'thesis_chapter', 'writing.j2']

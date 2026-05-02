@@ -1,0 +1,4 @@
+# file: D:\2.HUST\2026_Projects_Trial\SigMSmartResearch\research_platform\app\models\remote.py
+# hypothesis_version: 6.151.12
+
+[100, 255, 'CASCADE', 'RemoteExecution', 'SET NULL', 'SSHServer | None', 'all, delete-orphan', 'analyzed', 'deployed', 'executions', 'generated', 'harvested', 'name', 'remote_executions', 'running', 'ssh_server', 'ssh_servers', 'ssh_servers.id', 'standalone', 'topics.id', 'user_id', 'users.id']

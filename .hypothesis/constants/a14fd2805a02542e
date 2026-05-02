@@ -1,0 +1,4 @@
+# file: D:\2.HUST\2026_Projects_Trial\SigMSmartResearch\research_platform\app\services\audit_service.py
+# hypothesis_version: 6.151.12
+
+['created_at', 'event_data', 'event_type', 'finished_at', 'id', 'items', 'page', 'page_size', 'pipeline_run', 'repo_url', 'stage', 'started_at', 'status', 'total', 'user_id']

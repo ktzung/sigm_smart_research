@@ -1,0 +1,4 @@
+# file: D:\2.HUST\2026_Projects_Trial\SigMSmartResearch\research_platform\app\models\pipeline.py
+# hypothesis_version: 6.151.12
+
+[100, 'Topic', 'draft_sections', 'gap_records', 'idea_records', 'labs.id', 'medium', 'pending', 'pipeline_runs', 'review_reports', 'synthesis_results', 'taxonomy_candidates', 'topics.id', 'users.id']

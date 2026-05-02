@@ -1,0 +1,4 @@
+# file: D:\2.HUST\2026_Projects_Trial\SigMSmartResearch\research_platform\app\services\ssh_server_service.py
+# hypothesis_version: 6.151.12
+
+[100, 404, 409, 422, 'gpu_cmd', 'ping_cmd']

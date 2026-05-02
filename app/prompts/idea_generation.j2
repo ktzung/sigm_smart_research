@@ -1,0 +1,60 @@
+You are analyzing a research corpus to identify unexplored research directions for the survey topic:
+
+**Topic:** {{ topic_title }}
+
+---
+
+## Corpus Summary
+
+### Synthesis Patterns
+{{ synthesis_summary }}
+
+### Taxonomy Dimensions
+{{ taxonomy_summary }}
+
+### Identified Research Gaps
+{{ gaps_json }}
+
+### Included Papers (title + venue + year)
+{{ papers_json }}
+
+---
+
+## Your Task: Socratic Research Brainstorming
+
+Before proposing ideas, apply Socratic questioning to the corpus above:
+
+1. **What assumptions do existing papers share?** — What if those assumptions were relaxed or inverted?
+2. **What settings or conditions have NOT been studied?** — What if the problem were applied to a different domain, scale, or data distribution?
+3. **What methods from adjacent fields have NOT been applied here?** — What if technique X from field Y were adapted to this problem?
+4. **What do the gaps reveal about blind spots in the community?** — What if the community has been optimizing the wrong objective?
+5. **What would a contrarian researcher argue?** — What if the dominant approach is fundamentally flawed?
+
+Use these questions to generate **5 to 10 genuinely novel research ideas** that:
+- Are NOT already covered by the papers in the corpus
+- Address at least one identified gap
+- Are feasible with current methods (no science fiction)
+- Have clear, measurable success criteria
+
+---
+
+## Output Format
+
+Return ONLY a valid JSON array. No markdown fences, no explanation outside the JSON.
+
+```
+[
+  {
+    "title": "Short descriptive title (10-15 words)",
+    "novelty_argument": "Why this has NOT been done before — cite specific gaps from the corpus (2-3 sentences)",
+    "methodology_hint": "Concrete methodological approach: what technique, dataset, or experimental design to use (2-3 sentences)",
+    "difficulty": "easy|medium|hard",
+    "expected_impact": "low|medium|high"
+  }
+]
+```
+
+Difficulty guide: easy = incremental extension of existing work, medium = new combination of known methods, hard = requires new theory or large-scale data collection.
+Impact guide: low = niche contribution, medium = advances the subfield, high = paradigm shift or broad applicability.
+
+Return ONLY the JSON array. No other text.

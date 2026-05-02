@@ -1,0 +1,4 @@
+# file: D:\2.HUST\2026_Projects_Trial\SigMSmartResearch\research_platform\app\schemas\profile.py
+# hypothesis_version: 6.151.12
+
+[1900, 2100, 'EventRead', 'authors', 'book_chapter', 'completed', 'conference', 'from_attributes', 'journal', 'ongoing', 'planned', 'preprint', 'seminar', 'year']

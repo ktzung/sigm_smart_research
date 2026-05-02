@@ -1,0 +1,1028 @@
+<!DOCTYPE html>
+<html prefix="og: https://ogp.me/ns#" xmlns="http://www.w3.org/1999/xhtml" lang="en" >
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="stylesheet" type="text/css" href="https://www.techscience.com/static/css/style.css?t=20230215" />
+        <link rel="stylesheet" type="text/css" href="https://www.techscience.com/static/css/animate.min.css?t=20230215" />
+        <link rel="stylesheet" href="https://www.techscience.com/static/css/iconfont.css?t=20230215" />
+        <link rel="stylesheet" type="text/css" href="https://www.techscience.com/static/bu/bu.css?t=20230215" />
+        <title>CMC | FedCPS: A Dual Optimization Model for Federated Learning Based on Clustering and Personalization Strategy</title>
+        <meta name="keywords"    content="Federated learning; cluster; personalization; overfitting" />
+                
+                <link rel="canonical" href="https://www.techscience.com/cmc/v83n1/60101" />
+                                    
+            <meta name="title" content="FedCPS: A Dual Optimization Model for Federated Learning Based on Clustering and Personalization Strategy" />
+<meta name="description" content="Federated learning is a machine learning framework designed to protect privacy by keeping training data on clients’ devices without sharing private data. It trains a global model through collaboration between clients and the server. However, the presence of data heterogeneity can lead to inefficient model training and even reduce the final model’s accuracy and generalization capability. Meanwhile, data scarcity can result in suboptimal cluster distributions for few-shot clients in centralized clustering tasks, and standalone personalization tasks may cause severe overfitting issues. To address these limitations, we introduce a federated learning dual optimization model based on clustering and personalization strategy (FedCPS). FedCPS adopts a decentralized approach, where clients identify their cluster membership locally without relying on a centralized clustering algorithm. Building on this, FedCPS introduces personalized training tasks locally, adding a regularization term to control deviations between local and cluster models. This improves the generalization ability of the final model while mitigating overfitting. The use of weight-sharing techniques also reduces the computational cost of central machines. Experimental results on MNIST, FMNIST, CIFAR10, and CIFAR100 datasets demonstrate that our method achieves better personalization effects compared to other personalized federated learning methods, with an average test accuracy improvement of 0.81%–2.96%. Meanwhile, we adjusted the proportion of few-shot clients to evaluate the impact on accuracy across different methods. The experiments show that FedCPS reduces accuracy by only 0.2%–3.7%, compared to 2.1%–10% for existing methods. Our method demonstrates its advantages across diverse data environments." />
+<meta name="dc.identifier" content="doi:10.32604/cmc.2025.060709"/>
+<meta name="DOI" content="10.32604/cmc.2025.060709"/>
+<meta property="twitter:site" content="@TechScience_TSP"/>
+<meta property="twitter:creator" content="@TechScience_TSP"/>
+<meta property="twitter:card" content="summary"/>
+<meta property="twitter:url" content="https://www.techscience.com/cmc/v83n1/60101"/>
+<meta property="og:site" content="Tech Science Press"/>
+<meta property="og:site_name" content="Tech Science Press"/>
+<meta property="og:type" content="website"/>
+<meta property="og:title" content="FedCPS: A Dual Optimization Model for Federated Learning Based on Clustering and Personalization Strategy"/>
+<meta property="og:description" content="Federated learning is a machine learning framework designed to protect privacy by keeping training data on clients’ devices without sharing private data. It trains a global model through collaboration between clients and th... | Find, read and cite all the research you need on Tech Science Press"/>
+<meta property="og:url" content="https://www.techscience.com/cmc/v83n1/60101"/>
+<meta property="og:image" content="https://www.techscience.com/static/images/logo/logo-200.png?t=20230215"/>
+<meta name="citation_title" content="FedCPS: A Dual Optimization Model for Federated Learning Based on Clustering and Personalization Strategy"/>
+<meta name="citation_author" content="Zhen Yang"/>
+<meta name="citation_author" content="Yifan Liu"/>
+<meta name="citation_author" content="Fan Feng"/>
+<meta name="citation_author" content="Yi Liu"/>
+<meta name="citation_author" content="Zhenpeng Liu"/>
+<meta name="citation_publication_date" content="2025/03/26"/>
+<meta name="citation_online_date" content=""/>
+<meta name="citation_journal_title" content="Computers, Materials &amp; Continua"/>
+<meta name="citation_year" content="2025"/>
+<meta name="citation_volume" content="83"/>
+<meta name="citation_issue" content="1"/>
+<meta name="citation_firstpage" content="357"/>
+<meta name="citation_lastpage" content="380"/>
+<meta name="citation_article_type" content="ARTICLE"/>
+<meta name="citation_fulltext_world_readable" content=""/>
+<meta name="citation_pdf_url" content="https://cdn.techscience.press/files/cmc/2025/TSP_CMC-83-1/TSP_CMC_60709/TSP_CMC_60709.pdf" />
+<meta name="citation_publisher" content="Tech Science Press"/>
+<meta name="citation_public_url" content="https://www.techscience.com/cmc/v83n1/60101" />
+<meta name="citation_abstract_html_url" content="https://www.techscience.com/cmc/v83n1/60101"/>
+<meta name="citation_fulltext_html_url" content="https://www.techscience.com/cmc/v83n1/60101.html"/>
+<meta name="citation_issn" content="1546-2218"/>
+<meta name="citation_issn" content="1546-2226"/>
+<meta name="citation_doi" content="10.32604/cmc.2025.060709"/>
+<meta name="citation_journal_abbrev" content="CMC" />
+<meta name="citation_language" content="en" />
+<meta name="citation_date" content="2025"/>
+<meta name="citation_reference" content="citation_title=Personalized federated learning for intelligent IoT applications: a cloud-edge based framework;citation_article_type=journal;citation_volume=1;citation_firstpage=35;citation_lastpage=44;citation_publication_date=2020;citation_doi=10.1109/OJCS.2020.2993259;citation_author=Q Wu;citation_author=K He;citation_author=X Chen;"/>
+<meta name="citation_reference" content="citation_title=Survey of personalization techniques for federated learning;citation_article_type=conf-proc;citation_firstpage=794;citation_lastpage=7;citation_publication_date=2020 Jul 27–28;citation_doi=10.1109/WorldS450073.2020.9210355;citation_author=V Kulkarni;citation_author=M Kulkarni;citation_author=A Pant;"/>
+<meta name="citation_reference" content="citation_title=Clustered federated multitask learning on non-IID data with enhanced privacy;citation_article_type=journal;citation_volume=10;citation_issue=4;citation_firstpage=3453;citation_lastpage=67;citation_publication_date=2023;citation_doi=10.1109/JIOT.2022.3228893;citation_author=J Shu;citation_author=T Yang;citation_author=X Liao;citation_author=F Chen;citation_author=Y Xiao;citation_author=K Yang;"/>
+<meta name="citation_reference" content="citation_article_type=book;citation_firstpage=19586;citation_lastpage=97;citation_publication_date=2020 Dec 6–12;citation_author=A Ghosh;citation_author=J Chung;citation_author=D Yin;citation_author=K Ramchandran;citation_author=A Ghosh;citation_author=J Chung;"/>
+<meta name="citation_reference" content="citation_title=Clustered federated learning: model-agnostic distributed multitask optimization under privacy constraints;citation_article_type=journal;citation_volume=32;citation_issue=8;citation_firstpage=3710;citation_lastpage=22;citation_publication_date=2021;citation_doi=10.1109/TNNLS.2020.3015958;citation_author=F Sattler;citation_author=KR Müller;citation_author=W Samek;"/>
+<meta name="citation_reference" content="citation_title=On the Byzantine robustness of clustered federated learning;citation_article_type=conf-proc;citation_firstpage=8861;citation_lastpage=5;citation_publication_date=2020 May 4–8;citation_doi=10.1109/icassp40776.2020.9054676;citation_author=F Sattler;citation_author=KR Muller;citation_author=T Wiegand;citation_author=W Samek;"/>
+<meta name="citation_reference" content="citation_title=Federated learning for Internet of Things: a comprehensive survey;citation_article_type=journal;citation_volume=23;citation_issue=3;citation_firstpage=1622;citation_lastpage=58;citation_publication_date=2021;citation_doi=10.1109/COMST.2021.3075439;citation_author=DC Nguyen;citation_author=M Ding;citation_author=PN Pathirana;citation_author=A Seneviratne;citation_author=J Li;citation_author=H Vincent Poor;"/>
+<meta name="citation_reference" content="citation_title=FedMe: federated learning via model exchange;citation_article_type=conf-proc;citation_firstpage=459;citation_lastpage=67;citation_publication_date=2022 Apr 28–30;citation_doi=10.1137/1.9781611977172.52;citation_author=K Matsuda;citation_author=Y Sasaki;citation_author=C Xiao;citation_author=M Onizuka;"/>
+<meta name="citation_reference" content="citation_title=Layer-wised model aggregation for personalized federated learning;citation_article_type=conf-proc;citation_firstpage=10082;citation_lastpage=91;citation_publication_date=2022 Jun 18–24;citation_author=X Ma;citation_author=J Zhang;citation_author=S Guo;citation_author=W Xu;"/>
+<meta name="citation_reference" content="citation_article_type=book;citation_firstpage=3557;citation_lastpage=68;citation_publication_date=2020 Dec 6–12;citation_author=A Fallah;citation_author=A Mokhtari;citation_author=A Ozdaglar;"/>
+<meta name="citation_reference" content="citation_article_type=book;citation_firstpage=9489;citation_lastpage=502;citation_publication_date=2021 Jul 18–24;citation_publisher=Curran Associates Inc;citation_author=A Shamsian;citation_author=A Navon;citation_author=E Fetaya;citation_author=G Chechik;"/>
+<meta name="citation_reference" content="citation_article_type=book;citation_firstpage=5234;citation_lastpage=56;citation_publication_date=2023 Jul 23–29;citation_author=D Chen;citation_author=L Yao;citation_author=D Gao;citation_author=B Ding;citation_author=Y Li;citation_author=D Chen;"/>
+<meta name="citation_reference" content="citation_title=A personalized federated meta-learning method for intelligent and privacy-preserving fault diagnosis;citation_article_type=journal;citation_volume=62;citation_firstpage=102781;citation_publication_date=2024;citation_doi=10.1016/j.aei.2024.102781;citation_author=X Zhang;citation_author=C Li;citation_author=C Han;citation_author=S Li;citation_author=Y Feng;citation_author=H Wang;"/>
+<meta name="citation_reference" content="citation_article_type=book;citation_firstpage=509;citation_lastpage=17;citation_publication_date=2017 Apr 20–22;citation_author=P Vanhaesebrouck;citation_author=A Bellet;citation_author=M Tommasi;"/>
+<meta name="citation_reference" content="citation_article_type=book;citation_firstpage=864;citation_lastpage=74;citation_publication_date=2020 Aug 26–28;citation_author=V Zantedeschi;citation_author=A Bellet;citation_author=M Tommasi;"/>
+<meta name="citation_reference" content="citation_title=Personalized cross- federated learning on non-IID data;citation_article_type=journal;citation_volume=35;citation_issue=9;citation_firstpage=7865;citation_lastpage=73;citation_publication_date=2021;citation_doi=10.1609/aaai.v35i9.16960;citation_author=Y Huang;citation_author=L Chu;citation_author=Z Zhou;citation_author=L Wang;citation_author=J Liu;citation_author=J Pei;"/>
+<meta name="citation_reference" content="citation_article_type=book;citation_firstpage=6357;citation_lastpage=68;citation_publication_date=2021 Jul 18–24；;citation_publisher=Curran Associates Inc.;citation_author=T Li;citation_author=SY Hu;citation_author=A Beirami;citation_author=V Smith;"/>
+<meta name="citation_reference" content="citation_article_type=book;citation_firstpage=15434;citation_lastpage=47;citation_publication_date=2020 Dec 6–12;citation_author=O Marfoq;citation_author=G Neglia;citation_author=A Bellet;citation_author=L Kameni;citation_author=R Vidal;citation_author=O Marfoq;"/>
+<meta name="citation_reference" content="citation_title=Personalized federated learning on non-IID data via group-based meta-learning;citation_article_type=journal;citation_volume=17;citation_issue=4;citation_firstpage=1;citation_lastpage=20;citation_publication_date=2023;citation_doi=10.1145/3558005;citation_author=L Yang;citation_author=J Huang;citation_author=W Lin;citation_author=J Cao;"/>
+<meta name="citation_reference" content="citation_article_type=book;citation_firstpage=21;citation_lastpage=31;citation_publication_date=2021 Jul 18–24;citation_publisher=Curran Associates Inc.;citation_author=DAE Acar;citation_author=Y Zhao;citation_author=RZ Zhu;citation_author=R Matas;citation_author=M Mattina;citation_author=P Whatmough;"/>
+<meta name="citation_reference" content="citation_title=Adaptive gradient-based meta-learning methods;citation_article_type=conf-proc;citation_firstpage=532;citation_lastpage=43;citation_publisher=Curran Associates Inc;citation_author=M Khodak;citation_author=MF Balcan;citation_author=A Talwalkar;"/>
+<meta name="citation_reference" content="citation_title=FedL2P: federated learning to personalize;citation_article_type=conf-proc;citation_firstpage=653;citation_lastpage=71;citation_publisher=Curran Associates Inc;citation_author=R Lee;citation_author=M Kim;citation_author=D Li;citation_author=XC Qiu;citation_author=T Hospedales;citation_author=F Huszár;"/>
+<meta name="citation_reference" content="citation_title=FedALA: adaptive local aggregation for personalized federated learning;citation_article_type=journal;citation_volume=37;citation_issue=9;citation_firstpage=11237;citation_lastpage=44;citation_publication_date=2023;citation_doi=10.1609/aaai.v37i9.26330;citation_author=J Zhang;citation_author=Y Hua;citation_author=H Wang;citation_author=T Song;citation_author=Z Xue;citation_author=R Ma;"/>
+<meta name="citation_reference" content="citation_article_type=book;citation_firstpage=2089;citation_lastpage=99;citation_publisher=Curran Associates Inc;citation_author=L Collins;citation_author=H Hassani;citation_author=A Mokhtari;citation_author=S Shakkottai;"/>
+<meta name="citation_reference" content="citation_title=QuPeD: quantized personalization via distillation with applications to federated learning;citation_article_type=conf-proc;citation_firstpage=277;citation_lastpage=89;citation_publisher=Curran Associates Inc;citation_author=K Ozkara;citation_author=N Singh;citation_author=D Data;citation_author=S Diggavi;"/>
+<meta name="citation_reference" content="citation_title=Distilling holistic knowledge with graph neural networks;citation_article_type=conf-proc;citation_firstpage=10367;citation_lastpage=76;citation_publication_date=2021 Oct 10–17;citation_author=S Zhou;citation_author=Y Wang;citation_author=D Chen;citation_author=J Chen;citation_author=X Wang;citation_author=C Wang;"/>
+<meta name="citation_reference" content="citation_title=Distilling knowledge via knowledge review;citation_article_type=conf-proc;citation_firstpage=5006;citation_lastpage=15;citation_publication_date=2021 Jun 20–25;citation_author=P Chen;citation_author=S Liu;citation_author=H Zhao;citation_author=J Jia;"/>
+<meta name="citation_reference" content="citation_title=Wireless federated distillation for distributed edge learning with heterogeneous data;citation_article_type=conf-proc;citation_firstpage=1;citation_lastpage=6;citation_publication_date=2019 Sep 8–11;citation_author=JH Ahn;citation_author=O Simeone;citation_author=J Kang;"/>
+<meta name="citation_reference" content="citation_article_type=book;citation_firstpage=37860;citation_lastpage=79;citation_publication_date=2023 Jul 23–29;citation_author=Y Wu;citation_author=S Zhang;citation_author=W Yu;citation_author=Y Liu;citation_author=Q Gu;citation_author=D Zhou;"/>
+<meta name="citation_reference" content="citation_article_type=book;citation_firstpage=41314;citation_lastpage=30;citation_publication_date=2023 Jul 23–29;citation_author=H Zhang;citation_author=CL Li;citation_author=WR Dai;citation_author=JN Zou;citation_author=HK Xiong;"/>
+<meta name="citation_reference" content="citation_article_type=book;citation_firstpage=39801;citation_lastpage=17;citation_publication_date=2023 Jul 23–29;citation_author=R Ye;citation_author=Z Ni;citation_author=F Wu;citation_author=S Chen;citation_author=Y Wang;citation_author=R Ye;"/>
+<meta name="citation_reference" content="citation_title=Towards personalized federated learning heterogeneous model reassembly;citation_article_type=conf-proc;citation_firstpage=29515;citation_lastpage=31;citation_publication_date=2023 Dec 10–16;citation_author=J Wang;citation_author=X Yang;citation_author=S Cui;citation_author=L Che;citation_author=L Lyu;citation_author=D Xu;"/>
+<meta name="citation_reference" content="citation_title=Adaptive test-time personalization for federated learning;citation_article_type=conf-proc;citation_firstpage=77882;citation_lastpage=914;citation_publication_date=2023 Dec 10–16;citation_author=W Bao;citation_author=T Wei;citation_author=H Wang;citation_author=J He;citation_author=W Bao;citation_author=T Wei;"/>
+<meta name="citation_reference" content="citation_title=Federated learning on non-IID data: a survey;citation_article_type=journal;citation_volume=465;citation_issue=4–2;citation_firstpage=371;citation_lastpage=90;citation_publication_date=2021;citation_doi=10.1016/j.neucom.2021.07.098;citation_author=H Zhu;citation_author=J Xu;citation_author=S Liu;citation_author=Y Jin;"/>
+<meta name="citation_reference" content="citation_article_type=book;citation_firstpage=228;citation_lastpage=37;citation_publication_date=2021 Sep 30–Oct 3;citation_doi=10.1109/ISPA-BDCloud-SocialCom-SustainCom52081.2021.00042;citation_author=M Duan;citation_author=D Liu;citation_author=X Ji;citation_author=R Liu;citation_author=L Liang;citation_author=X Chen;"/>
+<meta name="citation_reference" content="citation_title=Hypercluster: a flexible tool for parallelized unsupervised clustering optimization;citation_article_type=journal;citation_volume=21;citation_issue=1;citation_firstpage=428;citation_publication_date=2020;citation_doi=10.1186/s12859-020-03774-1;citation_author=L Blumenberg;citation_author=KV Ruggles;"/>
+<meta name="citation_reference" content="citation_title=FedSoft: soft clustered federated learning with proximal local updating;citation_article_type=journal;citation_volume=36;citation_issue=7;citation_firstpage=8124;citation_lastpage=31;citation_publication_date=2022;citation_doi=10.1609/aaai.v36i7.20785;citation_author=Y Ruan;citation_author=C Joe-Wong;"/>
+<meta name="citation_reference" content="citation_title=The MNIST database of handwritten digit images for machine learning research [best of the web];citation_article_type=journal;citation_volume=29;citation_issue=6;citation_firstpage=141;citation_lastpage=2;citation_publication_date=2012;citation_doi=10.1109/MSP.2012.2211477;citation_author=L Deng;"/>
+<meta name="citation_reference" content="citation_title=Fashion-MNIST: a novel image dataset for benchmarking machine learning algorithms;citation_article_type=other;citation_author=H Xiao;citation_author=K Rasul;citation_author=R Vollgraf;"/>
+<meta name="citation_reference" content="citation_article_type=book;citation_publication_date=2009;citation_publisher=University of Toronto;citation_author=A Krizhevsky;citation_author=G Hinton;"/>
+<meta name="citation_reference" content="citation_article_type=book;citation_doi=10.1145/306538;citation_author=A Krizhevsky;citation_author=I Sutskever;citation_author=GE Hinton;"/>
+<meta name="citation_reference" content="citation_article_type=book;citation_firstpage=1273;citation_lastpage=82;citation_publication_date=2017 Apr 20–22;citation_author=B McMahan;citation_author=E Moore;citation_author=D Ramage;citation_author=S Hampson;citation_author=BA Arcas;"/>
+<meta name="citation_reference" content="citation_title=Federated learning with personalization layers;citation_article_type=other;citation_author=MG Arivazhagan;citation_author=V Aggarwal;citation_author=AK Singh;citation_author=S Choudhary;"/>
+<meta name="citation_reference" content="citation_title=Think locally, act globally: federated learning with local and global representations;citation_article_type=other;citation_author=PP Liang;citation_author=T Liu;citation_author=Z Liu;citation_author=NB Allen;citation_author=RP Auerbach;citation_author=D Brent;"/>
+<meta name="citation_reference" content="citation_title=FedBABU: towards enhanced representation for federated image classification;citation_article_type=other;citation_author=J Oh;citation_author=S Kim;citation_author=SY Yun;"/>
+<meta name="citation_reference" content="citation_title=FedSR: a simple and effective domain generalization method for federated learning;citation_article_type=conf-proc;citation_firstpage=38831;citation_lastpage=43;citation_publication_date=2022 Nov 28–Dec 9;citation_author=AT Nguyen;citation_author=PHS Torr;citation_author=SN Lim;"/>
+<meta name="citation_keywords" content="Federated learning; cluster; personalization; overfitting" />
+<meta name="citation_id" content="60101" />
+<meta name="citation_state" content="" />
+<meta name="DC.Contributor" content="Zhen Yang"/>
+<meta name="DC.Creator" content="Zhen Yang"/>
+<meta name="DC.Contributor" content="Yifan Liu"/>
+<meta name="DC.Creator" content="Yifan Liu"/>
+<meta name="DC.Contributor" content="Fan Feng"/>
+<meta name="DC.Creator" content="Fan Feng"/>
+<meta name="DC.Contributor" content="Yi Liu"/>
+<meta name="DC.Creator" content="Yi Liu"/>
+<meta name="DC.Contributor" content="Zhenpeng Liu"/>
+<meta name="DC.Creator" content="Zhenpeng Liu"/>
+<meta name="DC.Created" content="2025-03-26"/>
+<meta name="DC.Date" content="2025-03-26"/>
+<meta name="DC.Format" content="text/html" />
+<meta name="DC.Type" content="text" />
+<meta name="DC.Title" content="FedCPS: A Dual Optimization Model for Federated Learning Based on Clustering and Personalization Strategy"/>
+<meta name="DC.Description" content="Federated learning is a machine learning framework designed to protect privacy by keeping training data on clients’ devices without sharing private data. It trains a global model through collaboration between clients and th... | Find, read and cite all the research you need on Tech Science Press"/>
+<meta name="DC.Publisher" content="Tech Science Press"/>
+<meta name="dc.subject" content="ARTICLE"/>
+
+<script type="application/ld+json">{"@context":"https:\/\/schema.org","@id":"https:\/\/www.techscience.com\/cmc\/v83n1\/60101","@type":"ScholarlyArticle","headline":"FedCPS: A Dual Optimization Model for Federated Learning Based on Clustering and Personalization Strategy","author":[{"@type":"Person","name":"Yang, Zhen"},{"@type":"Person","name":"Liu, Yifan"},{"@type":"Person","name":"Feng, Fan"},{"@type":"Person","name":"Liu, Yi"},{"@type":"Person","name":"Liu, Zhenpeng"}],"datePublished":"2025\/03\/26","publisher":{"@id":"https:\/\/www.techscience.com\/ndetail\/abt","@type":"NewsMediaOrganization","name":"Tech Science Press","logo":{"@type":"ImageObject","url":"https:\/\/www.techscience.com\/static\/images\/logo.png"}},"name":"FedCPS: A Dual Optimization Model for Federated Learning Based on Clustering and Personalization Strategy","keywords":"Federated learning, cluster, personalization, overfitting","articleSection":"Computers, Materials & Continua","interactionStatistic":[{"@type":"InteractionCounter","interactionType":"http:\/\/schema.org\/ReadAction","userInteractionCount":"1139"},{"@type":"InteractionCounter","interactionType":"http:\/\/schema.org\/DownloadAction","userInteractionCount":"774"}],"sameAs":"https:\/\/doi.org\/10.32604\/cmc.2025.060709"}</script>
+
+                
+                <script type="application/ld+json">{"@context":"https:\/\/schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https:\/\/www.techscience.com\/"},{"@type":"ListItem","position":2,"name":"Journals","item":"https:\/\/www.techscience.com\/journals"},{"@type":"ListItem","position":3,"name":"CMC","item":"https:\/\/www.techscience.com\/journal\/cmc"},{"@type":"ListItem","position":4,"name":"Vol.83, No.1, 2025","item":"https:\/\/www.techscience.com\/cmc\/v83n1"},{"@type":"ListItem","position":5,"name":"10.32604\/cmc.2025.060709"}]}</script>
+                        </head><style>
+ .rotate90{
+ width: 15px; height: 25px;
+transform:rotate(90deg);
+-ms-transform:rotate(90deg); 	/* IE 9 */
+-moz-transform:rotate(90deg); 	/* Firefox */
+-webkit-transform:rotate(90deg); /* Safari 和 Chrome */
+-o-transform:rotate(90deg); 	/* Opera */
+}
+.menudetail li a{
+     width: 170px;cursor: auto;
+}
+.menudetail li a:hover{
+    text-decoration: none; cursor: auto
+}
+.menudetail li a span{
+ float: right; padding-right: 15px
+}
+.cite_detail{
+    padding:0px; position: relative; padding-left: 110px;line-height: 19px;font-size: 12px
+}
+.cite_detail a{
+    cursor: pointer;
+    color: #235abf;
+    text-decoration: none;
+    text-decoration: none;
+    outline: none;}
+.cite_detail a:hover{ text-decoration: underline;}
+.sub-item-box{
+    padding-top: 0px; overflow: hidden;
+}
+.sub-item-box-item{
+    float: left; width: 120px; text-align: center;
+}
+.sub-item-box-item a{
+    display: block; 
+}
+.clear{ clear: both;}
+.crossmark_svg_box{ position: relative; }
+.crossmark_svg{
+    position: absolute;
+	right: 10px;
+	top: -47px;
+	width: 50px;
+	height: 50px;
+}
+@media only screen and (max-width:600px){	
+    #section_abstract img{ max-width: 95% !important}
+}
+
+.RetractedContainer{
+    margin-top: 20px;
+    border-left: 5px solid #e87626;
+    padding-left: 10px;
+    background-color: #fff6ec;
+}
+.RetractedContainer__content {
+    padding: 16px 24px 16px 12px;
+    border-bottom: 1px solid #ffcb8d;
+}
+.RetractedContainer__alertText{
+    display: flex;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: 0;
+    text-align: left;
+}
+.RetractedContainer__alertText::before {
+    content: "";
+    display: inline-block;
+    min-width: 16px;
+    min-height: 20px;
+    margin-top: 2px;
+    margin-right: 8px;
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHZpZXdCb3g9IjAgMCAxNiAxNiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3QgeD0iNCIgeT0iMy4zMzM1IiB3aWR0aD0iOCIgaGVpZ2h0PSI5LjMzMzMzIiBmaWxsPSIjMjgyODI4Ii8+CjxwYXRoIGQ9Ik03Ljk5OTk2IDAuOTU5OTYxQzYuNjA3NTggMC45NTk5NjEgNS4yNDY0NyAxLjM3Mjg1IDQuMDg4NzUgMi4xNDY0MUMyLjkzMTAzIDIuOTE5OTggMi4wMjg2OSA0LjAxOTQ4IDEuNDk1ODUgNS4zMDU4N0MwLjk2MzAxMSA2LjU5MjI2IDAuODIzNTk2IDguMDA3NzcgMS4wOTUyNCA5LjM3MzRDMS4zNjY4OCAxMC43MzkgMi4wMzczNyAxMS45OTM0IDMuMDIxOTMgMTIuOTc4QzQuMDA2NDkgMTMuOTYyNiA1LjI2MDkgMTQuNjMzIDYuNjI2NTMgMTQuOTA0N0M3Ljk5MjE2IDE1LjE3NjMgOS40MDc2NiAxNS4wMzY5IDEwLjY5NDEgMTQuNTA0MUMxMS45ODA0IDEzLjk3MTIgMTMuMDc5OSAxMy4wNjg5IDEzLjg1MzUgMTEuOTExMkMxNC42MjcxIDEwLjc1MzUgMTUuMDQgOS4zOTIzNCAxNS4wNCA3Ljk5OTk2QzE1LjAzNzggNi4xMzM0OSAxNC4yOTU1IDQuMzQ0MDcgMTIuOTc1NyAzLjAyNDI3QzExLjY1NTkgMS43MDQ0NyA5Ljg2NjQ0IDAuOTYyMDc4IDcuOTk5OTYgMC45NTk5NjFaTTguNjM5OTYgMTEuNTM2QzguNjM5OTYgMTEuNjIwOCA4LjYwNjI1IDExLjcwMjIgOC41NDYyNCAxMS43NjIyQzguNDg2MjMgMTEuODIyMiA4LjQwNDgzIDExLjg1NiA4LjMxOTk2IDExLjg1Nkg3LjY3OTk2QzcuNTk1MSAxMS44NTYgNy41MTM3IDExLjgyMjIgNy40NTM2OSAxMS43NjIyQzcuMzkzNjggMTEuNzAyMiA3LjM1OTk2IDExLjYyMDggNy4zNTk5NiAxMS41MzZWMTAuODk2QzcuMzU5OTYgMTAuODExMSA3LjM5MzY4IDEwLjcyOTcgNy40NTM2OSAxMC42Njk3QzcuNTEzNyAxMC42MDk3IDcuNTk1MSAxMC41NzYgNy42Nzk5NiAxMC41NzZIOC4zMTk5NkM4LjQwNDgzIDEwLjU3NiA4LjQ4NjIzIDEwLjYwOTcgOC41NDYyNCAxMC42Njk3QzguNjA2MjUgMTAuNzI5NyA4LjYzOTk2IDEwLjgxMTEgOC42Mzk5NiAxMC44OTZWMTEuNTM2Wk04LjYzOTk2IDguOTc1OTZDOC42Mzk5NiA5LjA2MDgzIDguNjA2MjUgOS4xNDIyMiA4LjU0NjI0IDkuMjAyMjRDOC40ODYyMyA5LjI2MjI1IDguNDA0ODMgOS4yOTU5NiA4LjMxOTk2IDkuMjk1OTZINy42Nzk5NkM3LjU5NTEgOS4yOTU5NiA3LjUxMzcgOS4yNjIyNSA3LjQ1MzY5IDkuMjAyMjRDNy4zOTM2OCA5LjE0MjIyIDcuMzU5OTYgOS4wNjA4MyA3LjM1OTk2IDguOTc1OTZWNC40OTU5NkM3LjM1OTk2IDQuNDExMDkgNy4zOTM2OCA0LjMyOTcgNy40NTM2OSA0LjI2OTY5QzcuNTEzNyA0LjIwOTY4IDcuNTk1MSA0LjE3NTk2IDcuNjc5OTYgNC4xNzU5Nkg4LjMxOTk2QzguNDA0ODMgNC4xNzU5NiA4LjQ4NjIzIDQuMjA5NjggOC41NDYyNCA0LjI2OTY5QzguNjA2MjUgNC4zMjk3IDguNjM5OTYgNC40MTEwOSA4LjYzOTk2IDQuNDk1OTZWOC45NzU5NloiIGZpbGw9IiNFODc2MjYiLz4KPC9zdmc+Cg==);
+    background-repeat: no-repeat;
+}
+.RetractedContainer__info{
+    padding-left: 24px;
+}
+.RetractedContainer-full{
+    margin-top: 20px;
+}
+.TSP2022 span.sup{
+    line-height: 10px;
+}
+
+#modal {
+        display: none;
+    }
+    .modal {
+        margin: auto;
+        padding-top: 5%;
+        width: 50%;
+        height: 80%;
+        z-index: 1;
+    }
+
+    .modal img {
+        animation-name: zoom;
+        animation-duration: 0.6s;
+        display: block;
+        padding: 10px;
+        margin: auto;
+        max-width: 100%;
+        max-height: 100%;
+        box-shadow: 0 2px 6px rgb(0, 0, 0, 0.2), 0 10px 20px rgb(0, 0, 0, 0.2);
+        border-radius: 12px;
+        border: 1px solid white;
+    }
+    
+    .modal-close{
+        color: #333;
+        overflow: visible;
+        cursor: pointer;
+        background: 0 0;
+        border: 0;
+        -webkit-appearance: none;
+        display: block;
+        outline: 0;
+        padding: 0;
+        z-index: 1046;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+        width: 44px;
+        height: 44px;
+        line-height: 44px;
+        position: absolute;
+        right: 0px;
+        top: 10px;
+        text-decoration: none;
+        text-align: center;
+        opacity: .65;
+
+        font-style: normal;
+        font-size: 28px;
+    }
+        
+    @media only screen and (max-width:992px){	
+        .modal {
+             width: 100%;
+             padding-top: 20%;
+        }
+        .modal img {
+            padding: 5px;
+            max-width: calc(100% - 20px);
+        }
+        .modal-close{
+            right: 10px;
+            top: 0px;
+        }
+    }
+
+    @keyframes zoom {
+        from {transform: scale(0.1)}
+        to {transform: scale(1)}
+    }
+</style>
+<body>
+            <div style='position:fixed;width:100%;height:100%;z-index: 99999999;background-color:rgb(0,0,0,0.65)' id='modal'>
+        <div class='modal' id='modalw'>
+            <div style="position: relative;">
+                <button title="Close (Esc)" type="button" class="modal-close" onclick="modalClose()">×</button>
+            </div>
+            <a href="" target="_blank" id="bgImgLink">
+                <img id='bgImg' />
+            </a>
+        </div>
+    </div>
+    
+    
+
+
+<div class="header">
+    <div class="top1">
+        <div class="logo"><a href="https://www.techscience.com/" title="www.techscience.com"><img src="https://www.techscience.com/static/images/logo.png?t=20230215" alt="logo"/></a></div>
+  
+    <div class="shui">
+        <div class="ss"><a href="https://www.techscience.com/results" title="Search"><i class="iconfont icon-sousuo"></i></a></div>
+    
+
+
+    <div class="btn1"><a href="https://ijs.tspsubmission.com/homepage?returnUrl=/submission/1">Submit</a></div>
+<div class="btn2">
+    <p>
+        <a href="https://ijs.tspsubmission.com/homepage?returnUrl=/submission/1"><img src="https://www.techscience.com/static/images/r1.png?t=20230215" alt="Login" width="15" height="15" /> Login</a>
+    </p>
+    <p>
+        <a href="https://ijs.tspsubmission.com/regist"><img src="https://www.techscience.com/static/images/r2.png?t=20230215" alt="Register" width="15" height="15" /> Register</a>
+    </p>
+</div>
+
+      </div>
+     
+       
+ 
+  </div>
+  
+  <div class="top2">  <div class="an"><span class="a1"></span><span class="a2"></span><span class="a3"></span></div>
+  
+       
+
+        <div class="nav">
+            <ul>
+                <li>
+                    <div class="y_j"><a href="https://www.techscience.com/" class="o_lm">Home</a></div>
+                </li>     
+                  
+                    <li>
+                        <div class="y_j">
+                            <a href="https://www.techscience.com/journals" class="o_lm">Academic Journals</a>
+                                                    </div>
+                                                    
+                    </li>  
+                      
+                    <li>
+                        <div class="y_j">
+                            <a href="https://www.techscience.com/info/books" class="o_lm">Books &amp; Monographs</a>
+                                                    </div>
+                                                    
+                    </li>  
+                      
+                    <li>
+                        <div class="y_j">
+                            <a href="https://www.techscience.com/conferences" class="o_lm">Conferences</a>
+                                                    </div>
+                                                    
+                    </li>  
+                      
+                    <li>
+                        <div class="y_j">
+                            <a href="https://www.techscience.com/ndetail/languageservice" class="o_lm">Language Service</a>
+                            <i class="iconfont icon-jiantou"></i>                        </div>
+                                                <div class="e_j">
+                        <ul>
+                              
+                            <li><a href="https://www.techscience.com/ndetail/editingservice">Standard Editing Service</a></li>
+                              
+                            <li><a href="https://www.techscience.com/ndetail/scientificediting">Expert Scientific Editing Service</a></li>
+                              
+                            <li><a href="https://www.techscience.com/ndetail/translationservice">Academic Translation Service</a></li>
+                                                    </ul>
+                        </div>
+                                                    
+                    </li>  
+                      
+                    <li>
+                        <div class="y_j">
+                            <a href="https://www.techscience.com/newslist" class="o_lm">News &amp; Announcements</a>
+                                                    </div>
+                                                    
+                    </li>  
+                      
+                    <li>
+                        <div class="y_j">
+                            <a href="https://www.techscience.com/ndetail/abt" class="o_lm">About</a>
+                                                    </div>
+                                                    
+                    </li>  
+                         
+            </ul>
+        </div>
+      
+ </div>
+  
+  </div>
+    <div class="jiange"></div>
+    <div class="hui2">
+        <div class="weizhi breadcrumb breadcrumbs avia-breadcrumbs">
+             
+                    <a href="https://www.techscience.com/">Home</a><span>/</span> 
+                     
+                    <a href="https://www.techscience.com/journals">Journals</a><span>/</span> 
+                     
+                    <a href="https://www.techscience.com/journal/cmc">CMC</a><span>/</span> 
+                     
+                    <a href="https://www.techscience.com/cmc/v83n1">Vol.83, No.1, 2025</a><span>/</span> 
+                     
+                    10.32604/cmc.2025.060709 
+
+                     
+        </div>
+    </div>
+    
+    <div class="nmain">
+        <div class="nlf">
+         
+            
+
+<div class="k1">
+<ul>
+  
+    <li><a href="https://www.techscience.com/journal/cmc"><img src="https://file.techscience.com/uploads/imgs/202507/e46d74fe50e298f5b40da10d61974dde.png?t=20220620" alt="Journal Logo" width="350" height="84" /></a></li>
+  
+     
+    <li><a href="https://ijs.tspsubmission.com/homepage?returnUrl=/submission/1"><img src="https://www.techscience.com/static/images/k10.png?t=20230215" alt="Submit a Paper icon" width="50" height="50" />Submit a Paper</a></li>
+    
+      
+    <li><a href="https://ijs.tspsubmission.com/journal/issues/propose"><img src="https://www.techscience.com/static/images/k11.png?t=20230215" alt="Propose a Special lssue icon" width="50" height="50" />Propose a Special lssue</a></li>
+           
+    <li><a href="https://ijs.tspsubmission.com/page/index.html#/volunteer/apply?jid=1" target="_blank">Review for CMC</a></li>
+   
+</ul>
+</div>
+
+
+            <div class="k2 gsfd">
+                <h2 class="nbt">Table of Content</h2>
+
+                <ul>
+                    <li><a href="#section_abstract">Abstract</a></li>
+                                        <li><a href="https://www.techscience.com/cmc/v83n1/60101/html#s1" target="_blank">Introduction</a></li>
+                                        <li><a href="https://www.techscience.com/cmc/v83n1/60101/html#s2" target="_blank">Related Works</a></li>
+                                        <li><a href="https://www.techscience.com/cmc/v83n1/60101/html#s3" target="_blank">FedCPS Task Description</a></li>
+                                        <li><a href="https://www.techscience.com/cmc/v83n1/60101/html#s4" target="_blank">FedCPS Design</a></li>
+                                        <li><a href="https://www.techscience.com/cmc/v83n1/60101/html#s5" target="_blank">Experiment</a></li>
+                                        <li><a href="https://www.techscience.com/cmc/v83n1/60101/html#s6" target="_blank">Conclusion and Future Work</a></li>
+                                        <li><a href="https://www.techscience.com/cmc/v83n1/60101/html#sref" target="_blank">References</a></li>
+                                    </ul>
+
+            </div>
+
+
+        </div>
+
+        <div class="ncenter">
+             <article>
+            <div class="html-article-content xxjs">
+                <span itemprop="publisher" content="Tech Science Press"></span>
+                <span itemprop="url" content="https://www.techscience.com/cmc/v83n1/60101"></span>
+                <div class="bq1">
+                    <p class="hong"><img src="https://www.techscience.com/static/images/suob.png?t=20230215" alt="Open Access icon" width="126" height="198" />Open Access</p>
+       <p class="lv">ARTICLE</p>
+                
+                
+                 </div>
+                <div class="bq2">
+                    <div class="crossmark_svg_box">
+                                                      <!-- Start Crossmark Snippet v2.0 -->
+                            <script src="https://crossmark-cdn.crossref.org/widget/v2.0/widget.js"></script>
+                            <a data-target="crossmark" ><img class="crossmark_svg" alt="crossmark" src="https://crossmark-cdn.crossref.org/widget/v2.0/logos/CROSSMARK_Color_square.svg" width="50" /></a>
+                            <!-- End Crossmark Snippet -->
+                                                </div>
+                     
+                    <h1 class="title citation_title" itemprop="name">FedCPS: A Dual Optimization Model for Federated Learning Based on Clustering and Personalization Strategy</h1>
+                                   
+                    <p class="authors citation_author">
+                        Zhen Yang<sup>1</sup>, Yifan Liu<sup>1,2,*</sup>, Fan Feng<sup>3</sup>, Yi Liu<sup>3</sup>, Zhenpeng Liu<sup>1,3</sup>                    </p>
+
+                    <p class="affiliation">
+                        1 School of Cyber Security and Computer, Hebei University, Baoding, 071000, China<br/>2 School of Management, Hebei University, Baoding, 071000, China<br/>3 Information Technology Center, Hebei University, Baoding, 071000, China                    </p>
+
+                                            <p class="Corresponding">
+
+                        * Corresponding Author: Yifan Liu. Email: <img style="vertical-align: middle" alt="email" src="https://www.techscience.com/psh.php?mailname=lyf@hbu.edu.cn" />  
+
+                        </p>
+                    
+                                        <p class="cite-info">
+                       <i>Computers, Materials &amp; Continua</i> <b>2025</b>, <i>83</i>(1), 357-380. <a href="https://doi.org/10.32604/cmc.2025.060709">https://doi.org/10.32604/cmc.2025.060709</a>                    </p>
+                    <p class="article-date">
+                         <strong>Received</strong> 07 November 2024; <strong>Accepted</strong> 21 January 2025;                         <strong>Issue published</strong> 26 March 2025                        
+                                            </p>
+                                        
+                                        
+                                        
+                                        
+                </div>
+                <div class="bq3">
+                    <div class="gengduo">
+                    <ul>
+                                                <li><a href="https://www.techscience.com/cmc/v83n1/60101/html"><img src="https://www.techscience.com/static/images/bb1.png?t=20230215" alt="View Full Text icon" />View Full Text</a></li>
+                                                                            <li><a href="https://www.techscience.com/cmc/v83n1/60101/pdf"><img src="https://www.techscience.com/static/images/bb2.png?t=20230215" alt="Download PDF icon" />Download PDF</a></li>
+                                                                        </ul>
+                    </div>
+
+                    <div class="fenxiang">
+                        <ul>
+                            <li style="display: none"><a href="javascript:addStar('60101')"><i class="iconfont icon-dianzan_kuai"></i></a></li>
+                            <li><a class="button" data-sharer="linkedin" data-title="CMC | FedCPS: A Dual Optimization Model for Federated Learning Based on Clustering and Personalization Strategy" data-url="https://www.techscience.com/cmc/v83n1/60101"><i class="iconfont icon-LinkedinIn"></i></a></li>
+                            <li><a class="button" data-sharer="facebook" data-title="CMC | FedCPS: A Dual Optimization Model for Federated Learning Based on Clustering and Personalization Strategy" data-url="https://www.techscience.com/cmc/v83n1/60101"><i class="iconfont icon-Facebook-copy"></i></a></li>
+                            <li><a class="button" data-sharer="twitter" data-title="CMC | FedCPS: A Dual Optimization Model for Federated Learning Based on Clustering and Personalization Strategy" data-url="https://www.techscience.com/cmc/v83n1/60101"><i class="iconfont icon-twitter"></i></a></li>
+                            <li><a onClick="javascript:document.getElementById('sasas').style.display='block';"><i class="iconfont icon-rizhi"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="clear"></div>
+                </div>   
+                
+                <div class="bq2">
+                                        
+                                            
+                     
+
+                                            
+                                            
+                      
+                        
+                </div>
+
+                <div class="bq4" id="section_abstract">
+
+                    <h2 class="xiaobt">Abstract</h2>
+
+                    Federated learning is a machine learning framework designed to protect privacy by keeping training data on clients’ devices without sharing private data. It trains a global model through collaboration between clients and the server. However, the presence of data heterogeneity can lead to inefficient model training and even reduce the final model’s accuracy and generalization capability. Meanwhile, data scarcity can result in suboptimal cluster distributions for few-shot clients in centralized clustering tasks, and standalone personalization tasks may cause severe overfitting issues. To address these limitations, we introduce a federated learning dual optimization model based on clustering and personalization strategy (FedCPS). FedCPS adopts a decentralized approach, where clients identify their cluster membership locally without relying on a centralized clustering algorithm. Building on this, FedCPS introduces personalized training tasks locally, adding a regularization term to control deviations between local and cluster models. This improves the generalization ability of the final model while mitigating overfitting. The use of weight-sharing techniques also reduces the computational cost of central machines. Experimental results on MNIST, FMNIST, CIFAR10, and CIFAR100 datasets demonstrate that our method achieves better personalization effects compared to other personalized federated learning methods, with an average test accuracy improvement of 0.81%–2.96%. Meanwhile, we adjusted the proportion of few-shot clients to evaluate the impact on accuracy across different methods. The experiments show that FedCPS reduces accuracy by only 0.2%–3.7%, compared to 2.1%–10% for existing methods. Our method demonstrates its advantages across diverse data environments.                    <hr />
+                    
+                                        
+                         
+                
+                                        <h2 class="xiaobt">Keywords</h2>
+                    <div itemprop="keywords">
+                        Federated learning; cluster; personalization; overfitting                    </div>
+                    <hr />
+                                         
+                                        
+                     
+                        
+                     
+                    
+                      
+					
+           <div id="cite_article_list">           
+            <h2 class="xiaobt">Cite This Article</h2>
+            <div>
+                <b>APA Style</b>
+                <div>Yang, Z., Liu, Y., Feng, F., Liu, Y., Liu, Z. (2025). FedCPS: A Dual Optimization Model for Federated Learning Based on Clustering and Personalization Strategy. <i>Computers, Materials &amp; Continua</i>, <i>83</i><i>(1)</i>, 357–380. <a href="https://doi.org/10.32604/cmc.2025.060709">https://doi.org/10.32604/cmc.2025.060709</a></div>
+            </div>
+            <div>
+                <b>Vancouver Style</b>
+                <div>Yang Z, Liu Y, Feng F, Liu Y, Liu Z. FedCPS: A Dual Optimization Model for Federated Learning Based on Clustering and Personalization Strategy. Comput Mater Contin. 2025;83(1):357–380. <a href="https://doi.org/10.32604/cmc.2025.060709">https://doi.org/10.32604/cmc.2025.060709</a></div>
+            </div>
+            <div>
+                <b>IEEE Style</b>
+                <div>Z. Yang, Y. Liu, F. Feng, Y. Liu,  and Z. Liu, “FedCPS: A Dual Optimization Model for Federated Learning Based on Clustering and Personalization Strategy,” <i>Comput. Mater. Contin.</i>, vol. 83, no. 1, pp. 357–380, 2025. <a href="https://doi.org/10.32604/cmc.2025.060709">https://doi.org/10.32604/cmc.2025.060709</a></div>
+            </div>
+          
+
+          <div class="citation-link cite_detail" style="padding-left:0">
+              <a href="https://www.techscience.com/cmc/v83n1/60101/bibtex" >BibTex</a>
+              <a href="https://www.techscience.com/cmc/v83n1/60101/enw" >EndNote</a>
+              <a href="https://www.techscience.com/cmc/v83n1/60101/ris" >RIS</a>
+            </div>
+          </div>
+    
+          </div><!-- comment -->
+      <br/>
+      <br/>
+      <br/>
+                    <div class="cite_detail" style='line-height: 14px; padding-left: 120px;'>
+                  <img src="https://www.techscience.com/static/images/cc.jpg?t=20230215" alt="cc" width="110" style="position:absolute; left: 0" /> Copyright © 2025 The Author(s). Published by Tech Science Press.<br/> This work is licensed under a <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">Creative Commons Attribution 4.0 International License</a> , which permits unrestricted use, distribution, and reproduction in any medium, provided the original work is properly cited. 
+              </div>
+       
+        
+       
+
+
+
+
+<div id="trendmd-suggestions"></div>
+
+<script defer src='//js.trendmd.com/trendmd.min.js' data-trendmdconfig='{"journal_id":"74181", "element":"#trendmd-suggestions"}'></script>
+
+ 
+
+
+
+
+
+                
+                </div>   
+
+            </article>
+
+            </div>
+
+
+       
+        <div class="nlf2">
+            <script src="https://www.techscience.com/static/js/tan.js?t=20230215"></script>
+
+            <div class="nkslj">
+                <ul >
+                    <li class="dropdown">
+                        <a data-target="#" class="dropdown-toggle" data-test-id="download-button" data-toggle="dropdown" role="button" aria-expanded="false">
+                            <img src="https://www.techscience.com/static/images/gj2.png?t=20230215" alt="Downloads icon"  />Downloads
+                        </a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a class="download-files-pdf action-link" href="https://www.techscience.com/cmc/v83n1/60101/pdf" >Full-Text PDF</a></li>
+                                                        <li><a class="download-files-readcube" href="https://www.techscience.com/cmc/v83n1/60101/html" >Full-Text HTML</a></li>
+                                                                                    <li><a class="download-files-epub" href="https://www.techscience.com/cmc/v83n1/60101/xml" >Full-Text XML</a></li>
+                                                          
+
+                        </ul>
+                    </li>                   
+                    <li class="dropdown">
+                        <a data-target="#" class="dropdown-toggle" data-test-id="citation-button" data-toggle="dropdown" role="button" aria-expanded="false">
+                            <img src="https://www.techscience.com/static/images/gj.png?t=20230215" alt="Citation Tools icon" />Citation Tools
+                        </a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="https://www.techscience.com/cmc/v83n1/60101/bibtex"   >BibTex</a></li>
+                            <li><a href="https://www.techscience.com/cmc/v83n1/60101/enw" >EndNote</a></li>
+                            <li><a href="https://www.techscience.com/cmc/v83n1/60101/ris"  >RIS</a></li>
+                        </ul>
+                    </li>
+                    <div class="clear"></div>            
+                </ul>
+
+            </div>
+
+            <div class="shuliang">
+                <ul>
+                    <li>
+                        <h3>1139</h3>
+                        <p><i class="iconfont icon-yanjing1"></i>View</p>
+
+                    </li>
+                    <li>
+                        <h3>774</h3>
+                        <p><i class="iconfont icon-xiazai2"></i>Download</p>
+
+                    </li>
+                    <li style="display: none">
+                        <h3 id="star_60101">0</h3>
+                        <p><i class="iconfont icon-dianzan_kuai"></i>Like</p>
+                    </li>
+                    <div class="clear"></div>
+                </ul>
+            </div>
+           <div class="acade-j" style="margin-top: 15px; padding-left: 33%;">
+          
+<span class="__dimensions_badge_embed__" data-doi="10.32604/cmc.2025.060709"   data-hide-zero-citations="true" data-style="small_circle"></span><script async="true" src="https://badge.dimensions.ai/badge.js" charset="utf-8"></script>
+
+      </div>
+                        <div class="k2">
+                <h2 class="nbt">Related articles</h2>
+                <div class="weizhang">
+                    <ul>
+                           
+                        <li>
+                            <p>
+                                <a href="https://www.techscience.com/cmc/v74n1/49765" title="GRU-based Buzzer Ensemble for Abnormal Detection in Industrial Control Systems">
+                                    GRU-based Buzzer Ensemble for Abnormal Detection in Industrial Control Systems                                </a> 
+                            </p>
+                            <span title="Hyo-Seok Kim, Chang-Gyoon Lim, Sang-Joon Lee, Yong-Min Kim">Hyo-Seok Kim, Chang-Gyoon Lim,...</span>
+                        </li>
+                              
+                        <li>
+                            <p>
+                                <a href="https://www.techscience.com/cmc/v74n1/49766" title="Profiling Astronomical Objects Using Unsupervised Learning Approach">
+                                    Profiling Astronomical Objects Using Unsupervised Learning Approach                                </a> 
+                            </p>
+                            <span title="Theerapat Sangpetch, Tossapon Boongoen, Natthakan Iam-On">Theerapat Sangpetch, Tossapon...</span>
+                        </li>
+                              
+                        <li>
+                            <p>
+                                <a href="https://www.techscience.com/cmc/v74n1/49775" title="Employment Quality Evaluation Model Based on Hybrid Intelligent Algorithm">
+                                    Employment Quality Evaluation Model Based on Hybrid Intelligent Algorithm                                </a> 
+                            </p>
+                            <span title="Xianhui Gu, Xiaokan Wang, Shuang Liang">Xianhui Gu, Xiaokan Wang, Shuang...</span>
+                        </li>
+                              
+                        <li>
+                            <p>
+                                <a href="https://www.techscience.com/cmc/v74n1/49777" title="Privacy Data Management Mechanism Based on Blockchain and Federated Learning">
+                                    Privacy Data Management Mechanism Based on Blockchain and Federated Learning                                </a> 
+                            </p>
+                            <span title="Mingsen Mo, Shan Ji, Xiaowan Wang, Ghulam Mohiuddin, Yongjun Ren">Mingsen Mo, Shan Ji, Xiaowan Wang,...</span>
+                        </li>
+                              
+                        <li>
+                            <p>
+                                <a href="https://www.techscience.com/cmc/v74n1/49798" title="Application of Time Serial Model in Water Quality Predicting">
+                                    Application of Time Serial Model in Water Quality Predicting                                </a> 
+                            </p>
+                            <span title="Jiang Wu, Jianjun Zhang, Wenwu Tan, Hao Lan, Sirao Zhang, Ke Xiao, Li Wang, Haijun Lin, Guang Sun, Peng Guo">Jiang Wu, Jianjun Zhang, Wenwu...</span>
+                        </li>
+                                               </ul>
+                </div>
+            </div>
+                                </div>
+        <div class="clear"></div>
+    </div>
+        <div class="clear"></div>
+
+
+    <!-- footer start -->
+<div class="footer wow fadeIn" >
+    <!-- footer-container -->
+    <div class="foot1">
+        <div class="dlink">
+            <ul>
+                                    <li><h3>Further Information</h3>
+                         
+                            <p><a href="https://www.techscience.com/ndetail/abt"  title="About Tech Science Press">About Tech Science Press</a></p>
+                             
+                            <p><a href="https://www.techscience.com/ndetail/openaccess"  title="Open Access Policy">Open Access Policy</a></p>
+                             
+                            <p><a href="https://www.techscience.com/ndetail/apc"  title="Article Processing Charges">Article Processing Charges</a></p>
+                             
+                            <p><a href="https://www.techscience.com/ndetail/specialissue"  title="Special Issue Policy">Special Issue Policy</a></p>
+                             
+                            <p><a href="https://www.techscience.com/ndetail/researchtopic"  title="Research Topic Policy">Research Topic Policy</a></p>
+                             
+                            <p><a href="https://www.techscience.com/ndetail/terms"  title="Terms and Conditions">Terms and Conditions</a></p>
+                             
+                            <p><a href="https://www.techscience.com/ndetail/privacy"  title="Privacy Policy">Privacy Policy</a></p>
+                             
+                            <p><a href="https://www.techscience.com/ndetail/advertising"  title="Advertising Policy">Advertising Policy</a></p>
+                             
+                            <p><a href="https://www.techscience.com/ndetail/contact"  title="Contact">Contact</a></p>
+                                                </li>
+                                        <li><h3>Guidelines</h3>
+                         
+                            <p><a href="https://www.techscience.com/ndetail/editors"  title="For Editors">For Editors</a></p>
+                             
+                            <p><a href="https://www.techscience.com/ndetail/reviewers"  title="For Reviewers">For Reviewers</a></p>
+                             
+                            <p><a href="https://www.techscience.com/ndetail/authors"  title="For Authors">For Authors</a></p>
+                             
+                            <p><a href="https://www.techscience.com/ndetail/organizers"  title="For Conference Organizers">For Conference Organizers</a></p>
+                             
+                            <p><a href="https://www.techscience.com/ndetail/subscribers"  title="For Subscribers">For Subscribers</a></p>
+                                                </li>
+                                    <li>
+                    <h3>Follow Us</h3>    
+                    <p><a href="https://www.linkedin.com/company/tech-science-press-2022/"  title="LinkedIn">LinkedIn</a></p>
+                    <p><a href="https://twitter.com/TechScience_TSP"  title="LinkedIn">Twitter</a></p>
+                </li>
+                <li>
+                    <h3>Join Us</h3>    
+                    <p><a href="https://www.techscience.com/join-as-editor" >Join TSP editorial community</a></p>
+                </li>
+                <li class="dguanzhu1">
+                    <h3>Contact Us</h3>    
+                    <div>
+                        <a href="https://www.techscience.com/ndetail/contact"><i class="iconfont icon-youxiang"></i></a>
+                        <a href="https://www.techscience.com/ndetail/contact"><i class="iconfont icon-w_dizhi-"></i></a>
+                        <a href="javascript:showWhatsApp();"><i class="iconfont icon-whats-app"></i></a>
+                    </div>
+                </li>
+            </ul>       
+        </div>        
+        
+    </div>
+    <div id="whats-app" class="zx_bm" style="display: none;">
+        <div class="bm_bj"></div>
+        <div class="b_m" style="padding: 30px 30px; max-width: 280px"> 
+            <h3>WhatsApp:</h3>
+            <div class="fuzhi">
+                +1（702）9272320
+            </div>
+            <a href="javascript:hideWhatsApp();" style="float:right; position:absolute; right:10px; top:10px;">
+                <img src="https://www.techscience.com/static/images/fixe_esc1.png?t=20230215" width="25" height="25">
+            </a> 
+        </div>
+    </div>
+
+    <div class="foot2"> 
+           <div>  
+        Copyright© 2026 Tech Science Press <br/>
+© 1997-2026 TSP (Henderson, USA) unless otherwise stated    </div>
+    <span id="siteseal" style="margin-left: 15px;margin-top: 7px; display: block;"><script async="true" type="text/javascript" src="https://seal.godaddy.com/getSeal?sealID=NyuRzmGl5GM74T5fwbHA1hxL09vRSUVWcF3oFoQPks7JU48TJ739mUEZzqqm"></script></span>
+</div></div>
+<!-- footer end -->
+
+<script src="https://www.techscience.com/static/js/iconfont.js?t=20230215"></script>
+<script src="https://www.techscience.com/static/js/jquery-1.8.3.min.js?t=20230215" type="text/javascript" ></script>
+<script src="https://www.techscience.com/static/js/main.js?t=20230215" type="text/javascript" ></script>
+<script src="https://www.techscience.com/static/js/detail.js?t=20230215" type="text/javascript" ></script>
+<script src="https://www.techscience.com/static/js/wow.min.js?t=20230215"></script>
+
+<script>
+    new WOW().init();
+    
+    function showWhatsApp() {
+        document.getElementById('whats-app').style.display = 'block';
+    }
+    function hideWhatsApp() {
+        document.getElementById('whats-app').style.display = 'none';
+    }
+</script>
+<link rel="stylesheet" href="https://www.techscience.com/static/css/swiper.min.css?t=20230215" />
+<!-- Google tag (gtag.js) -->
+<script async="true" src="https://www.googletagmanager.com/gtag/js?id=G-PD3QTEE3HW"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-PD3QTEE3HW');
+</script>
+<script src="https://web.cmp.usercentrics.eu/modules/autoblocker.js"></script>
+<script id="usercentrics-cmp" src="https://web.cmp.usercentrics.eu/ui/loader.js" data-settings-id="hGjI_wnNp25nVw" async></script>
+
+    
+<div class="sddh">
+    <ul>
+        <li><a href="https://www.techscience.com/"><i class="iconfont icon-shouye"></i>Home</a></li>
+        <li><a href="https://ijs.tspsubmission.com/homepage?returnUrl=/submission/1"><i class="iconfont icon-tijiao"></i>Submit</a></li>
+        <li><a href="https://ijs.tspsubmission.com/homepage?returnUrl=/submission/1"><i class="iconfont icon-touxiang"></i>Login</a></li>
+        <li><a href="https://ijs.tspsubmission.com/regist"><i class="iconfont icon-zhuce"></i>Register</a></li>
+    </ul>
+</div>
+
+<div id="sasas" class="zx_bm">
+    <div class="bm_bj"></div>
+    <div class="b_m"> 
+        <h3>Share Link</h3>
+        <div class="tguanzhu">
+            <ul>
+                <li>
+                    <a class="button" data-sharer="email" data-title="CMC | FedCPS: A Dual Optimization Model for Federated Learning Based on Clustering and Personalization Strategy" data-url="https://www.techscience.com/cmc/v83n1/60101" data-subject="Hey! Check out that URL" data-to="office@techscience.com">
+                        <i class="iconfont icon-youxiang"></i>
+                    </a>
+                </li>
+                <li>
+                    <a class="button" data-sharer="twitter" data-title="CMC | FedCPS: A Dual Optimization Model for Federated Learning Based on Clustering and Personalization Strategy" data-url="https://www.techscience.com/cmc/v83n1/60101">
+                        <i class="iconfont icon-twitter"></i>
+                    </a>
+                </li>
+                <li>
+                    <a class="button" data-sharer="linkedin" data-title="CMC | FedCPS: A Dual Optimization Model for Federated Learning Based on Clustering and Personalization Strategy" data-url="https://www.techscience.com/cmc/v83n1/60101">
+                        <i class="iconfont icon-LinkedinIn"></i>
+                    </a>
+                </li>
+                <li>
+                    <a class="button" data-sharer="facebook" data-title="CMC | FedCPS: A Dual Optimization Model for Federated Learning Based on Clustering and Personalization Strategy" data-url="https://www.techscience.com/cmc/v83n1/60101" >
+                        <i class="iconfont icon-Facebook-copy"></i>
+                    </a>
+                </li>
+
+                    <!--<li><a href="javascript:document.getElementById('sasas1').style.display = 'block';"><i class="iconfont icon-weixin1"></i></a></li>-->
+            </ul>
+        </div>
+        <div class="fuzhi">
+            <input id="foo" type="text" value="https://www.techscience.com/cmc/v83n1/60101" class="fz1" />
+            <button class="fz2" data-clipboard-action="copy" data-clipboard-target="#foo">Copy</button> 
+            <!-- 2. Include library -->
+            <script src="https://www.techscience.com/static/js/clipboard.min.js?t=20230215"></script>
+        </div>
+
+        <a href="javascript:hideShareLinked()" style="float:right; position:absolute; right:10px; top:10px;" >
+            <img src="https://www.techscience.com/static/images/fixe_esc1.png?t=20230215" width="25" height="25" />
+        </a> 
+    </div>
+</div>
+<div class="toTop" id="roll_top"><i class="iconfont icon-dingbu1"></i></div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/sharer.js@latest/sharer.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        /*返回顶部*/
+        $('#roll_top').hide();
+        $(window).scroll(function () {
+            if ($(window).scrollTop() > 300) {
+                $('#roll_top').fadeIn(400);//当滑动栏向下滑动时，按钮渐现的时间
+            } else {
+                $('#roll_top').fadeOut(0);//当页面回到顶部第一屏时，按钮渐隐的时间
+            }
+        });
+        $('#roll_top').click(function () {
+            $('html,body').animate({
+                scrollTop: '0px'
+            }, 300);//返回顶部所用的时间 返回顶部也可调用goto()函数
+        });
+    });
+    function goto(selector) {
+        $.scrollTo(selector, 1000);
+    }
+
+    $(function () {
+        var clipboard = new Clipboard('.fz2');
+
+        clipboard.on('success', function (e) {
+            console.log(e);
+        });
+
+        clipboard.on('error', function (e) {
+            console.log(e);
+        });
+                
+        $(".nlf .nbt").click(function () {
+            $(this).toggleClass("currentDd").siblings(".nbt").removeClass("currentDd")
+            $(this).toggleClass("currentDt").siblings(".nbt").removeClass("currentDt")
+            // 修改数字控制速度， slideUp(500)控制卷起速度
+            $(this).next(".k2 ul").slideToggle(500).siblings(".k2 ul").slideUp(500),
+                    $(this).next(".k2 .news ").slideToggle(500).siblings(".k2 .news ").slideUp(500),
+                    $(this).next(".k2 .weizhang ").slideToggle(500).siblings(".k2 .weizhang ").slideUp(500),
+                    $(this).next(".k3 .gdg").slideToggle(500).siblings(".k3 .gdg").slideUp(500);
+        })
+    })
+</script>    
+
+        <script>
+   var modal = document.getElementById('modal');
+   var bgImg = document.getElementById('bgImg');
+   var bgImgLink = document.getElementById('bgImgLink');
+
+  function showBgImg(e) {
+       modal.style.display = 'block';
+       bgImg.src = e.src;
+       bgImgLink.href = e.src;
+   }
+
+   modal.onclick = function() {
+       modal.style.display = 'none';
+   }
+   
+   bgImg.onclick = function() {
+       event.stopPropagation();    // 上层加上这行代码，可以阻止点击穿透
+   }
+   
+   function modalClose(){
+       modal.style.display = 'none';
+   }
+    </script>
+    <script type="text/javascript">
+  $(window).scroll(function(){
+    var top = $(window).scrollTop();
+	var hed = $(".gsfd").innerHeight();
+    if(top>hed){
+      $(".gsfd").addClass("on");
+    }else{
+      $(".gsfd").removeClass("on");
+    };
+  });
+</script>
+
+
+    <script>
+
+    
+    function loadCitationList(id) {
+        $('#cite_article_msg').html('loading...')
+        req_html( 'https://www.techscience.com/tg/home/journal/citation_list',{id: id}, function (data) {
+            $('#cite_article_msg').html('')
+            $("#citation_detail").html(data); 
+        }, 'get')
+    }
+    
+    /*
+    * 实现点赞功能
+    * @param    资源id
+    * */
+    function addStar(id){
+        var num =  $('#star_'+id).html();
+        var cookieKey = "star_" + id
+        var star=getCookieById(cookieKey,1);
+        if(star==""){
+            addCookieById(cookieKey,1,365);
+            //后台点赞操作
+            req_html( 'https://www.techscience.com/tg/home/journal/addStar',{id: id, num: num}, function (data) {
+                $('#star_'+id).html(data.data)
+            }, 'get','json')
+        }else{
+            alert("Already “LIKED” it! Thanks for loving this article!");
+        }
+    }
+    
+    $(document).ready(function(){
+            // jQuery加载后，将toggleIssueAccordion升级为带滑动动画的版本
+            window.toggleIssueAccordion = function (dome) {
+                var $ej = $(dome).siblings(".nav_div_ej");
+                var isHidden = $ej.is(":hidden");
+                $(".nav_div_ej").slideUp();
+                $(".nav_div_dome").removeClass("on");
+                if (isHidden) {
+                    $ej.slideDown();
+                    $(dome).addClass("on");
+                }
+            };
+            
+            $("#cite_btn").click(function(){
+               $('#more_cite').toggle('slow');
+            });
+            -
+            $("#article_information").click(function(){
+                
+              if(   $(this).find('div').hasClass('rotate90') ){
+                  $(this).find('div').removeClass('rotate90');
+                  $('#affiliation').hide();
+              }else{
+                  $(this).find('div').addClass('rotate90');
+                  $('#affiliation').show();   
+              }
+            });  
+           
+           
+
+              });
+ 
+
+
+</script>
+</body>
+</html>

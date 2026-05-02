@@ -1,0 +1,4 @@
+# file: D:\2.HUST\2026_Projects_Trial\SigMSmartResearch\research_platform\app\models\llm_usage.py
+# hypothesis_version: 6.151.12
+
+[0.0, 100, 'SET NULL', 'llm_usage_records', 'topics.id', 'users.id']
